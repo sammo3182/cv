@@ -1,0 +1,41 @@
+---
+output: 
+  ## rticles::ctex: Chinese
+  bookdown::pdf_document2:
+    citation_package: natbib
+    keep_tex: yes
+    latex_engine: pdflatex
+    template: svm-latex-cv.tex
+geometry: margin=1in
+biblio-style: ajps
+
+title: "CV"
+author: Yue Hu
+
+jobtitle: "PhD Candidate, Statistical Consultant (ISRC)"
+address: "313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242"
+fontawesome: yes
+email: yue-hu-1@uiowa.edu
+github: sammo3182
+phone: "+01-803-250-1686"
+web: sammo3182.github.io
+updated: no
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 10.5pt
+linkcolor: blue
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+library(RefManageR)
+bib <- ReadBib("publication.bib", check = "error")
+BibOptions(check.entries = FALSE, 
+           first.inits = FALSE, 
+           sorting = "ydnt")
+```
+
+```{r echo = FALSE, results = "asis"}
+bib
+```
+

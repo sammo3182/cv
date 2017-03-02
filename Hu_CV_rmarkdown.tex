@@ -1,0 +1,164 @@
+\documentclass[10.5pt,]{article}
+\usepackage[sc, osf]{mathpazo}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+
+
+\usepackage{natbib}
+\bibliographystyle{ajps}
+\usepackage{longtable,booktabs}
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% Now begins the stuff that I added.
+% ----------------------------------
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\itshape}
+
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% Make parskips rather than indent with lists.
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+
+% Fancyhdr, as I tend to do with these personal documents.
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{
+\cfoot{\scriptsize  Yue Hu - CV }}
+\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
+
+% Always load hyperref last.
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+
+\hypersetup{unicode=true,
+            pdftitle={Yue Hu:  CV (Curriculum Vitae)},
+            pdfauthor={Yue Hu},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true, bookmarks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\begin{document}
+
+
+\centerline{\huge \bf Yue Hu}
+
+\vspace{2 mm}
+
+\hrule
+
+\vspace{2 mm}
+
+\moveleft.5\hoffset\centerline{PhD Candidate, Statistical Consultant (ISRC)}
+\moveleft.5\hoffset\centerline{313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242}
+\moveleft.5\hoffset\centerline{ \faEnvelopeO \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yue-hu-1@uiowa.edu}{\nolinkurl{yue-hu-1@uiowa.edu}}} \hspace{1 mm}  \faPhone \hspace{1 mm}  +01-803-250-1686  \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    \faGlobe \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
+
+\vspace{2 mm}
+
+\hrule
+
+
+{[}1{]} Frederick Solt and Yue Hu. \emph{pewdata: Reproducible Retrieval
+of Pew Research Center Datasets}. Available at The Comprehensive R
+Archive Network (CRAN). 2016. \textless{}URL:
+\url{http://CRAN.R-project.org/package=pewdata}\textgreater{}.
+
+{[}2{]} Frederick Solt, Yue Hu, Kevan Hudson, et al. ``Economic
+Inequality and Belief in Meritocracy in the United States''. In:
+\emph{Research \& Politics} 3.4 (2016), pp.~1-7. DOI:
+10.1177/2053168016672101. eprint:
+\url{http://rap.sagepub.com/content/3/4/2053168016672101.full.pdf}.
+\textless{}URL:
+\url{http://rap.sagepub.com/content/3/4/2053168016672101}\textgreater{}.
+
+{[}3{]} Wen Fang Tang, Yue Hu and Shuai Jin. ``Affirmative Inaction:
+Language Education and Labor Mobility among China's Muslim Minorities''.
+In: \emph{Chinese Sociological Review} (4 2016), pp.~346-66.
+
+{[}4{]} Frederick Solt and Yue Hu. \emph{dotwhisker: Dot-and-Whisker
+Plots of Regression Results}. Available at The Comprehensive R Archive
+Network (CRAN). 2015. \textless{}URL:
+\url{http://CRAN.R-project.org/package=dotwhisker}\textgreater{}.
+
+{[}5{]} Frederick Solt and Yue Hu. \emph{interplot: Plot the Effects of
+Variables in Interaction Terms}. Available at The Comprehensive R
+Archive Network (CRAN). 2015. \textless{}URL:
+\url{http://CRAN.R-project.org/package=interplot}\textgreater{}.
+
+{[}6{]} Yue Hu. ``Institutional Difference and Cultural Difference: A
+Comparative Study of Canadian and Chinese Cultural Diplomacy''. In:
+\emph{Journal of American-East Asian Relations} 20.2-3 (2013),
+pp.~256-68. \textless{}URL:
+\url{http://booksandjournals.brillonline.com/content/journals/10.1163/18765610-02003011}\textgreater{}.
+
+{[}7{]} Yue Hu and Yuchao Zhu. ``\,`Issue-Oriented' vs. `Ism-Oriented':
+Indigenizing Political Science in China?'' Chinese. In: \emph{Tianjin
+Social Science} 3 (2011), pp.~46-50.
+
+{[}8{]} Tongshun Cheng and Yue Hu. ``The Cultural Props of Foreign
+Policy''. Chinese. In: \emph{Tribune of Study} (2010), pp.~33-37.
+
+{[}9{]} Yue Hu. ``An Analysis of Politics Fixed Position of CPPCC from
+the Political Scientific Angle''. Chinese. In: \emph{Journal of Tianjin
+Institute of Socialism} 1 (2009), pp.~19-23.
+
+\end{document}
