@@ -7,7 +7,6 @@ output:
     latex_engine: pdflatex
     template: svm-latex-cv.tex
 geometry: margin=1in
-biblio-style: ajps
 
 title: "CV"
 author: Yue Hu
@@ -31,11 +30,15 @@ urlcolor: blue
 library(RefManageR)
 bib <- ReadBib("publication.bib", check = "error")
 BibOptions(check.entries = FALSE, 
-           first.inits = FALSE, 
+           first.inits = FALSE,
+           bib.style = "authoryear",
+           style = "latex",
+           max.names = 2,
+           dashed = FALSE,
            sorting = "ydnt")
 ```
 
 ```{r echo = FALSE, results = "asis"}
-bib
+bib[group = "published"]
 ```
 
