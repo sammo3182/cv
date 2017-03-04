@@ -58,31 +58,34 @@
   timestamp = {2014.02.06},
 }
 
-@Misc{Solt2015,
+@Article{Solt2015,
   author       = {Frederick Solt and Yue Hu},
   title        = {{dotwhisker}: Dot-and-Whisker Plots of Regression Results},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
+  journal      = {The Comprehensive R Archive Network (CRAN)},
   year         = {2015},
   group        = {software},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=dotwhisker},
 }
 
-@Misc{Solt2015a,
+@Article{Solt2015a,
   author       = {Frederick Solt and Yue Hu},
   title        = {{interplot}: Plot the Effects of Variables in Interaction Terms},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
+  journal      = {The Comprehensive R Archive Network (CRAN)},
   year         = {2015},
   group        = {software},
   groups       = {Interaction},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=interplot},
 }
 
-@Misc{Solt2016a,
+@Article{Solt2016a,
   author       = {Frederick Solt and Yue Hu},
   title        = {pewdata: Reproducible Retrieval of Pew Research Center Datasets},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
+  journal      = {The Comprehensive R Archive Network (CRAN)},
   year         = {2016},
   group        = {software},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=pewdata},
 }
 
@@ -127,9 +130,27 @@
 }
 
 @Article{Claypool,
-  author = {Vicki Claypool and William Reisinger and Marina Zaloznaya and Yue Hu},
-  title  = {The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States},
-  group  = {underreview},
+  author  = {Vicki Claypool and William Reisinger and Marina Zaloznaya and Yue Hu},
+  title   = {The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States},
+  journal = {AJPS},
+  year    = {2017},
+  group   = {underreview},
+}
+
+@Article{Hu,
+  author  = {Yue Hu},
+  title   = {Strategic Communication: Why the Chinese Government Engages in Discourse about Democracy and Why It Matters},
+  journal = {JOP},
+  year    = {2016},
+  group   = {underreview},
+}
+
+@Article{Hua,
+  author  = {Yue Hu},
+  title   = {Are Informal Education Facilities Effective Means for Political Propaganda? A Spatial Analysis},
+  journal = {BJPS},
+  year    = {2017},
+  group   = {underreview},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

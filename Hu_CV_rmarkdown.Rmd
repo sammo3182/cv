@@ -1,8 +1,7 @@
 ---
 output: 
   ## rticles::ctex: Chinese
-  bookdown::pdf_document2:
-    citation_package: natbib
+  pdf_document:
     keep_tex: yes
     latex_engine: pdflatex
     template: svm-latex-cv.tex
@@ -28,17 +27,133 @@ urlcolor: blue
 
 ```{r setup, include=FALSE}
 library(RefManageR)
+# custom <- RefManageR:::MakeBibLaTeX()
+# custom$fmtJournal <- function(s){
+#                                 if (length(s$journaltitle)) {
+#                                     res <- emph(cleanupLatex(s$journaltitle))
+#                                     if (length(s$journalsubtitle))
+#                                         res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
+#                                     return(res)
+#                                 }
+#                                 else if (!is.null(s$journal)) {
+#                                     emph(cleanupLatex(s$journal))
+#                                 }
+#                             }
+
 bib <- ReadBib("publication.bib", check = "error")
 BibOptions(check.entries = FALSE, 
            first.inits = FALSE,
            bib.style = "authoryear",
-           style = "latex",
+           # style = "latex",
            max.names = 2,
            dashed = FALSE,
            sorting = "ydnt")
 ```
 
+# Education
+## Degree
+Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2017-05(Expected)
+
+> \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
+
+Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
+
+M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
+
+> \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
+
+LL.B. in International Politics, Nankai University, China\hfill 2009-06
+
+# Professional Training
+Experimental Methods \hfill 2014-06/07
+
+> \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
+
+# Professional Positions
+Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
+
+# Publication
+## Journal Articles
 ```{r echo = FALSE, results = "asis"}
 bib[group = "published"]
 ```
 
+## Software
+```{r echo = FALSE, results = "asis"}
+bib[group = "software"]
+```
+
+## Under Review
+Claypool, Vicki William Reisinger, Marina Zaloznaya, and Yue Hu, "The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States."
+
+Hu, Yue, "Strategic Communication: Why the Chinese Government Engages in Discourse about Democracy and Why It Matters."
+
+Hu, Yue, "Are Informal Education Facilities Effective Means for Political Propaganda? A Spatial Analysis."
+
+## Working Projoects
+
+"Measure Political Desirability: An Experimental Method" (with Wenfang Tang).
+
+"The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
+
+"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Yao).
+
+"Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
+
+"The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
+
+
+## Magazine and Others
+```{r echo = FALSE, results = "asis"}
+bib[group = "others"]
+```
+
+
+# Conference
+## 2017
+"The Logic of Peaceful Rise" (with Ray Ou-Yang).
+
+> \footnotesize International Studies Association Annual Convention,  Baltimore, Maryland, Feb. 22~25.
+
+## 2016
+"Measure Political Desirability: A List Experimental Method" (with Wenfang Tang);
+
+"Propaganda with Museums: A Spatial Analysis of Patriotic Educational Demonstration Bases in China".
+
+> \footnotesize Association of Chinese Political Science Annual Meeting, Monterey, California, Oct, 10-11.
+
+"Value Promotion, Justification, or Mobilization? The Dynamic of the Discourse on Democracy in Modern China."
+
+> \footnotesize Midwest Political Science Association Annual Conference, Chicago, Apr., 7-10.
+
+## 2015
+"Affirmative Inaction: Education, Social Mobility, and Ethnic Inequality in China" (with Shuai Jin and Wenfang Tang).
+"Language and Political Trust."
+
+> \footnotesize Midwest Political Science Association Annual Conference, Chicago, Apr., 16-19.
+
+## 2013
+"Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case."
+
+> \footnotesize University of South Carolina Inaugural Graduate Student Conference, Columbia, South Carolina.
+
+## 2012
+"Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
+
+> \footnotesize American Association for Chinese Studies Annual Conference, Atlanta, Georgia, Oct. 12-14.
+
+## 2011
+"Culture and Cultural Diplomacy of Canada and China: A Comparative Study."
+
+> \footnotesize Workshop of Canada-China Relations: Past, Present and Future,
+Regina, Saskatchewan, Oct. 7-8.
+
+## 2010
+"The Development of Western Comparative Politics and Indigenizing Political Science in China."
+
+> \footnotesize International Conference on "Chinese Political Research: Theories & Methods," Tianjin, Sep 25-26.
+
+## 2008
+"The Study of Shanghai Cooperation Organization: The Way for China to Strive for A Position of Local Dominant Power."
+
+> \footnotesize National East Asia Forum for College Students, Beijing, Mar. 28-30.
