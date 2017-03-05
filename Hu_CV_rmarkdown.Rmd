@@ -50,27 +50,32 @@ BibOptions(check.entries = FALSE,
            sorting = "ydnt")
 ```
 
+
 # Education
 ## Degree
-Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2017-05(Expected)
+* Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2017-05 (Expected)
+    + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
+* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
+* M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
+    + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
+* M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
+    + \footnotesize Thesis: “Culture and Cultural Diplomacy: A Comparative Study of a Canadian and Chinese Case.”
+* LL.B. in International Politics, Nankai University, China\hfill 2009-06
 
-> \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
-
-Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
-
-M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
-
-> \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
-
-LL.B. in International Politics, Nankai University, China\hfill 2009-06
-
-# Professional Training
-Experimental Methods \hfill 2014-06/07
-
-> \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
+## Additional Training
+* Experimental Methods \hfill 2014-06/07
+    + \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
 
 # Professional Positions
-Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
+* Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
+
+# Research Interests
+* Comparative Politics: 
+    + Language Policy, Chinese politics, public opinion, political communication, political culture.
+* Political Methodology:
+    + Survey experiment, text analysis, network analysis, spatial analysis, multilevel analysis.
+* International Relations:
+    + Public diplomacy, international cultural relations, Chinese foreign policy.
 
 # Publication
 ## Journal Articles
@@ -110,50 +115,124 @@ bib[group = "others"]
 
 
 # Conference
-## 2017
-"The Logic of Peaceful Rise" (with Ray Ou-Yang).
+* 2017
+    + "The Logic of Peaceful Rise" (with Ray Ou-Yang).
+        + \footnotesize International Studies Association(ISA) Annual Convention,  Baltimore, Maryland, Feb. 22~25.
+* 2016
+    + "Measure Political Desirability: A List Experimental Method" (with Wenfang Tang);
+    + "Propaganda with Museums: A Spatial Analysis of Patriotic Educational Demonstration Bases in China".
+        + \footnotesize Association of Chinese Political Science (ACPS) Annual Meeting, Monterey, California, Oct, 10-11.
+    + "Value Promotion, Justification, or Mobilization? The Dynamic of the Discourse on Democracy in Modern China."
+        + \footnotesize Midwest Political Science Association Annual (MPSA) Conference, Chicago, Apr., 7-10.
+* 2015
+    + "Affirmative Inaction: Education, Social Mobility, and Ethnic Inequality in China" (with Wenfang Tang and Shuai Jin).
+    + "Language and Political Trust."
+        + \footnotesize Midwest Political Science Association (MPSA) Annual Conference, Chicago, Apr., 16-19.
+* 2013
+    + "Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case."
+        + \footnotesize University of South Carolina Inaugural Graduate Student Conference, Columbia, South Carolina.
+* 2012
+    + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
+        + \footnotesize American Association for Chinese Studies (AACS) Annual Conference, Atlanta, Georgia, Oct. 12-14.
 
-> \footnotesize International Studies Association Annual Convention,  Baltimore, Maryland, Feb. 22~25.
+# Research Experience
+## Data Collection
+* Field survey experiment in China.\hfill 2016-12
+    + \footnotesize Designed and conducted survey experiments in Chengdu and Meizhou of China on 421 subjects in total.
 
-## 2016
-"Measure Political Desirability: A List Experimental Method" (with Wenfang Tang);
+* Online survey experiment in China.\hfill 2017-02
+    + \footnotesize Designed an online survey experiments, finished 994 surveys.
 
-"Propaganda with Museums: A Spatial Analysis of Patriotic Educational Demonstration Bases in China".
+* Webscrapping Newspaper Documents.\hfill 2016
+    + \footnotesize Scrapped the text content of *People's Daily* (1946-2003) from a third party website, ending with 1,371,607 documents.
 
-> \footnotesize Association of Chinese Political Science Annual Meeting, Monterey, California, Oct, 10-11.
+## Research Assistant
+* Corruption and Politics in Russia, Ukraine, and Georgia Project (Univ. of Iowa)\hfill 2015-2016
+* Standardized World Income Inequality Database Project (Univ. of Iowa)\hfill 2015-05/06
+* Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2013-05/08 
 
-"Value Promotion, Justification, or Mobilization? The Dynamic of the Discourse on Democracy in Modern China."
 
-> \footnotesize Midwest Political Science Association Annual Conference, Chicago, Apr., 7-10.
+# Teaching Interest
+* Comparative Politics: 
+    + Intro to Comparative Politics, Language Policy, Public Opinion, Asian Politics, Chinese Politics, Ethnicity, Nationalism, Democratization.
+* Political Methodology:
+    + Research Design, Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experiment, Structural Equation Modeling, Survey Design and Analysis, Programming in R, Stata, and Python, Data Visualization.
 
-## 2015
-"Affirmative Inaction: Education, Social Mobility, and Ethnic Inequality in China" (with Shuai Jin and Wenfang Tang).
-"Language and Political Trust."
 
-> \footnotesize Midwest Political Science Association Annual Conference, Chicago, Apr., 16-19.
+# Teaching Experience
 
-## 2013
-"Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case."
+## Instructor, University of Iowa
 
-> \footnotesize University of South Carolina Inaugural Graduate Student Conference, Columbia, South Carolina.
+* Introduction To R Workshop Series\hfill 2015-present
+* Multilevel Modeling with Stata and R\hfill 2016-present
+* Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill 2016-08
 
-## 2012
-"Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
+## Guest Lecture, University of South Carolina
+* Comparative Politics-Developing Countries\hfill Spring 2012
+* National Security of United States\hfill Fall 2011
 
-> \footnotesize American Association for Chinese Studies Annual Conference, Atlanta, Georgia, Oct. 12-14.
+## Teaching Assistant, University of Iowa
 
-## 2011
-"Culture and Cultural Diplomacy of Canada and China: A Comparative Study."
+* Introduction to Political Behavior\hfill Spring 2015
+* Introduction to International Relations\hfill Fall 2014
+* Introduction to Comparative Politics\hfill Spring 2014
+* Political Campaigning\hfill Fall 2014
+* Political Pschology\hfill Fall 2014
 
-> \footnotesize Workshop of Canada-China Relations: Past, Present and Future,
-Regina, Saskatchewan, Oct. 7-8.
+## Teaching Assistant, University of South Carolina
 
-## 2010
-"The Development of Western Comparative Politics and Indigenizing Political Science in China."
+* International Relations\hfill Spring 2013
+* Comparative Politics\hfill Spring 2013
+* Controversial World Politics\hfill Fall 2012
+* American National Government\hfill Spring 2012
+* Comparative Politics-Developing Countries\hfill Spring 2012
+* National Security of United States\hfill Fall 2011
 
-> \footnotesize International Conference on "Chinese Political Research: Theories & Methods," Tianjin, Sep 25-26.
+## Teaching Assistant, University of Regina
 
-## 2008
-"The Study of Shanghai Cooperation Organization: The Way for China to Strive for A Position of Local Dominant Power."
+* Introduction to Political Science\hfill Fall 2010
 
-> \footnotesize National East Asia Forum for College Students, Beijing, Mar. 28-30.
+# Grants
+## Research Awards
+* Post-Comprehensive Research Award ($9404.50)\hfill 2016
+* T. Anne Cleary International Dissertation Research Fellowship ($5000) \hfill 2016
+* Center of Asian and Pacific Studies Graduate Dissertation Grant ($1000)\hfill 2016
+* Best Conference Paper Award of Department of Political Science ($500)\hfill 2016
+* Department Summer Training Grant ($1900)\hfill 2014
+* Graduate Research Award, University of Regina\hfill 2010 
+* Graduate Studies Scholarship, University of Regina\hfill 2009-2011
+* City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
+
+
+## Travel Grants
+* Graduate School Senate Supplemental Travel Funds Award ($600)\hfill 2016
+* Graduate & Professional Student Government Travel Grant ($500)\hfill 2016
+* CAPS Graduate Student Conference Travel Award ($500)\hfill 2015
+* Graduate Student Senate Travel Funds Award ($200)\hfill 2015
+* Department Travel Awards ($500~$800)\hfill 2015-2017
+
+## Graduate Assistantship
+* Graduate Assistantship, University of Iowa\hfill 2014-2017
+* Graduate Assistantship, University of South Carolina\hfill 2011-2013
+
+
+# Professional Affiliation
+* Member of American Political Science Association.
+* Member of Midwest Political Science Association.
+* Member of Association of Chinese Political Science
+* Member of American Association for Chinese Studies.
+
+# Skills
+* Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAG.
+* Application:  \LaTeX, Markdown, Git, GitHub.
+* Language: English, Chinese (Mandarin)
+
+# Reference
+
+\begin{tabular}{ll}
+\parbox{5cm}{\textbf{Wenfang Tang}\\Professor\\University of Iowa\\(319)335-2546\\\href{mailto:wenfang-tang@uiowa.edu}{wenfang-tang@uiowa.edu}}
+ &\parbox{5cm}{\textbf{William M. Reisinger}\\Professor\\University of Iowa\\(319)335-2351\\\href{mailto:william-reisinger@uiowa.edu}{william-reisinger@uiowa.edu}}\\
+&\\
+\parbox{5cm}{\textbf{Frederick Solt}\\Associate Professor\\University of Iowa\\(319) 335-2340\\\href{mailto:frederick-solt@uiowa.edu}{frederick-solt@uiowa.edu}}
+ &\parbox{5cm}{\textbf{Caroline J. Tolbert}\\Professor\\University of Iowa\\(319) 335-2471\\\href{caroline-tolbert@uiowa.edu}{caroline-tolbert@uiowa.edu}}\\
+\end{tabular}
