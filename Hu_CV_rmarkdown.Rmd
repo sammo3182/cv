@@ -10,7 +10,6 @@ geometry: margin=1in
 title: "CV"
 author: Yue Hu
 
-jobtitle: "PhD Candidate, Statistical Consultant (ISRC)"
 address: "313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242"
 fontawesome: yes
 email: yue-hu-1@uiowa.edu
