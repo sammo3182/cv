@@ -26,24 +26,72 @@ urlcolor: blue
 
 ```{r setup, include=FALSE}
 library(RefManageR)
-# custom <- RefManageR:::MakeBibLaTeX()
-# custom$fmtJournal <- function(s){
-#                                 if (length(s$journaltitle)) {
-#                                     res <- emph(cleanupLatex(s$journaltitle))
-#                                     if (length(s$journalsubtitle))
-#                                         res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
-#                                     return(res)
-#                                 }
-#                                 else if (!is.null(s$journal)) {
-#                                     emph(cleanupLatex(s$journal))
-#                                 }
-#                             }
+ajps_mimic <- RefManageR:::MakeBibLaTeX()
+with(ajps_mimic,{
+  ajps_mimic$fmtJournal <- function(s){
+                                if (length(s$journaltitle)) {
+                                    res <- emph(cleanupLatex(s$journaltitle))
+                                    if (length(s$journalsubtitle))
+                                        res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
+                                    return(res)
+                                }
+                                else if (!is.null(s$journal)) {
+                                    emph(cleanupLatex(s$journal))
+                                }
+     }
+     
+     ajps_mimic$fmtURL <- function (paper) {
+        if (length(paper[["url"]])) {
+            res <- paper$url
+            res <- switch(docstyle, html = paste0("\\url{", 
+                res, "}"), markdown = paste0("[", res, "](", 
+                res, ")"), paste0("\\url{", res, "}"))
+            if (length(paper$urldate)) {
+                fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
+                if (!is.null(fDate) && !inherits(fDate, "try-error")) 
+                    res <- paste0(res, " (visited on ", DateFormatter(fDate, 
+                      TRUE), ")")
+            }
+            addPeriod(res)
+        }
+        else if (length(paper$urldate)) {
+            fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
+            if (!is.null(fDate) && !inherits(fDate, "try-error")) 
+                paste0("(Visited on ", DateFormatter(fDate, TRUE), 
+                    ").")
+        }
+     }
+     
+     ajps_mimic$fmtLanguage <- function(lang) {
+    if (length(lang) && tolower(lang) != "english") 
+        paste0("[", sub("\\b(\\w)", "\\U\\1", lang, perl = TRUE, 
+            useBytes = TRUE),"]")
+       }
+     
+     ajps_mimic$formatArticle <- function (paper) {
+    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
+        fmtAddOn(paper$titleaddon),
+        fmtTranslator(paper), fmtCommentator(paper$commentator), 
+        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
+        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
+            collapse = ""), fmtVolume(paper$volume, paper$number), 
+            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
+            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
+            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
+            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
+            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
+        fmtPubstate(paper$pubstate)))
+       }
+})
+
+
+tools::bibstyle("ajps_mimic", ajps_mimic)
 
 bib <- ReadBib("publication.bib", check = "error")
 BibOptions(check.entries = FALSE, 
            first.inits = FALSE,
-           bib.style = "authoryear",
-           # style = "latex",
+           bib.style = "ajps_mimic",
+           style = "latex",
            max.names = 2,
            dashed = FALSE,
            sorting = "ydnt")

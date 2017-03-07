@@ -125,8 +125,8 @@
   journal = {Journal of Politics},
   year    = {2017},
   volume  = {3},
-  pages   = {(forthcoming)},
   group   = {published},
+  pubstat = {forthcoming},
 }
 
 @Article{Claypool,
@@ -153,6 +153,59 @@
   group   = {underreview},
 }
 
+@Article{Hu2014,
+  author   = {Yue Hu},
+  title    = {Experiences on Document Preparation for Applications to PhD Programs of American Universities},
+  journal  = {New Vision},
+  year     = {2014},
+  volume   = {17},
+  pages    = {37-38},
+  group    = {others},
+  language = {Chinese},
+}
+
+@Article{Hu2010,
+  author   = {Yue Hu},
+  title    = {Nothing Honored, So...},
+  journal  = {New Vision},
+  year     = {2010},
+  pages    = {25-26},
+  group    = {others},
+  language = {Chinese},
+}
+
+@Article{Hu2007,
+  author   = {Yue Hu},
+  title    = {Three Harmonies of Premier Zhou Enlai},
+  journal  = {National Spirit},
+  year     = {2007},
+  volume   = {17},
+  pages    = {45},
+  group    = {others},
+  language = {Chinese},
+}
+
+@Article{Hu2006,
+  author   = {Yue Hu},
+  title    = {Philo-mathematics: A Methodology of Politicians.},
+  journal  = {Beauty of Mathematics},
+  year     = {2006},
+  volume   = {1},
+  pages    = {157-160},
+  group    = {others},
+  language = {Chinese},
+}
+
+@Article{Hu2006a,
+  author   = {Yue Hu},
+  title    = {The Greatness of Open Sources},
+  journal  = {LUPA-STAR Essay Compilation},
+  year     = {2006},
+  pages    = {24-25},
+  group    = {others},
+  language = {Chinese},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: groupstree:
@@ -160,4 +213,5 @@
 1 KeywordGroup:published\;0\;group\;published\;0\;0\;;
 1 KeywordGroup:software\;0\;group\;software\;0\;0\;;
 1 KeywordGroup:underreviewed\;0\;group\;underreview\;0\;0\;;
+1 KeywordGroup:others\;0\;group\;others\;0\;0\;;
 }
