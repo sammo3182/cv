@@ -1,14 +1,14 @@
 ---
 output: 
-  ## rticles::ctex: Chinese
-  pdf_document:
+  rticles::ctex:
     keep_tex: yes
-    latex_engine: pdflatex
     template: svm-latex-cv.tex
 geometry: margin=1in
 
+chinese: TRUE
+
 title: "CV"
-author: Yue Hu
+author: 胡悦
 
 address: "313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242"
 fontawesome: yes
@@ -132,50 +132,50 @@ BibOptions(check.entries = FALSE,
 ```
 
 
-# Education
-## Degree
-* Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2017-05 (Expected)
-    + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
-* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
-* M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
-    + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
-* M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
-    + \footnotesize Thesis: “Culture and Cultural Diplomacy: A Comparative Study of a Canadian and Chinese Case.”
-* LL.B. in International Politics, Nankai University, China\hfill 2009-06
+# 教育经历
+## 学历
+* 政治学博士, 美国爱荷华大学.\hfill 2017-05 (预期)
+    + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer"
+* 信息学辅修证书, 美国爱荷华大学\hfill 2017-01
+* 政治学硕士, 美国南卡罗来纳大学\hfill 2013-03
+    + \footnotesize 硕士论文: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
+* 政治学硕士, 加拿大里贾纳大学\hfill 2011-03
+    + \footnotesize 硕士论文: “Culture and Cultural Diplomacy: A Comparative Study of a Canadian and Chinese Case.”
+* 国际关系学士, 南开大学\hfill 2009-06
 
-## Additional Training
-* Experimental Methods \hfill 2014-06/07
+## 专业训练
+* 实验研究方法 \hfill 2014-06/07
     + \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
 
-# Professional Positions
-* Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
+# 工作职务
+* 美国爱荷华大学社会研究中心统计学顾问
 
-# Research Interests
-* Comparative Politics: 
-    + Language Policy, Chinese politics, public opinion, political communication, political culture.
-* Political Methodology:
-    + Survey experiment, text analysis, network analysis, spatial analysis, multilevel analysis.
-* International Relations:
-    + Public diplomacy, international cultural relations, Chinese foreign policy.
+# 研究兴趣
+* 比较政治学: 
+    + 语言政治，中国政治，公众舆论，政治传播，政治文化。
+* 方法论:
+    + 调查实验，文本分析，网络分析，空间分析，多层分析。
+* 国际政治:
+    + 公共外交，国际文化关系，中国外交政策。
 
-# Publication
-## Journal Articles
+# 学术成果
+## 学术期刊
 ```{r echo = FALSE, results = "asis"}
 bib[group = "published"]
 ```
 
-## Software
+## 软件
 ```{r echo = FALSE, results = "asis"}
 bib[group = "software"]
 ```
 
-## Under Review
+## 期刊审阅
 
 ```{r echo = FALSE, results = "asis"}
 bib[group = "underreview"]
 ```
 
-## Working Projoects
+## 正在进行的项目
 
 "Measure Political Desirability: An Experimental Method" (with Wenfang Tang).
 
@@ -189,13 +189,13 @@ bib[group = "underreview"]
 
 
 
-## Magazine and Others
+## 杂志和其他发表
 ```{r echo = FALSE, results = "asis"}
 bib[group = "others"]
 ```
 
 
-# Conference
+# 会议发表
 * 2017
     + "The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
         + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 7--9.
@@ -222,8 +222,8 @@ bib[group = "others"]
     + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
         + \footnotesize American Association for Chinese Studies (AACS) Annual Conference, Atlanta, Georgia, Oct. 12-14.
 
-# Research Experience
-## Data Collection
+# 研究经验
+## 数据收集
 * Online survey experiment in China.\hfill 2017-02
     + \footnotesize Designed an online survey experiments, finished 994 surveys.
     
@@ -233,32 +233,32 @@ bib[group = "others"]
 * Webscrapping Newspaper Documents.\hfill 2016
     + \footnotesize Scrapped the text content of *People's Daily* (1946-2003) from a third party website, ending with 1,371,607 documents.
 
-## Research Assistant
+## 助理研究员经历
 * Corruption and Politics in Russia, Ukraine, and Georgia Project (Univ. of Iowa)\hfill 2015-2016
 * Standardized World Income Inequality Database Project (Univ. of Iowa)\hfill 2015-05/06
 * Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2013-05/08 
 
 
-# Teaching Interest
+# 教学兴趣
 * Comparative Politics: 
     + Intro to Comparative Politics, Language Policy, Public Opinion, Asian Politics, Chinese Politics, Ethnicity, Nationalism, Democratization.
 * Political Methodology:
     + Research Design, Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experiment, Structural Equation Modeling, Survey Design and Analysis, Programming in R, Stata, and Python, Data Visualization.
 
 
-# Teaching Experience
+# 教学经历
 
-## Instructor, University of Iowa
+## 教师，爱荷华大学
 
 * Introduction To R Workshop Series\hfill 2015-present
 * Multilevel Modeling with Stata and R\hfill 2016-present
 * Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill 2016-08
 
-## Guest Lecture, University of South Carolina
+## 客座讲师, 南卡罗来纳大学
 * Comparative Politics-Developing Countries\hfill Spring 2012
 * National Security of United States\hfill Fall 2011
 
-## Teaching Assistant, University of Iowa
+## 教学助理, 爱荷华大学
 
 * Introduction to Political Behavior\hfill Spring 2015
 * Introduction to International Relations\hfill Fall 2014
@@ -266,7 +266,7 @@ bib[group = "others"]
 * Political Campaigning\hfill Fall 2014
 * Political Pschology\hfill Fall 2014
 
-## Teaching Assistant, University of South Carolina
+## 教学助理, 南卡罗来纳大学
 
 * International Relations\hfill Spring 2013
 * Comparative Politics\hfill Spring 2013
@@ -275,7 +275,7 @@ bib[group = "others"]
 * Comparative Politics-Developing Countries\hfill Spring 2012
 * National Security of United States\hfill Fall 2011
 
-## Teaching Assistant, University of Regina
+## 教学助理, 里贾纳大学
 
 * Introduction to Political Science\hfill Fall 2010
 

@@ -2,6 +2,11 @@
 
 \usepackage{multicol} % for multiple columns
 
+$if(chinese)$
+\usepackage{ctex}
+$endif$
+
+
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$

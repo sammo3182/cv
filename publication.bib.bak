@@ -5,10 +5,10 @@
   title   = {Affirmative Inaction: Language Education and Labor Mobility among China's Muslim Minorities},
   journal = {Chinese Sociological Review},
   year    = {2016},
+  volume  = {4},
   number  = {48},
   pages   = {346-66},
   group   = {published},
-  issue   = {4},
 }
 
 @Article{Hu2013,
@@ -58,34 +58,31 @@
   timestamp = {2014.02.06},
 }
 
-@Article{Solt2015,
+@Misc{Solt2015,
   author       = {Frederick Solt and Yue Hu},
   title        = {{dotwhisker}: Dot-and-Whisker Plots of Regression Results},
-  journal      = {The Comprehensive R Archive Network (CRAN)},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   year         = {2015},
   group        = {software},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=dotwhisker},
 }
 
-@Article{Solt2015a,
+@Misc{Solt2015a,
   author       = {Frederick Solt and Yue Hu},
   title        = {{interplot}: Plot the Effects of Variables in Interaction Terms},
-  journal      = {The Comprehensive R Archive Network (CRAN)},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   year         = {2015},
   group        = {software},
   groups       = {Interaction},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=interplot},
 }
 
-@Article{Solt2016a,
+@Misc{Solt2016a,
   author       = {Frederick Solt and Yue Hu},
   title        = {pewdata: Reproducible Retrieval of Pew Research Center Datasets},
-  journal      = {The Comprehensive R Archive Network (CRAN)},
+  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   year         = {2016},
   group        = {software},
-  howpublished = {Available at The Comprehensive R Archive Network (CRAN)},
   url          = {http://CRAN.R-project.org/package=pewdata},
 }
 
@@ -129,28 +126,22 @@
   pubstat = {forthcoming},
 }
 
-@Article{Claypool,
-  author  = {Vicki Claypool and William Reisinger and Marina Zaloznaya and Yue Hu},
-  title   = {The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States},
-  journal = {AJPS},
-  year    = {2017},
-  group   = {underreview},
+@Unpublished{Claypool,
+  author = {Vicki Claypool and William Reisinger and Marina Zaloznaya and Yue Hu},
+  title  = {The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States},
+  group  = {underreview},
 }
 
-@Article{Hu,
-  author  = {Yue Hu},
-  title   = {Strategic Communication: Why the Chinese Government Engages in Discourse about Democracy and Why It Matters},
-  journal = {JOP},
-  year    = {2016},
-  group   = {underreview},
+@Unpublished{Hu,
+  author = {Yue Hu},
+  title  = {Strategic Communication: Why the Chinese Government Engages in Discourse about Democracy and Why It Matters},
+  group  = {underreview},
 }
 
-@Article{Hua,
-  author  = {Yue Hu},
-  title   = {Are Informal Education Facilities Effective Means for Political Propaganda? A Spatial Analysis},
-  journal = {BJPS},
-  year    = {2017},
-  group   = {underreview},
+@Unpublished{Hua,
+  author = {Yue Hu},
+  title  = {Are Informal Education Facilities Effective Means for Political Propaganda? A Spatial Analysis},
+  group  = {underreview},
 }
 
 @Article{Hu2014,
