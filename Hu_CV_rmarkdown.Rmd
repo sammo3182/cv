@@ -126,7 +126,7 @@ BibOptions(check.entries = FALSE,
            first.inits = FALSE,
            bib.style = "ajps_mimic",
            style = "latex",
-           max.names = 2,
+           max.names = 4,
            dashed = FALSE,
            sorting = "ydnt")
 ```
@@ -310,7 +310,7 @@ bib[group = "others"]
 * Member of American Association for Chinese Studies.
 
 # Skills
-* Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAG.
+* Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAGS.
 * Application:  \LaTeX, Markdown, Git(GitHub).
 * Language: English, Chinese (Mandarin)
 
