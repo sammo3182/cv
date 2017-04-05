@@ -136,7 +136,7 @@ BibOptions(check.entries = FALSE,
 ## 学历
 * 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
     + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer"
-* 信息学辅修证书, 美国爱荷华大学\hfill 2017-01
+* 信息学辅修证书, 美国爱荷华大学\hfill 2016-12
 * 政治学硕士, 美国南卡罗来纳大学\hfill 2013-03
     + \footnotesize 硕士论文: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
 * 政治学硕士, 加拿大里贾纳大学\hfill 2011-03

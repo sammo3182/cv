@@ -136,7 +136,7 @@ BibOptions(check.entries = FALSE,
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05 (Expected)
     + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
-* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
+* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2016-12
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
     + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
 * M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
