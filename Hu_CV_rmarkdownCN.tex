@@ -2,10 +2,9 @@
 
 \usepackage{multicol} % for multiple columns
 
-\usepackage{ctex}
 
 
-\usepackage[sc, osf]{mathpazo}
+\usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -68,8 +67,12 @@
 % Make parskips rather than indent with lists.
 \usepackage{parskip}
 \usepackage{titlesec}
-\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+	\usepackage{ctex}
+	% less space for the Chinese format
+	\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
+	\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
 
 % Use fontawesome. Note: you'll need TeXLive 2015. Update.
 \usepackage{fontawesome}
@@ -127,7 +130,7 @@
 \begin{itemize}
 \tightlist
 \item
-  政治学博士, 美国爱荷华大学.\hfill 2017-05 (预期)
+  政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
 
   \begin{itemize}
   \tightlist
@@ -243,7 +246,6 @@ pp.~256-68.
 
 胡悦. ``从政治科学角度分析人民政协的政治定位''.
 \emph{天津市社会主义学院学报} 1 (2009), pp.~19-23.
-
 
 \subsection{软件}
 

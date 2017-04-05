@@ -134,7 +134,7 @@ BibOptions(check.entries = FALSE,
 
 # Education
 ## Degree
-* Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2017-05 (Expected)
+* Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05 (Expected)
     + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
 * Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2017-01
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03

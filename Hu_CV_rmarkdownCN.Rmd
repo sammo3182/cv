@@ -17,8 +17,8 @@ github: sammo3182
 phone: "+01-803-250-1686"
 web: sammo3182.github.io
 updated: no
-fontfamily: mathpazo
-fontfamilyoptions: sc, osf
+# fontfamily: mathpazo
+# fontfamilyoptions: sc, osf
 fontsize: 10.5pt
 linkcolor: blue
 urlcolor: blue
@@ -134,7 +134,7 @@ BibOptions(check.entries = FALSE,
 
 # 教育经历
 ## 学历
-* 政治学博士, 美国爱荷华大学.\hfill 2017-05 (预期)
+* 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
     + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer"
 * 信息学辅修证书, 美国爱荷华大学\hfill 2017-01
 * 政治学硕士, 美国南卡罗来纳大学\hfill 2013-03
@@ -148,15 +148,25 @@ BibOptions(check.entries = FALSE,
     + \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
 
 # 工作职务
-* 美国爱荷华大学社会研究中心统计学顾问
+* 美国爱荷华大学社会研究中心统计学顾问 
+
+
+<!-- \begin{wrapfigure}{R}{0.2\textwidth} -->
+<!--     \vspace{-40pt} -->
+<!--     \begin{center} -->
+<!--     \includegraphics[width=0.3\textwidth]{vertical_YueHu.jpg} -->
+<!--     \end{center} -->
+<!-- \end{wrapfigure} -->
 
 # 研究兴趣
+
 * 比较政治学: 
     + 语言政治，中国政治，公众舆论，政治传播，政治文化。
 * 方法论:
     + 调查实验，文本分析，网络分析，空间分析，多层分析。
 * 国际政治:
     + 公共外交，国际文化关系，中国外交政策。
+
 
 # 发表
 ## 学术期刊
