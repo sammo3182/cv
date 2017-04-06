@@ -136,6 +136,8 @@ BibOptions(check.entries = FALSE,
 ## 学历
 * 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
     + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer"
+        + 导师：唐文方 (Wenfang Tang)
+        + 博士论文委员会：William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (教育系)
 * 信息学辅修证书, 美国爱荷华大学\hfill 2016-12
 * 政治学硕士, 美国南卡罗来纳大学\hfill 2013-03
     + \footnotesize 硕士论文: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
@@ -193,7 +195,7 @@ bib[group = "underreview"]
 
 "The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
 
-"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Yao).
+"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
@@ -202,7 +204,7 @@ bib[group = "underreview"]
 * 2017
     + "The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
-    + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Yao).
+    + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
     + "The Logic of Peaceful Rise" (with Ray Ou-Yang).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。

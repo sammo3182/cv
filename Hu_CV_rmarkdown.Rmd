@@ -135,7 +135,9 @@ BibOptions(check.entries = FALSE,
 # Education
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05 (Expected)
-    + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer"
+    + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer."
+        + Committee Chair: Wenfang Tang
+        + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
 * Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2016-12
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
     + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
@@ -183,7 +185,7 @@ bib[group = "underreview"]
 
 "The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
 
-"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Yao).
+"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
@@ -199,7 +201,7 @@ bib[group = "others"]
 * 2017
     + "The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
         + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 7--9.
-    + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Yao).
+    + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
         + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 7--9.
     + "The Logic of Peaceful Rise" (with Ray Ou-Yang).
         + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 7--9.
@@ -230,7 +232,7 @@ bib[group = "others"]
 * Field survey experiment in China.\hfill 2016-12
     + \footnotesize Designed and conducted survey experiments in Chengdu and Meizhou of China on 421 subjects in total.
 
-* Webscrapping Newspaper Documents.\hfill 2016
+* Web scrapping Newspaper Documents.\hfill 2016
     + \footnotesize Scrapped the text content of *People's Daily* (1946-2003) from a third party website, ending with 1,371,607 documents.
 
 ## Research Assistant
@@ -264,7 +266,7 @@ bib[group = "others"]
 * Introduction to International Relations\hfill Fall 2014
 * Introduction to Comparative Politics\hfill Spring 2014
 * Political Campaigning\hfill Fall 2014
-* Political Pschology\hfill Fall 2014
+* Political Psychology\hfill Fall 2014
 
 ## Teaching Assistant, University of South Carolina
 
