@@ -1,11 +1,12 @@
 ---
 output: 
-  ## rticles::ctex: Chinese
-  pdf_document:
+  rticles::ctex:
+  ## pdf_document:
     keep_tex: yes
-    latex_engine: pdflatex
     template: svm-latex-cv.tex
 geometry: margin=1in
+
+chinese: TRUE
 
 title: "CV"
 author: Yue Hu
@@ -162,7 +163,7 @@ BibOptions(check.entries = FALSE,
 
 # Publication
 ## Journal Articles
-```{r echo = FALSE, results = "asis"}
+```{r echo = FALSE, results = "asis", warning=FALSE}
 bib[group = "published"]
 ```
 

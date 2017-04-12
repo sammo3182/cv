@@ -17,8 +17,8 @@ github: sammo3182
 phone: "+01-803-250-1686"
 web: sammo3182.github.io
 updated: no
-# fontfamily: mathpazo
-# fontfamilyoptions: sc, osf
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
 fontsize: 10.5pt
 linkcolor: blue
 urlcolor: blue
