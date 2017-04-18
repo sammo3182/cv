@@ -6,8 +6,6 @@ output:
     template: svm-latex-cv.tex
 geometry: margin=1in
 
-chinese: TRUE
-
 title: "CV"
 author: Yue Hu
 
@@ -193,7 +191,7 @@ bib[group = "underreview"]
 
 
 ## Magazine and Others
-```{r echo = FALSE, results = "asis"}
+```{r echo = FALSE, results = "asis", warning=FALSE}
 bib[group = "others"]
 ```
 

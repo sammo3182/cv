@@ -162,12 +162,12 @@ BibOptions(check.entries = FALSE,
 
 # 研究兴趣
 
+* 国际政治:
+    + 公共外交，国际文化关系，中国外交政策。
 * 比较政治学: 
     + 语言政治，中国政治，公众舆论，政治传播，政治文化。
 * 方法论:
     + 调查实验，文本分析，网络分析，空间分析，多层分析。
-* 国际政治:
-    + 公共外交，国际文化关系，中国外交政策。
 
 
 # 发表
@@ -202,13 +202,13 @@ bib[group = "underreview"]
 
 # 会议发表
 * 2017
+    + "The Logic of Peaceful Rise" (with Ray Ou-Yang).
+        + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
+        + \footnotesize 国际研究年会 (ISA), 巴尔的摩，马里兰, 二月22--25日。
     + "The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
     + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
-    + "The Logic of Peaceful Rise" (with Ray Ou-Yang).
-        + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
-        + \footnotesize 国际研究年会 (ISA), 巴尔的摩，马里兰, 二月22--25日。
         
 * 2016
     + "Measure Political Desirability: A List Experimental Method" (with Wenfang Tang);
@@ -242,14 +242,6 @@ bib[group = "underreview"]
 * 俄罗斯、乌克兰、格鲁吉亚三国腐败与政治研究 (爱荷华大学)\hfill 2015-2016
 * 收入差异标准化数据库项目 (爱荷华大学)\hfill 2015-05/06
 * 东亚国家公众调查项目 (南卡罗来纳大学)\hfill 2013-05/08 
-
-
-# 教学兴趣
-* 比较政治: 
-    + 比较政治学入门, 语言政策, 公共舆论, 亚洲政治, 中国政治, 民族学, 民族主义, 民主化议题
-* 政治学方法论:
-    + 研究设计, 社会科学定量研究入门, 回归分析, 最大似然可能性分析, 多层分析, 空间分析, 网络分析, 社会科学实验, 结构方程模型, 舆论调查设计与分析, R/Stata/Python编程, 数据可视化
-
 
 # 教学经历
 
