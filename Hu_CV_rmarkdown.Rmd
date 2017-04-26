@@ -6,6 +6,8 @@ output:
     template: svm-latex-cv.tex
 geometry: margin=1in
 
+chinese: TRUE
+
 title: "CV"
 author: Yue Hu
 
@@ -162,8 +164,15 @@ BibOptions(check.entries = FALSE,
 # Publication
 ## Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"]
+bib[group = "published"][1:4]
 ```
+
+Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?)”. [Chinese] *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
+
+Tongshun Cheng and Yue Hu. “The Cultural Props of Foreign Policy”. [Chinese] *Tribune of Study* (2010), pp. 33--37.(程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-7页。)
+
+Yue Hu. “An Analysis of Politics Fixed Position of CPPCC from the Political Scientific Angle”. [Chinese] *Journal of Tianjin Institute of Socialism* (2009), pp. 19--23.
+(《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页。)
 
 ## Software
 ```{r echo = FALSE, results = "asis"}
@@ -187,13 +196,6 @@ bib[group = "underreview"]
 "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
-
-
-
-## Magazine and Others
-```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "others"]
-```
 
 
 # Conference
@@ -220,7 +222,7 @@ bib[group = "others"]
     + "Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case."
         + \footnotesize University of South Carolina Inaugural Graduate Student Conference, Columbia, South Carolina.
 * 2012
-    + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
+    + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia Cases."
         + \footnotesize American Association for Chinese Studies (AACS) Annual Conference, Atlanta, Georgia, Oct. 12-14.
 
 # Research Experience
