@@ -136,6 +136,7 @@ BibOptions(check.entries = FALSE,
 # Education
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05 (Expected)
+    + \footnotesize Fields: Comparative Politics, Political Methodology, International Relations.
     + \footnotesize Dissertation: "Dominant Language: A Political Stabilizer."
         + Committee Chair: Wenfang Tang
         + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
@@ -154,17 +155,17 @@ BibOptions(check.entries = FALSE,
 * Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
 
 # Research Interests
-* Comparative Politics: 
-    + Language Policy, Chinese politics, public opinion, political communication, political culture.
-* Political Methodology:
+* *Comparative Politics*: 
+    + Language policy, Chinese politics, public opinion, political communication, political culture.
+* *Political Methodology*:
     + Survey experiment, text analysis, network analysis, spatial analysis, multilevel analysis.
-* International Relations:
+* *International Relations*:
     + Public diplomacy, international cultural relations, Chinese foreign policy.
 
 # Publication
 ## Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"][1:4]
+bib[group = "published"][c(1,2,6,7)]
 ```
 
 Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?)”. [Chinese] *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
@@ -313,7 +314,7 @@ bib[group = "underreview"]
 * Member of American Association for Chinese Studies.
 
 # Skills
-* Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAGS.
+* Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
 * Application:  \LaTeX, Markdown, Git(GitHub).
 * Language: English, Chinese (Mandarin)
 

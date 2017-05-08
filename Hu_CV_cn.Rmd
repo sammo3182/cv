@@ -135,7 +135,8 @@ BibOptions(check.entries = FALSE,
 # 教育经历
 ## 学历
 * 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
-    + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer"
+    + \footnotesize 专业领域：比较政治学、政治方法论、国际关系。
+    + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer."
         + 导师：唐文方 (Wenfang Tang)
         + 博士论文委员会：William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (教育系)
 * 信息学辅修证书, 美国爱荷华大学\hfill 2016-12
@@ -162,18 +163,18 @@ BibOptions(check.entries = FALSE,
 
 # 研究兴趣
 
-* 比较政治学: 
+* *比较政治学*: 
     + 语言政治，中国政治，公众舆论，政治传播，政治文化。
-* 方法论:
+* *方法论*:
     + 调查实验，文本分析，网络分析，空间分析，多层分析。
-* 国际政治:
+* *国际政治*:
     + 公共外交，国际文化关系，中国外交政策。
 
 
 # 发表
 ## 学术期刊
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"][1:4]
+bib[group = "published"][c(1,2,6,7)]
 ```
 
 胡悦和朱毓朝：《'问题与主义’ 导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。 
@@ -321,7 +322,7 @@ bib[group = "underreview"]
 * 美国中国研究学会会员
 
 # 技能
-* 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS.
+* 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
 * 应用:  \LaTeX, Markdown, Git(GitHub).
 
 # 推荐人
