@@ -1,12 +1,4 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-
-\usepackage{multicol} % for multiple columns
-
-$if(wrapfigure)$
-\usepackage{wrapfig}
-$endif$
-
-
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
@@ -20,44 +12,44 @@ $endif$
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-\usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
-\usepackage[utf8]{inputenc}
+  \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
+  \usepackage[utf8]{inputenc}
 $if(euro)$
-\usepackage{eurosym}
+  \usepackage{eurosym}
 $endif$
 \else % if luatex or xelatex
-\ifxetex
-\usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
-\else
-\usepackage{fontspec}
-\fi
-\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 $if(euro)$
-\newcommand{\euro}{€}
+  \newcommand{\euro}{€}
 $endif$
 $if(mainfont)$
-\setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
+    \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
 $endif$
 $if(sansfont)$
-\setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
+    \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
 $endif$
 $if(monofont)$
-\setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$,$endfor$$endif$]{$monofont$}
+    \setmonofont[Mapping=tex-ansi$if(monofontoptions)$,$for(monofontoptions)$$monofontoptions$$sep$,$endfor$$endif$]{$monofont$}
 $endif$
 $if(mathfont)$
-\setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
+    \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
 $endif$
 $if(CJKmainfont)$
-\usepackage{xeCJK}
-\setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
+    \usepackage{xeCJK}
+    \setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
 $endif$
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-	\usepackage{microtype}
-	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
@@ -66,15 +58,15 @@ $endif$
 
 $if(lang)$
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-\usepackage[shorthands=off,$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
+  \usepackage[shorthands=off,$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
 $if(babel-newcommands)$
-$babel-newcommands$
+  $babel-newcommands$
 $endif$
 \else
-\usepackage{polyglossia}
-\setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
+  \usepackage{polyglossia}
+  \setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
 $for(polyglossia-otherlangs)$
-\setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
+  \setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
 $endfor$
 \fi
 $endif$
@@ -132,7 +124,7 @@ $else$
 $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
-	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 $if(numbersections)$
 \setcounter{secnumdepth}{5}
 $else$
@@ -152,19 +144,19 @@ $else$
 $endif$
 $if(dir)$
 \ifxetex
-% load bidi as late as possible as it modifies e.g. graphicx
-$if(latex-dir-rtl)$
-\usepackage[RTLdocument]{bidi}
-$else$
-\usepackage{bidi}
-$endif$
+  % load bidi as late as possible as it modifies e.g. graphicx
+  $if(latex-dir-rtl)$
+  \usepackage[RTLdocument]{bidi}
+  $else$
+  \usepackage{bidi}
+  $endif$
 \fi
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-\TeXXeTstate=1
-\newcommand{\RL}[1]{\beginR #1\endR}
-\newcommand{\LR}[1]{\beginL #1\endL}
-\newenvironment{RTL}{\beginR}{\endR}
-\newenvironment{LTR}{\beginL}{\endL}
+  \TeXXeTstate=1
+  \newcommand{\RL}[1]{\beginR #1\endR}
+  \newcommand{\LR}[1]{\beginL #1\endL}
+  \newenvironment{RTL}{\beginR}{\endR}
+  \newenvironment{LTR}{\beginL}{\endL}
 \fi
 $endif$
 $for(header-includes)$
@@ -182,34 +174,22 @@ $endfor$
 
 % Make lists without bullets
 \renewenvironment{itemize}{
-	\begin{list}{}{
-			\setlength{\leftmargin}{1.5em}
-		}
-	}{
-	\end{list}
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
 }
 
 
 % Make parskips rather than indent with lists.
 \usepackage{parskip}
 \usepackage{titlesec}
-
-$if(chinese)$
-\usepackage{ctex}
-% less space for the Chinese format
-\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-$else$
 \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
-$endif$
-
 
 % Use fontawesome. Note: you'll need TeXLive 2015. Update.
-$if(fontawesome)$
-\usepackage{fontawesome}
-\newfontfamily\FA{FontAwesome.otf} % Explicitly provide .otf
-$endif$
+$if(fontawesome)$\usepackage{fontawesome}$endif$
 
 % Fancyhdr, as I tend to do with these personal documents.
 \usepackage{fancyhdr,lastpage}
@@ -220,7 +200,7 @@ $endif$
 \chead{}
 \rhead{}
 \lfoot{
-	\cfoot{\scriptsize  $author-meta$ - $title$ }}
+\cfoot{\scriptsize  $author-meta$ - $title$ }}
 \rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
 
 % Always load hyperref last.
@@ -230,63 +210,63 @@ $if(colorlinks)$
 $endif$
 
 \hypersetup{unicode=true,
-	$if(title-meta)$
-	pdftitle={$if(author-meta)$$author-meta$: $endif$ $title-meta$ (Curriculum Vitae)},
-	$endif$
-	$if(author-meta)$
-	pdfauthor={$author-meta$},
-	$endif$
-	$if(keywords)$
-	pdfkeywords={$for(keywords)$$keywords$$sep$; $endfor$},
-	$endif$
-	colorlinks=true,
-	linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
-	citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
-	urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
-	breaklinks=true, bookmarks=true}
+$if(title-meta)$
+            pdftitle={$if(author-meta)$$author-meta$: $endif$ $title-meta$ (Curriculum Vitae)},
+$endif$
+$if(author-meta)$
+            pdfauthor={$author-meta$},
+$endif$
+$if(keywords)$
+            pdfkeywords={$for(keywords)$$keywords$$sep$; $endfor$},
+$endif$
+            colorlinks=true,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
+            citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
+            breaklinks=true, bookmarks=true}
 \urlstyle{same}  % don't use monospace font for urls
 
 \begin{document}
-	
-	
-	\centerline{\huge \bf $author$}
-	
-	\vspace{2 mm}
-	
-	\hrule
-	
-	\vspace{2 mm}
-	
-	$if(jobtitle)$\moveleft.5\hoffset\centerline{$jobtitle$}$endif$
-	$if(address)$\moveleft.5\hoffset\centerline{$address$}$endif$
-	\moveleft.5\hoffset\centerline{ $if(email)$$if(fontawesome)${\FA\faEnvelope} \hspace{1 mm}$else$\emph{E-mail:}$endif$ \href{mailto:}{\tt $email$} \hspace{1 mm}$endif$ $if(phone)$$if(fontawesome)$ {\FA\faPhone} \hspace{1 mm}$else$\emph{Phone:}$endif$  $phone$  \hspace{1 mm} $endif$ $if(github)$$if(fontawesome)${\FA\faGithub} \hspace{1 mm}$else$\emph{Github:}$endif$ \href{http://github.com/$github$}{\tt $github$} \hspace{1 mm} $endif$   $if(web)$$if(fontawesome)${\FA\faGlobe} \hspace{1 mm}$else$\emph{Web:}$endif$ \href{http://$web$}{\tt $web$}  $endif$ $if(updated)$ | \emph{Updated:} \today$endif$}
-	
-	\vspace{2 mm}
-	
-	\hrule
-	
-	
-	$body$
-	
-	$if(natbib)$
-	$if(bibliography)$
-	$if(biblio-title)$
-	$if(book-class)$
-	\renewcommand\bibname{$biblio-title$}
-	$else$
-	\renewcommand\refname{$biblio-title$}
-	$endif$
-	$endif$
-	\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
-	
-	$endif$
-	$endif$
-	$if(biblatex)$
-	\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
-	
-	$endif$
-	$for(include-after)$
-	$include-after$
-	
-	$endfor$
+
+
+\centerline{\huge \bf $author$}
+
+\vspace{2 mm}
+
+\hrule
+
+\vspace{2 mm}
+
+$if(jobtitle)$\moveleft.5\hoffset\centerline{$jobtitle$}$endif$
+$if(address)$\moveleft.5\hoffset\centerline{$address$}$endif$
+\moveleft.5\hoffset\centerline{ $if(email)$$if(fontawesome)$\faEnvelopeO \hspace{1 mm}$else$\emph{E-mail:}$endif$ \href{mailto:}{\tt $email$} \hspace{1 mm}$endif$ $if(phone)$$if(fontawesome)$ \faPhone \hspace{1 mm}$else$\emph{Phone:}$endif$  $phone$  \hspace{1 mm} $endif$ $if(github)$$if(fontawesome)$\faGithub \hspace{1 mm}$else$\emph{Github:}$endif$ \href{http://github.com/$github$}{\tt $github$} \hspace{1 mm} $endif$   $if(web)$$if(fontawesome)$\faGlobe \hspace{1 mm}$else$\emph{Web:}$endif$ \href{http://$web$}{\tt $web$}  $endif$ $if(updated)$ | \emph{Updated:} \today$endif$}
+
+\vspace{2 mm}
+
+\hrule
+
+
+$body$
+
+$if(natbib)$
+$if(bibliography)$
+$if(biblio-title)$
+$if(book-class)$
+\renewcommand\bibname{$biblio-title$}
+$else$
+\renewcommand\refname{$biblio-title$}
+$endif$
+$endif$
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+
+$endif$
+$endif$
+$if(biblatex)$
+\printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
+
+$endif$
+$for(include-after)$
+$include-after$
+
+$endfor$
 \end{document}

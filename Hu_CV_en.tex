@@ -9,22 +9,22 @@
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \else % if luatex or xelatex
-  \ifxetex
-    \usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\ifxetex
+\usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
+\else
+\usepackage{fontspec}
+\fi
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+	\usepackage{microtype}
+	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \usepackage[margin=1in]{geometry}
 
@@ -33,7 +33,7 @@
 
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
 % Redefines (sub)paragraphs to behave more like sections
 \ifx\paragraph\undefined\else
@@ -56,11 +56,11 @@
 
 % Make lists without bullets
 \renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-  }
-}{
-  \end{list}
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+	}{
+	\end{list}
 }
 
 
@@ -68,14 +68,15 @@
 \usepackage{parskip}
 \usepackage{titlesec}
 
-	\usepackage{ctex}
-	% less space for the Chinese format
-	\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
-	\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\usepackage{ctex}
+% less space for the Chinese format
+\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 
 % Use fontawesome. Note: you'll need TeXLive 2015. Update.
 \usepackage{fontawesome}
+\newfontfamily\FA{FontAwesome.otf} % Explicitly provide .otf
 
 % Fancyhdr, as I tend to do with these personal documents.
 \usepackage{fancyhdr,lastpage}
@@ -86,7 +87,7 @@
 \chead{}
 \rhead{}
 \lfoot{
-\cfoot{\scriptsize  Yue Hu - CV }}
+	\cfoot{\scriptsize  Yue Hu - CV }}
 \rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
 
 % Always load hyperref last.
@@ -94,36 +95,36 @@
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 
 \hypersetup{unicode=true,
-            pdftitle={Yue Hu:  CV (Curriculum Vitae)},
-            pdfauthor={Yue Hu},
-            colorlinks=true,
-            linkcolor=blue,
-            citecolor=Blue,
-            urlcolor=blue,
-            breaklinks=true, bookmarks=true}
+		pdftitle={Yue Hu:  CV (Curriculum Vitae)},
+			pdfauthor={Yue Hu},
+			colorlinks=true,
+	linkcolor=blue,
+	citecolor=Blue,
+	urlcolor=blue,
+	breaklinks=true, bookmarks=true}
 \urlstyle{same}  % don't use monospace font for urls
 
 \begin{document}
-
-
-\centerline{\huge \bf Yue Hu}
-
-\vspace{2 mm}
-
-\hrule
-
-\vspace{2 mm}
-
-
-\moveleft.5\hoffset\centerline{313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242}
-\moveleft.5\hoffset\centerline{ \faEnvelopeO \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yue-hu-1@uiowa.edu}{\nolinkurl{yue-hu-1@uiowa.edu}}} \hspace{1 mm}  \faPhone \hspace{1 mm}  +01-803-250-1686  \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    \faGlobe \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
-
-\vspace{2 mm}
-
-\hrule
-
-
-\section{Education}\label{education}
+	
+	
+	\centerline{\huge \bf Yue Hu}
+	
+	\vspace{2 mm}
+	
+	\hrule
+	
+	\vspace{2 mm}
+	
+	
+	\moveleft.5\hoffset\centerline{313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242}
+	\moveleft.5\hoffset\centerline{ {\FA\faEnvelope} \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yue-hu-1@uiowa.edu}{\nolinkurl{yue-hu-1@uiowa.edu}}} \hspace{1 mm}  {\FA\faPhone} \hspace{1 mm}  +01-803-250-1686  \hspace{1 mm}  {\FA\faGithub} \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    {\FA\faGlobe} \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
+	
+	\vspace{2 mm}
+	
+	\hrule
+	
+	
+	\section{Education}\label{education}
 
 \subsection{Degree}\label{degree}
 
@@ -149,6 +150,43 @@
     \item
       Committee Members: William M. Reisinger, Frederick Solt, Caroline
       J. Tolbert, and David Cassels Johnson (Education)
+    \item
+      Abstract: My dissertation provides a new perspective---language
+      policy---to understand political trust in authoritarian countries.
+      The research theorizes that a single-official-language policy can
+      improve its citizens' trust in the central and local governments,
+      the bureaucrats that represent the authority, and the political
+      value system that favors the authoritarian regime through language
+      policy. In particular, the policy favors the official language
+      speakers in the social life and political communications. They can
+      earn more positive self-evaluations in the society and fewer
+      misunderstandings and inefficiency in political communications and
+      thus have more trust in the policy makers and executors. I tested
+      this argument with a nationally representative survey and found
+      that, although not significantly altering the trust in the central
+      government, promoting citizens' official language proficiency does
+      increase the positive influence of self-social evaluation and
+      reduce the negative influence of political activism on the trust
+      in the local government. Additionally, the
+      single-official-language policy provides the official language a
+      special political property as the ``authority accent.''Bureaucrats
+      can use it to reinforce their political identity. The citizens, in
+      turn, are expected to project more of their attitudes towards the
+      government to these identity-reinforced bureaucrats. With a
+      modified matched-guise method and an original field experiment
+      with Chinese high school students, I found empirical evidence
+      supporting this argument and demonstrated the importance of
+      identity-based language attitude for political trust research.
+      Finally, using a computer-assisted text analysis on 1,371,607
+      political articles, I uncovered a refocusing strategy of the
+      Chinese government to manipulate the political language system
+      based on the official language that can masquerade political
+      concepts, such as democracy, as consistent with commonly accepted
+      liberal values in the international society but work for the
+      preservation of the legitimacy of the authoritarian regime. My
+      dissertation concludes that an authoritarian government can use
+      language policy to affect various levels of public political trust
+      through all of the speaking, listening, and reading aspects.
     \end{itemize}
   \end{itemize}
 \item
@@ -243,12 +281,11 @@
 
 Frederick Solt, Yue Hu, Kevan Hudson, Jungmin Song, et al. ``Economic
 Inequality and Class Consciousness''. \emph{Journal of Politics} 3
-(2017).
+(2017). Forthcoming.
 
 Frederick Solt, Yue Hu, Kevan Hudson, Jungmin Song, et al. ``Economic
 Inequality and Belief in Meritocracy in the United States''.
 \emph{Research and Politics} 3.4 (2016), pp.~1-7.
-\url{http://rap.sagepub.com/content/3/4/2053168016672101}.
 
 Wenfang Tang, Yue Hu and Shuai Jin. ``Affirmative Inaction: Language
 Education and Labor Mobility among China's Muslim Minorities''.
@@ -686,5 +723,5 @@ Regina}\label{teaching-assistant-university-of-regina}
 \parbox{5cm}{\textbf{Frederick Solt}\\Associate Professor\\University of Iowa\\(319) 335-2340\\\href{mailto:frederick-solt@uiowa.edu}{frederick-solt@uiowa.edu}}
  &\parbox{5cm}{\textbf{Caroline J. Tolbert}\\Professor\\University of Iowa\\(319) 335-2471\\\href{caroline-tolbert@uiowa.edu}{caroline-tolbert@uiowa.edu}}\\
 \end{tabular}
-
-\end{document}
+	
+			\end{document}
