@@ -136,7 +136,7 @@ BibOptions(check.entries = FALSE,
 ## 学历
 * 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
     + \footnotesize 专业领域：比较政治学、政治方法论、国际关系。
-    + \footnotesize 博士论文: "Dominant Language: A Political Stabilizer."
+    + \footnotesize 博士论文: "Rebuild the Tower of Babel: Language Policy and Political Trust in China."
         + 导师：唐文方 (Wenfang Tang)
         + 博士论文委员会：William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (教育系)
 * 信息学辅修证书, 美国爱荷华大学\hfill 2016-12
@@ -209,6 +209,10 @@ bib[group = "underreview"]
 
 # 会议发表
 * 2017
+    + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
+        + \footnotesize 中国政治研究年会 (ACPS), 天津, 6月9--11日.
+        + \footnotesize 中国政治科学研究与方法工作坊, 上海, 7月8--9日.
+        + \footnotesize "政治文化、心理与行为研究"工作坊, 南京, 7月9--11日.
     + "The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月7--9日。
     + "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
@@ -262,9 +266,14 @@ bib[group = "underreview"]
 
 ## 教师，爱荷华大学
 
-* R入门系列\hfill 2015-现今
-* Stata与R多层分析\hfill 2016-现今
-* 研究生新生数学预科 (合作：金帅)\hfill 2016-08
+* 政治学研究设计\hfill 2017秋
+* 研究生新生数学预科 (合作：姚洁璐)\hfill 2017夏
+* R语言与社会科学研究系列讲座\hfill 2015-2017
+* Stata与R多层分析\hfill 2016-2017
+* 研究生新生数学预科 (合作：金帅)\hfill 2016
+
+## 客座讲师，南开大学
+* 对社会经济不平等问题的实证研究：策略与方法\hfill 2017夏
 
 ## 客座讲师, 南卡罗来纳大学
 * 比较政治学：发展中国家\hfill 2012年春

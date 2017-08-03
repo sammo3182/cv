@@ -9,22 +9,22 @@
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \else % if luatex or xelatex
-  \ifxetex
-    \usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\ifxetex
+\usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
+\else
+\usepackage{fontspec}
+\fi
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+	\usepackage{microtype}
+	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \usepackage[margin=1in]{geometry}
 
@@ -33,7 +33,7 @@
 
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
 % Redefines (sub)paragraphs to behave more like sections
 \ifx\paragraph\undefined\else
@@ -56,11 +56,11 @@
 
 % Make lists without bullets
 \renewenvironment{itemize}{
-  \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
-  }
-}{
-  \end{list}
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+	}{
+	\end{list}
 }
 
 
@@ -68,14 +68,15 @@
 \usepackage{parskip}
 \usepackage{titlesec}
 
-	\usepackage{ctex}
-	% less space for the Chinese format
-	\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
-	\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\usepackage{ctex}
+% less space for the Chinese format
+\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 
 
 % Use fontawesome. Note: you'll need TeXLive 2015. Update.
 \usepackage{fontawesome}
+\newfontfamily\FA{FontAwesome.otf} % Explicitly provide .otf
 
 % Fancyhdr, as I tend to do with these personal documents.
 \usepackage{fancyhdr,lastpage}
@@ -86,7 +87,7 @@
 \chead{}
 \rhead{}
 \lfoot{
-\cfoot{\scriptsize  胡悦 - CV }}
+	\cfoot{\scriptsize  胡悦 - CV }}
 \rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
 
 % Always load hyperref last.
@@ -94,36 +95,36 @@
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 
 \hypersetup{unicode=true,
-            pdftitle={胡悦:  CV (Curriculum Vitae)},
-            pdfauthor={胡悦},
-            colorlinks=true,
-            linkcolor=blue,
-            citecolor=Blue,
-            urlcolor=blue,
-            breaklinks=true, bookmarks=true}
+		pdftitle={胡悦:  CV (Curriculum Vitae)},
+			pdfauthor={胡悦},
+			colorlinks=true,
+	linkcolor=blue,
+	citecolor=Blue,
+	urlcolor=blue,
+	breaklinks=true, bookmarks=true}
 \urlstyle{same}  % don't use monospace font for urls
 
 \begin{document}
-
-
-\centerline{\huge \bf 胡悦}
-
-\vspace{2 mm}
-
-\hrule
-
-\vspace{2 mm}
-
-
-\moveleft.5\hoffset\centerline{313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242}
-\moveleft.5\hoffset\centerline{ \faEnvelopeO \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yue-hu-1@uiowa.edu}{\nolinkurl{yue-hu-1@uiowa.edu}}} \hspace{1 mm}  \faPhone \hspace{1 mm}  +01-803-250-1686  \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    \faGlobe \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
-
-\vspace{2 mm}
-
-\hrule
-
-
-\section{教育经历}
+	
+	
+	\centerline{\huge \bf 胡悦}
+	
+	\vspace{2 mm}
+	
+	\hrule
+	
+	\vspace{2 mm}
+	
+	
+	\moveleft.5\hoffset\centerline{313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242}
+	\moveleft.5\hoffset\centerline{ {\FA\faEnvelope} \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yue-hu-1@uiowa.edu}{\nolinkurl{yue-hu-1@uiowa.edu}}} \hspace{1 mm}  {\FA\faPhone} \hspace{1 mm}  +01-803-250-1686  \hspace{1 mm}  {\FA\faGithub} \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    {\FA\faGlobe} \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
+	
+	\vspace{2 mm}
+	
+	\hrule
+	
+	
+	\section{教育经历}
 
 \subsection{学历}
 
@@ -137,8 +138,8 @@
   \item
     \footnotesize 专业领域：比较政治学、政治方法论、国际关系。
   \item
-    \footnotesize 博士论文: ``Dominant Language: A Political
-    Stabilizer.''
+    \footnotesize 博士论文: ``Rebuild the Tower of Babel: Language
+    Policy and Political Trust in China.''
 
     \begin{itemize}
     \tightlist
@@ -232,8 +233,8 @@
 \subsection{学术期刊}
 
 Frederick Solt, Yue Hu, Kevan Hudson, Jungmin Song, et al. ``Economic
-Inequality and Class Consciousness''. \emph{Journal of Politics} 3
-(2017). Forthcoming.
+Inequality and Class Consciousness''. \emph{The Journal of Politics}
+79.3 (2017), pp.~1079--83.
 
 Frederick Solt, Yue Hu, Kevan Hudson, Jungmin Song, et al. ``Economic
 Inequality and Belief in Meritocracy in the United States''.
@@ -309,6 +310,20 @@ Propaganda'' (with Zijie Shao).
 
   \begin{itemize}
   \tightlist
+  \item
+    ``Cultural Accent vs.~Authority Accent: How Does Language Attitude
+    Affect Political Trust.''
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \footnotesize 中国政治研究年会 (ACPS), 天津, 6月9--11日.
+    \item
+      \footnotesize 中国政治科学研究与方法工作坊, 上海, 7月8--9日.
+    \item
+      \footnotesize ``政治文化、心理与行为研究''工作坊, 南京,
+      7月9--11日.
+    \end{itemize}
   \item
     ``The Weight of History: Explaining the Anti-Japanese Sentiments in
     the Chinese Circle'' (with Amy Liu).
@@ -500,11 +515,23 @@ Propaganda'' (with Zijie Shao).
 \begin{itemize}
 \tightlist
 \item
-  R入门系列\hfill 2015-现今
+  政治学研究设计\hfill 2017秋
 \item
-  Stata与R多层分析\hfill 2016-现今
+  研究生新生数学预科 (合作：姚洁璐)\hfill 2017夏
 \item
-  研究生新生数学预科 (合作：金帅)\hfill 2016-08
+  R语言与社会科学研究系列讲座\hfill 2015-2017
+\item
+  Stata与R多层分析\hfill 2016-2017
+\item
+  研究生新生数学预科 (合作：金帅)\hfill 2016
+\end{itemize}
+
+\subsection{客座讲师，南开大学}
+
+\begin{itemize}
+\tightlist
+\item
+  对社会经济不平等问题的实证研究：策略与方法\hfill 2017夏
 \end{itemize}
 
 \subsection{客座讲师, 南卡罗来纳大学}\label{-}
@@ -643,5 +670,5 @@ Propaganda'' (with Zijie Shao).
 \parbox{5cm}{\textbf{Frederick Solt}\\Associate Professor\\University of Iowa\\(319) 335-2340\\\href{mailto:frederick-solt@uiowa.edu}{frederick-solt@uiowa.edu}}
  &\parbox{5cm}{\textbf{Caroline J. Tolbert}\\Professor\\University of Iowa\\(319) 335-2471\\\href{caroline-tolbert@uiowa.edu}{caroline-tolbert@uiowa.edu}}\\
 \end{tabular}
-
-\end{document}
+	
+			\end{document}
