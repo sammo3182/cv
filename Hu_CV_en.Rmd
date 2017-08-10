@@ -157,20 +157,19 @@ BibOptions(check.entries = FALSE,
 
 # Research Interests
 * *Comparative Politics*: 
-    + Language policy, Chinese politics, public opinion, political communication, political culture.
+    + Language policy, political communication, public opinion, political culture, Chinese politics.
 * *Political Methodology*:
     + Survey experiment, text analysis, network analysis, spatial analysis, multilevel analysis.
 * *International Relations*:
     + Public diplomacy, international cultural relations, Chinese foreign policy.
 
 # Publications
-## Journal Articles
-### Article in English (Peer-Reviewed Journals)
+## Peer-Reviewed Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
 bib[group = "published"][c(1,2,6,7)]
 ```
 
-### Articles in Chinese
+## Journal Articles in Chinese
 Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?)”. *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
 
 Tongshun Cheng and Yue Hu. “The Cultural Props of Foreign Policy”. *Tribune of Study* (2010), pp. 33--37.
@@ -200,6 +199,8 @@ bib[group = "underreview"]
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
+# Researching Program
+* Principal Investigator, Youth Project of National Social Science Foundation of China: A Study of Assessing and Improving the Political Ecology of Grass-roots Party Organizations (ID: 17CZZ041)\hfill 2017.06-2020.06.
 
 # Conferences
 * 2017
@@ -315,7 +316,7 @@ bib[group = "underreview"]
 
 
 # Professional Affiliation
-* Member of American Political Science Association.
+* Member of American Political Science Association (& Political Communication Section).
 * Member of Midwest Political Science Association.
 * Member of Association of Chinese Political Science
 * Member of American Association for Chinese Studies.
