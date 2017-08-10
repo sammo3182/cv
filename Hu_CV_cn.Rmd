@@ -166,11 +166,11 @@ BibOptions(check.entries = FALSE,
 # 研究兴趣
 
 * *比较政治学*: 
-    + 语言政策，政治传播，公众舆论，政治文化，中国政治。
+    + 语言政策，政治传播，公众舆论。
 * *方法论*:
-    + 调查实验，文本分析，网络分析，空间分析，多层分析。
+    + 调查实验，文本分析，网络分析。
 * *国际政治*:
-    + 公共外交，国际文化关系，中国外交政策。
+    + 公共外交，国际文化关系。
 
 # 科研项目
 *  国家社科基金青年项目：基层党组织的政治生态评估体系与优化策略研究（项目编号17CZZ041）项目参与人\hfill 2017.06-2020.06.
@@ -187,7 +187,7 @@ bib[group = "published"][c(1,2,6,7)]
 
 胡悦：《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页.
 
-## 软件
+## 研发软件
 ```{r echo = FALSE, results = "asis"}
 bib[group = "software"]
 ```
@@ -256,51 +256,6 @@ bib[group = "underreview"]
 * 东亚国家公众调查项目 (南卡罗来纳大学)\hfill 2013-05/08 
 
 
-# 教学兴趣
-* 比较政治: 
-    + 比较政治学入门, 语言政策, 公共舆论, 亚洲政治, 中国政治, 民族学, 民族主义, 民主化议题
-* 政治学方法论:
-    + 研究设计, 社会科学定量研究入门, 回归分析, 最大似然可能性分析, 多层分析, 空间分析, 网络分析, 社会科学实验, 结构方程模型, 舆论调查设计与分析, R/Stata/Python编程, 数据可视化
-
-
-# 教学经历
-
-## 教师，爱荷华大学
-
-* 政治学研究设计\hfill 2017秋
-* 研究生新生数学预科 (合作：姚洁璐)\hfill 2017夏
-* R语言与社会科学研究系列讲座\hfill 2015-2017
-* Stata与R多层分析\hfill 2016-2017
-* 研究生新生数学预科 (合作：金帅)\hfill 2016
-
-## 客座讲师，南开大学
-* 对社会经济不平等问题的实证研究：策略与方法\hfill 2017夏
-
-## 客座讲师, 南卡罗来纳大学
-* 比较政治学：发展中国家\hfill 2012年春
-* 美国国家安全\hfill 2011年秋
-
-## 教学助理, 爱荷华大学
-
-* 政治行为入门\hfill 2015年春
-* 国际关系入门\hfill 2014年秋
-* 比较政治学入门\hfill 2014年春
-* 政治游说\hfill 2014年秋
-* 政治心理学\hfill 2014年秋
-
-## 教学助理, 南卡罗来纳大学
-
-* 国际关系学\hfill 2013年春
-* 比较政治学\hfill 2013年春
-* 争论中的世界政治\hfill 2012年秋
-* 美国政府\hfill 2012年春
-* 比较政治：发展中国家\hfill 2012年春
-* 美国国家安全\hfill 2011年秋
-
-## 教学助理, 里贾纳大学
-
-* 政治学入门\hfill 2010年秋
-
 # 荣誉奖励
 ## 研究奖励
 * 爱荷华大学Post-Comprehensive研究奖\hfill 2016
@@ -313,22 +268,13 @@ bib[group = "underreview"]
 * 天津市政府奖学金\hfill 2008
 
 
-# 组织经历
-* 美国政治学会（及政治传播分会）会员
-* 美国中西部政治学会会员
-* 中国政治学会会员
-* 美国中国研究学会会员
-
 # 技能
 * 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
 * 应用:  \LaTeX, Markdown, Git(GitHub).
 
-# 推荐人
+# 教学经历
 
-\begin{tabular}{ll}
-\parbox{5cm}{\textbf{Wenfang Tang }\\Professor\\University of Iowa\\(319)335-2546\\\href{mailto:wenfang-tang@uiowa.edu}{wenfang-tang@uiowa.edu}}
- &\parbox{5cm}{\textbf{William M. Reisinger}\\Professor\\University of Iowa\\(319)335-2351\\\href{mailto:william-reisinger@uiowa.edu}{william-reisinger@uiowa.edu}}\\
-&\\
-\parbox{5cm}{\textbf{Frederick Solt}\\Associate Professor\\University of Iowa\\(319) 335-2340\\\href{mailto:frederick-solt@uiowa.edu}{frederick-solt@uiowa.edu}}
- &\parbox{5cm}{\textbf{Caroline J. Tolbert}\\Professor\\University of Iowa\\(319) 335-2471\\\href{caroline-tolbert@uiowa.edu}{caroline-tolbert@uiowa.edu}}\\
-\end{tabular}
+* 爱荷华大学： 教师，教学助理（政治学研究设计、R语言与社会科学研究系列讲座、比较政治学入门等）
+* 南卡罗来纳大学：教学助理（国际关系学、争论中的世界政治、比较政治：发展中国家等）
+* 里贾纳大学：教学助理（政治学入门）
+* 南开大学：客座讲师（对社会经济不平等问题的实证研究：策略与方法）
