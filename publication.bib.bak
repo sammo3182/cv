@@ -12,15 +12,15 @@
 }
 
 @Article{Hu2013,
-  author  = {Hu, Yue},
-  title   = {Institutional Difference and Cultural Difference: A Comparative Study of Canadian and Chinese Cultural Diplomacy},
-  journal = {Journal of American-East Asian Relations},
-  year    = {2013},
-  volume  = {20},
-  number  = {2-3},
-  pages   = {256-68},
-  group   = {published},
-  url     = {http://booksandjournals.brillonline.com/content/journals/10.1163/18765610-02003011},
+  author    = {Hu, Yue},
+  title     = {Institutional Difference and Cultural Difference: A Comparative Study of Canadian and Chinese Cultural Diplomacy},
+  journal   = {Journal of American-East Asian Relations},
+  year      = {2013},
+  volume    = {20},
+  number    = {2-3},
+  pages     = {256-68},
+  group     = {published},
+  timestamp = {2017-08-09},
 }
 
 @Article{Hu2011b,
@@ -124,6 +124,7 @@
   volume    = {79},
   number    = {3},
   pages     = {1079--83},
+  group     = {published},
   publisher = {University of Chicago Press Chicago, IL},
   timestamp = {2017-08-03},
 }
@@ -197,6 +198,14 @@
   pages    = {24-25},
   group    = {others},
   language = {Chinese},
+}
+
+@Article{Liu2017,
+  author    = {Liu, Amy and Hu, Yue},
+  title     = {The Effects of Foreign Language Proficiency on Public Attitudes: Evidence from the Chinese-Speaking World},
+  year      = {2017},
+  group     = {underreview},
+  timestamp = {2017-08-09},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

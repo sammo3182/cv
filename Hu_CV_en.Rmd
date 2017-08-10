@@ -141,7 +141,6 @@ BibOptions(check.entries = FALSE,
         + Committee Chair: Wenfang Tang
         + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
         + Abstract: My dissertation uncovers a new path by which authoritarian governments impact public opinion---language policy. The research theorizes that an authoritarian government can use a single-official-language policy to enhance citizens' institution trust, improve their relations with government representatives, and influence their political value system in favor of regime preservation. In particular, the policy creates a social environment in which official language speakers have more positive self-evaluation and experience more efficient political communications. These preferred conditions enhance their trust to the established regime. I tested this hypothesis with a nationally representative survey and found that, although the trust in the central government does not change, high official language proficiency increases the positive effect of self-evaluation and reduces the negative effect of political activism on the trust in the local government. Additionally, a single-official-language policy gives the official language a special political property which is denoted by "authority accent."Bureaucrats can use this to reinforce their political identity. Citizens, in turn, are expected to project more of their attitudes towards the government on these bureaucrats. With an original field experiment on Chinese high school students, I found empirical support for this argument and demonstrated the importance of identity-based language attitudes for political trust research. Finally, using a computer-assisted text analysis of 1,371,607 political articles, I uncovered a refocusing strategy of the Chinese government to manipulate the political language system. The strategy masquerades political concepts, such as democracy, as consistent with commonly accepted liberal definition but works for the preservation of the legitimacy of the authoritarian regime. My dissertation concludes that an authoritarian government can use language policy to affect various levels of public political trust through speaking, listening, and reading.
-* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2016-12
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
     + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
 * M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
@@ -149,6 +148,7 @@ BibOptions(check.entries = FALSE,
 * LL.B. in International Politics, Nankai University, China\hfill 2009-06
 
 ## Additional Training
+* Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2016-12
 * Experimental Methods \hfill 2014-06/07
     + \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
 
@@ -163,17 +163,20 @@ BibOptions(check.entries = FALSE,
 * *International Relations*:
     + Public diplomacy, international cultural relations, Chinese foreign policy.
 
-# Publication
+# Publications
 ## Journal Articles
+### Article in English (Peer-Reviewed Journals)
 ```{r echo = FALSE, results = "asis", warning=FALSE}
 bib[group = "published"][c(1,2,6,7)]
 ```
 
-Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?)”. [Chinese] *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
+### Articles in Chinese
+Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?)”. *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
 
-Tongshun Cheng and Yue Hu. “The Cultural Props of Foreign Policy”. [Chinese] *Tribune of Study* (2010), pp. 33--37.(程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-7页。)
+Tongshun Cheng and Yue Hu. “The Cultural Props of Foreign Policy”. *Tribune of Study* (2010), pp. 33--37.
+(程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-37页。)
 
-Yue Hu. “An Analysis of Politics Fixed Position of CPPCC from the Political Scientific Angle”. [Chinese] *Journal of Tianjin Institute of Socialism* (2009), pp. 19--23.
+Yue Hu. “An Analysis of Politics Fixed Position of CPPCC from the Political Scientific Angle”. *Journal of Tianjin Institute of Socialism* (2009), pp. 19--23.
 (《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页。)
 
 ## Software
@@ -187,11 +190,9 @@ bib[group = "software"]
 bib[group = "underreview"]
 ```
 
-## Working Projoects
+## Working Projects
 
 "Measure Political Desirability: An Experimental Method" (with Wenfang Tang).
-
-"The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle" (with Amy Liu).
 
 "The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
 
@@ -200,7 +201,7 @@ bib[group = "underreview"]
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
 
-# Conference
+# Conferences
 * 2017
     + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
         + \footnotesize Association of Chinese Political Science (ACPS) Annual Meeting, Tianjin, China, Jun., 9--11.
@@ -248,7 +249,7 @@ bib[group = "underreview"]
 * Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2013-05/08 
 
 
-# Teaching Interest
+# Teaching Interests
 * Comparative Politics: 
     + Intro to Comparative Politics, Language Policy, Public Opinion, Asian Politics, Chinese Politics, Ethnicity, Nationalism, Democratization.
 * Political Methodology:
@@ -264,13 +265,6 @@ bib[group = "underreview"]
 * Introduction To R Workshop Series\hfill 2015-2017
 * Multilevel Modeling with Stata and R\hfill 2016-2017
 * Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill Summer 2016
-
-## Guest Lecture, Nankai University
-* Investigating Inequality with Real-Life Data: Research Strategies and Methods\hfill Summer 2017
-
-## Guest Lecture, University of South Carolina
-* Comparative Politics-Developing Countries\hfill Spring 2012
-* National Security of United States\hfill Fall 2011
 
 ## Teaching Assistant, University of Iowa
 
@@ -293,28 +287,31 @@ bib[group = "underreview"]
 
 * Introduction to Political Science\hfill Fall 2010
 
+## Guest Lecture, Nankai University
+* Investigating Inequality with Real-Life Data: Research Strategies and Methods\hfill Summer 2017
+
+## Guest Lecture, University of South Carolina
+* Comparative Politics-Developing Countries\hfill Spring 2012
+* National Security of United States\hfill Fall 2011
+
 # Grants
 ## Research Awards
-* Post-Comprehensive Research Award ($9404.50)\hfill 2016
-* T. Anne Cleary International Dissertation Research Fellowship ($5000) \hfill 2016
-* Center of Asian and Pacific Studies Graduate Dissertation Grant ($1000)\hfill 2016
-* Best Conference Paper Award of Department of Political Science ($500)\hfill 2016
-* Department Summer Training Grant ($1900)\hfill 2014
+* Post-Comprehensive Research Award\hfill 2016
+* T. Anne Cleary International Dissertation Research Fellowship\hfill 2016
+* Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
+* Best Conference Paper Award of Department of Political Science\hfill 2016
+* Department Summer Training Grant\hfill 2014
 * Graduate Research Award, University of Regina\hfill 2010 
 * Graduate Studies Scholarship, University of Regina\hfill 2009-2011
 * City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
 
 
 ## Travel Grants
-* Graduate School Senate Supplemental Travel Funds Award ($600)\hfill 2016
-* Graduate & Professional Student Government Travel Grant ($500)\hfill 2016
-* CAPS Graduate Student Conference Travel Award ($500)\hfill 2015
-* Graduate Student Senate Travel Funds Award ($200)\hfill 2015
-* Department Travel Awards ($500~$800)\hfill 2015-2017
-
-## Graduate Assistantship
-* Graduate Assistantship, University of Iowa\hfill 2014-2017
-* Graduate Assistantship, University of South Carolina\hfill 2011-2013
+* Graduate School Senate Supplemental Travel Funds Award\hfill 2016
+* Graduate & Professional Student Government Travel Grant\hfill 2016
+* CAPS Graduate Student Conference Travel Award\hfill 2015
+* Graduate Student Senate Travel Funds Award\hfill 2015
+* Department Travel Awards\hfill 2015-2017
 
 
 # Professional Affiliation
@@ -328,7 +325,7 @@ bib[group = "underreview"]
 * Application:  \LaTeX, Markdown, Git(GitHub).
 * Language: English, Chinese (Mandarin)
 
-# Reference
+# References
 
 \begin{tabular}{ll}
 \parbox{5cm}{\textbf{Wenfang Tang}\\Professor\\University of Iowa\\(319)335-2546\\\href{mailto:wenfang-tang@uiowa.edu}{wenfang-tang@uiowa.edu}}
