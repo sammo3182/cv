@@ -200,7 +200,7 @@ bib[group = "underreview"]
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
 # Researching Program
-* Principal Investigator, Youth Project of National Social Science Foundation of China: A Study of Assessing and Improving the Political Ecology of Grass-roots Party Organizations (ID: 17CZZ041)\hfill 2017.06-2020.06.
+* Principal Investigator, Youth Project of National Social Science Foundation of China: A Study of Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041)\hfill 2017.06-2020.06.
 
 # Conferences
 * 2017
