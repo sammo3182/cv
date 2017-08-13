@@ -137,7 +137,7 @@ BibOptions(check.entries = FALSE,
 
 # 教育背景
 ## 学历
-* 政治学博士, 美国爱荷华大学.\hfill 2018-05 (预期)
+* 政治学博士, 美国爱荷华大学\hfill 2018-05 (预期)
     + \footnotesize 专业领域：比较政治学、政治方法论、国际关系。
     + \footnotesize 博士论文: "Rebuild the Tower of Babel: Language Policy and Political Trust in China."
         + 导师：唐文方 (Wenfang Tang)
@@ -173,7 +173,8 @@ BibOptions(check.entries = FALSE,
     + 公共外交，国际文化关系。
 
 # 科研项目
-*  国家社科基金青年项目：基层党组织的政治生态评估体系与优化策略研究（项目编号17CZZ041）项目参与人\hfill 2017.06-2020.06.
+*  国家社科基金青年项目：基层党组织的政治生态评估体系与优化策略研究（项目编号17CZZ041）
+    + 项目参与人及研究方法指导 \hfill 2017/06-2020/06.
 
 # 发表
 ## 学术期刊
@@ -183,9 +184,9 @@ bib[group = "published"][c(1,2,6,7)]
 
 胡悦和朱毓朝：《'问题与主义’ 导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。 
 
-程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-7页. 
+程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-7页。
 
-胡悦：《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页.
+胡悦：《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页。
 
 ## 研发软件
 ```{r echo = FALSE, results = "asis"}
@@ -269,8 +270,8 @@ bib[group = "underreview"]
 
 
 # 技能
-* 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
-* 应用:  \LaTeX, Markdown, Git(GitHub).
+* 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET
+* 应用:  \LaTeX, Markdown, Git(GitHub)
 
 # 教学经历
 
