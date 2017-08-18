@@ -136,32 +136,25 @@ BibOptions(check.entries = FALSE,
 # Education
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05 (Expected)
-    + \footnotesize Fields: Comparative Politics, Political Methodology, International Relations.
     + \footnotesize Dissertation: "Rebuild the Tower of Babel: Language Policy and Political Trust in China."
         + Committee Chair: Wenfang Tang
         + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
-        + Abstract: My dissertation uncovers a new path by which authoritarian governments impact public opinion---language policy. The research theorizes that an authoritarian government can use a single-official-language policy to enhance citizens' institution trust, improve their relations with government representatives, and influence their political value system in favor of regime preservation. In particular, the policy creates a social environment in which official language speakers have more positive self-evaluation and experience more efficient political communications. These preferred conditions enhance their trust to the established regime. I tested this hypothesis with a nationally representative survey and found that, although the trust in the central government does not change, high official language proficiency increases the positive effect of self-evaluation and reduces the negative effect of political activism on the trust in the local government. Additionally, a single-official-language policy gives the official language a special political property which is denoted by "authority accent."Bureaucrats can use this to reinforce their political identity. Citizens, in turn, are expected to project more of their attitudes towards the government on these bureaucrats. With an original field experiment on Chinese high school students, I found empirical support for this argument and demonstrated the importance of identity-based language attitudes for political trust research. Finally, using a computer-assisted text analysis of 1,371,607 political articles, I uncovered a refocusing strategy of the Chinese government to manipulate the political language system. The strategy masquerades political concepts, such as democracy, as consistent with commonly accepted liberal definition but works for the preservation of the legitimacy of the authoritarian regime. My dissertation concludes that an authoritarian government can use language policy to affect various levels of public political trust through speaking, listening, and reading.
+        + Abstract: My dissertation uncovers a new path by which authoritarian governments impact public opinion---language policy. Conventionally, the policy is regarded as a social institution to set the official language and the linguistic hierarchy of a country. My research argues and demonstrates with various empirical evidence that an authoritarian government can use it as a political tool to influence citizens' political trust and thoughts profoundly. Especially, it empowers the official language that bureaucrats, the grassroots representatives of the government, can use to reinforce their political identities and enhance the citizens' trust in them. To test this theory, I conducted an original field experiment on Chinese high school students and found that using the official language significantly improve listeners' trust in the bureaucrats and this attitude closely relates to the bureaucrats' political identity rather than cultural or personal characteristics. My dissertation also uncovers that official language proficiency can adjust Chinese citizens' trust in political institutions with a modifier analysis of a recent nationally representative sample and shows how the government strategically manipulates the formal political language system to communicate with citizens and influence their political value system based on a computer-assisted text analysis of 1,371,607 political articles. The research concludes that an authoritarian government can use language policy to affect various levels of public political trust through speaking, listening, and reading and manifests that political trust in political actors, political institutions, and political values connected and influenced each other.
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
-    + \footnotesize Thesis: "Connecting Nationalism and Political Transition: A Study of Nationalist Influence on Political Transition Based on the Chinese Case."
 * M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
-    + \footnotesize Thesis: “Culture and Cultural Diplomacy: A Comparative Study of a Canadian and Chinese Case.”
 * LL.B. in International Politics, Nankai University, China\hfill 2009-06
 
 ## Additional Training
 * Certificate in Informatics, The University of Iowa, U.S.A.\hfill 2016-12
-* Experimental Methods \hfill 2014-06/07
-    + \footnotesize IPSA-NUS Summer School of Social Science Research Methods, Singapore.
+* Experimental Methods, National University of Singapore (IPSA), Singapore \hfill 2014-06/07
 
 # Professional Positions
 * Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
 
 # Research Interests
-* *Comparative Politics*: 
-    + Language policy, political communication, public opinion, political culture, Chinese politics.
-* *Political Methodology*:
-    + Survey experiment, text analysis, network analysis, spatial analysis, multilevel analysis.
-* *International Relations*:
-    + Public diplomacy, international cultural relations, Chinese foreign policy.
+* *Comparative Politics*: Language policy, political communication, public opinion.
+* *Political Methodology*: Survey experiment, text analysis, network analysis, spatial analysis.
+* *International Relations*: Public diplomacy, international cultural relations, Chinese foreign policy.
 
 # Publications
 ## Peer-Reviewed Journal Articles
@@ -200,7 +193,7 @@ bib[group = "underreview"]
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
 # Researching Program
-* Youth Project of National Social Science Foundation of China: A Study of Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041)    
+* Youth Project of National Social Science Foundation of China: Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041). 
     + Principal Investigator and Methodology Director\hfill 2017/06-2020/06.
 
 # Conferences
@@ -264,7 +257,7 @@ bib[group = "underreview"]
 
 * Designing Political Research\hfill Fall 2017
 * Math Camp for Incoming Graduate Students (with Jielu Yao)\hfill Summer 2017
-* Introduction To R Workshop Series\hfill 2015-2017
+* Introduction to R Workshop Series\hfill 2015-2017
 * Multilevel Modeling with Stata and R\hfill 2016-2017
 * Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill Summer 2016
 
