@@ -132,9 +132,6 @@ BibOptions(check.entries = FALSE,
 ```
 
 
-# 政治面貌
-* 中国共产党党员
-
 # 教育背景
 ## 学历
 * 政治学博士, 美国爱荷华大学\hfill 2018-05 (预期)
@@ -159,6 +156,9 @@ BibOptions(check.entries = FALSE,
 <!--     \includegraphics[width=0.3\textwidth]{vertical_YueHu.jpg} -->
 <!--     \end{center} -->
 <!-- \end{wrapfigure} -->
+
+# 政治面貌
+* 中国共产党党员
 
 # 研究兴趣
 
