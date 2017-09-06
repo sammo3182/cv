@@ -149,7 +149,7 @@ BibOptions(check.entries = FALSE,
 * Experimental Methods, National University of Singapore (IPSA), Singapore \hfill 2014-06/07
 
 # Professional Positions
-* Statistical Consultant, Iowa Social Science Research Center, University of Iowa.
+* Statistical Consultant, Iowa Social Science Research Center, University of Iowa. 2015-08/present
 
 # Research Interests
 * *Comparative Politics*: Language policy, political communication, public opinion.
@@ -192,10 +192,6 @@ bib[group = "underreview"]
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
-# Researching Program
-* Youth Project of National Social Science Foundation of China: Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041). 
-    + Principal Investigator and Methodology Director\hfill 2017/06-2020/06.
-
 # Conferences
 * 2017
     + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
@@ -226,6 +222,10 @@ bib[group = "underreview"]
 * 2012
     + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia Cases."
         + \footnotesize American Association for Chinese Studies (AACS) Annual Conference, Atlanta, Georgia, Oct. 12-14.
+
+# Researching Program
+* Youth Project of National Social Science Foundation of China: Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041). 
+    + Principal Investigator and Methodology Director\hfill 2017/06-2020/06.
 
 # Research Experience
 ## Data Collection
@@ -299,14 +299,6 @@ bib[group = "underreview"]
 * Graduate Research Award, University of Regina\hfill 2010 
 * Graduate Studies Scholarship, University of Regina\hfill 2009-2011
 * City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
-
-
-## Travel Grants
-* Graduate School Senate Supplemental Travel Funds Award\hfill 2016
-* Graduate & Professional Student Government Travel Grant\hfill 2016
-* CAPS Graduate Student Conference Travel Award\hfill 2015
-* Graduate Student Senate Travel Funds Award\hfill 2015
-* Department Travel Awards\hfill 2015-2017
 
 
 # Professional Affiliation
