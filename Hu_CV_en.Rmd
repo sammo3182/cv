@@ -290,7 +290,6 @@ bib[group = "underreview"]
 * National Security of United States\hfill Fall 2011
 
 # Grants
-## Research Awards
 * Post-Comprehensive Research Award\hfill 2016
 * T. Anne Cleary International Dissertation Research Fellowship\hfill 2016
 * Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
