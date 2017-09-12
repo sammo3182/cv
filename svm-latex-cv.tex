@@ -253,10 +253,18 @@ $endif$
 	breaklinks=true, bookmarks=true}
 \urlstyle{same}  % don't use monospace font for urls
 
+% try to fit picture
+$if(photo)$
+\usepackage{tikz}
+$endif$
+
+
 \begin{document}
 	
 	
 	\centerline{\huge \bf $author$}
+	
+	
 	
 	\vspace{2 mm}
 	
@@ -272,6 +280,12 @@ $endif$
 	
 	\hrule
 	
+	$if(photo)$
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[xshift=163mm,yshift=-4mm,anchor=north west] at (current page.north west){%
+		\includegraphics[width=28mm]{$photo$}};
+	\end{tikzpicture}
+	$endif$
 	
 	$body$
 	
