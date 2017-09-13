@@ -294,7 +294,6 @@ bib[group = "underreview"]
 * T. Anne Cleary International Dissertation Research Fellowship\hfill 2016
 * Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
 * Best Conference Paper Award of Department of Political Science\hfill 2016
-* Department Summer Training Grant\hfill 2014
 * Graduate Research Award, University of Regina\hfill 2010 
 * Graduate Studies Scholarship, University of Regina\hfill 2009-2011
 * City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
