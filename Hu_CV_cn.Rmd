@@ -137,7 +137,7 @@ BibOptions(check.entries = FALSE,
 ## 学历
 * 美国爱荷华大学博士(政治学)\hfill 2018-05 (预期)
     + \footnotesize 专业领域：比较政治学、政治方法论、国际政治。
-    + \footnotesize 博士论文: "Rebuild the Tower of Babel: Language Policy and Political Trust in China."
+    + \footnotesize 博士论文: "Rebuilding the Tower of Babel: Language Policy and Political Trust in China."
         + 导师：唐文方 (Wenfang Tang)
         + 博士论文委员会：William M. Reisinger、Frederick Solt、Caroline J. Tolbert、David Cassels Johnson
 * 美国南卡罗来纳大学硕士(政治学)\hfill 2013-03
