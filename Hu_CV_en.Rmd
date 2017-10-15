@@ -250,7 +250,7 @@ bib[group = "underreview"]
 * Political Methodology:
     + Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experimental Methods, Structural Equation Modeling, Survey Design and Analysis, Programming in R, Stata, and Python, Data Visualization.
 * Professionalism
-    + Research Design, Progamming in R and Stata (tutorship on Python and C++); Professional writing with Latex and Rmarkdown.
+    + Research Design, Progamming in R and Stata (tutorship on Python and C++)， Professional writing with Latex and Rmarkdown.
 
 # Teaching Experience
 
