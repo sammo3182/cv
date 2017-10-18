@@ -250,8 +250,8 @@ bib[group = "underreview"]
 * 网络调查实验\hfill 2017-02
     + \footnotesize 问卷、实验设计及发布，有效数据944个。
     
-* 田野调查实验 \hfill 2016-12
-    + \footnotesize 双盲match-guise实验设计及实施，有效数据421个.
+* 实验室双盲实验 \hfill 2016-12
+    + \footnotesize adjusted match-guise实验设计及实施，有效数据421个.
 
 * 大数据级文本收集\hfill 2016
     + \footnotesize 编程收集《人民日报》1946至2003年发表的所有文章, 文章数 1,371,607篇。
