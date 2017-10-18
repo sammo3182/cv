@@ -197,6 +197,7 @@ bib[group = "underreview"]
 * 美国爱荷华大学社会研究中心统计学顾问\hfill 2015-08/今
 
 # 荣誉奖励
+* Ballard and Seashore 奖学金\hfill 2017
 * 爱荷华大学Post-Comprehensive研究奖\hfill 2016
 * T. Anne Cleary国际博士论文奖学金 \hfill 2016
 * 亚太研究中心博士论文研究奖金\hfill 2016
@@ -235,7 +236,7 @@ bib[group = "underreview"]
         + \footnotesize 美国中西部政治学会 (MPSA), 芝加哥，伊利诺伊, 4月16--19日。
 * 2013
     + "Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case."
-        + \footnotesize 南开罗莱纳达研究生学会年会, 哥伦比亚，南卡罗来纳。
+        + \footnotesize 南卡罗莱纳达研究生学会年会, 哥伦比亚，南卡罗来纳。
 * 2012
     + "Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia cases."
         + \footnotesize 美国中国研究年会 (AACS), 奥特兰, 佐治亚, 10月12-14日。

@@ -248,7 +248,7 @@ bib[group = "underreview"]
 * Comparative Politics: 
     + Intro to Comparative Politics, Language Policy, Public Opinion, Chinese Politics, Asian Politics, Inequality, Democratization and Regime Transition, Nationalism.
 * Political Methodology:
-    + Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experimental Methods, Structural Equation Modeling, Survey Design and Analysis, Programming in R, Stata, and Python, Data Visualization.
+    + Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experimental Methods, Structural Equation Modeling, Survey Design and Analysis, Data Visualization.
 * Professionalism
     + Research Design, Progamming in R and Stata (tutorship on Python and C++)， Professional writing with Latex and Rmarkdown.
 
@@ -291,6 +291,7 @@ bib[group = "underreview"]
 * National Security of United States\hfill Fall 2011
 
 # Grants
+* Ballard and Seashore Fellowship\hfill 2017
 * Post-Comprehensive Research Award\hfill 2016
 * T. Anne Cleary International Dissertation Research Fellowship\hfill 2016
 * Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
