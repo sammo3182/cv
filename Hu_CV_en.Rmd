@@ -225,7 +225,7 @@ bib[group = "underreview"]
 
 # Researching Program
 * Youth Project of National Social Science Foundation of China: Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041). 
-    + Principal Investigator and Methodology Director\hfill 2017/06-2020/06.
+    + Principal Investigator and Methodology Director\hfill 2017/06-2020/06
 
 # Research Experience
 ## Data Collection
