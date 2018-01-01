@@ -192,6 +192,13 @@ bib[group = "underreview"]
 
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
+# Invited Talks
+
+* 2018
+    + "Culture Marker vs. Authority Marker: How Does Language Attitude Affect Political Trust?" Sun Yat-Sen University, Guangzhou, Jan., 3.
+* 2017
+    + "Investigating Inequality with Real-Life Data: Research Strategies and Methods." Nankai University, Tianjin, Jun., 25.
+
 # Conferences
 * 2017
     + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
@@ -282,9 +289,6 @@ bib[group = "underreview"]
 ## Teaching Assistant, University of Regina
 
 * Introduction to Political Science\hfill Fall 2010
-
-## Guest Lecture, Nankai University
-* Investigating Inequality with Real-Life Data: Research Strategies and Methods\hfill Summer 2017
 
 ## Guest Lecture, University of South Carolina
 * Comparative Politics-Developing Countries\hfill Spring 2012
