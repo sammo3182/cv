@@ -194,7 +194,7 @@ bib[group = "underreview"]
 "Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
 # 工作职务
-* 美国爱荷华大学社会研究中心统计学顾问\hfill 2015-08/今
+* 美国爱荷华社会科学研究中心统计学顾问\hfill 2015-08/今
 
 # 荣誉奖励
 * Ballard and Seashore 奖学金\hfill 2017
@@ -266,7 +266,7 @@ bib[group = "underreview"]
 ## 助理研究员经历
 * 俄罗斯、乌克兰、格鲁吉亚三国腐败与政治研究 (爱荷华大学)\hfill 2015-2016
 * 收入差异标准化数据库项目 (爱荷华大学)\hfill 2015-05/06
-* 东亚国家公众调查项目 (南卡罗来纳大学)\hfill 2013-05/08 
+* 东亚国家公众调查项目 (南卡罗来纳大学)\hfill 2012-05/08 
 
 
 # 教学经历

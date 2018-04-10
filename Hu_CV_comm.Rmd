@@ -248,7 +248,7 @@ bib[group = "underreview"]
 ## Research Assistant
 * Corruption and Politics in Russia, Ukraine, and Georgia Project (Univ. of Iowa)\hfill 2015-2016
 * Standardized World Income Inequality Database Project (Univ. of Iowa)\hfill 2015-05/06
-* Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2013-05/08 
+* Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2012-05/08 
 
 
 # Teaching Interests
@@ -274,8 +274,8 @@ bib[group = "underreview"]
 * Introduction to Political Behavior\hfill Spring 2015
 * Introduction to International Relations\hfill Fall 2014
 * Introduction to Comparative Politics\hfill Spring 2014
-* Political Campaigning\hfill Fall 2014
-* Political Psychology\hfill Fall 2014
+* Political Campaigning\hfill Fall 2013
+* Political Psychology\hfill Fall 2013
 
 ## Teaching Assistant, University of South Carolina
 
