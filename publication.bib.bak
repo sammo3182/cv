@@ -31,7 +31,7 @@
   year      = {2011},
   volume    = {3},
   pages     = {46-50},
-  group     = {published},
+  groups    = {Chinese},
   language  = {Chinese},
   timestamp = {2017-08-09},
 }
@@ -43,7 +43,7 @@
   year      = {2010},
   number    = {26},
   pages     = {33--37},
-  group     = {published},
+  groups    = {Chinese},
   language  = {Chinese},
   timestamp = {2017-08-09},
 }
@@ -55,7 +55,7 @@
   year      = {2009},
   volume    = {1},
   pages     = {19-23},
-  group     = {published},
+  groups    = {Chinese},
   language  = {Chinese},
   owner     = {Yue Hu},
   timestamp = {2014.02.06},
@@ -147,13 +147,6 @@
   timestamp = {2017-08-09},
 }
 
-@Unpublished{Hua,
-  author    = {Yue Hu},
-  title     = {Are Informal Education Facilities Effective Means for Political Propaganda? A Spatial Analysis},
-  group     = {underreview},
-  timestamp = {2017-08-09},
-}
-
 @Article{Hu2014,
   author    = {Yue Hu},
   title     = {Zhunbei meiguo daxue xiangmu shenqing ziliao de jidian jingyan (Experiences on Document Preparation for Applications to PhD Programs of American Universities)},
@@ -226,7 +219,16 @@
 
 @Unpublished{,
   author = {Hu, Yue and Shao, Zijie},
-  title  = {The Popularity of Political Propaganda in Modern China: A Model of Demands.},
+  title  = {The Popularity of Political Propaganda in Modern China: A Model of Demands},
+}
+
+@Article{Hu2018,
+  author  = {Hu, Yue},
+  title   = {Are Informal Education Facilities Effective Means for Generating Political Support? A Spatial Analysis},
+  journal = {Social Science Quarterly},
+  year    = {2018},
+  pages   = {Forthcoming},
+  group   = {published},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -237,4 +239,5 @@
 1 KeywordGroup:software\;0\;group\;software\;0\;0\;1\;\;\;\;;
 1 KeywordGroup:underreviewed\;0\;group\;underreview\;0\;0\;1\;\;\;\;;
 1 KeywordGroup:others\;0\;group\;others\;0\;0\;1\;\;\;\;;
+1 StaticGroup:Chinese\;0\;1\;\;\;\;;
 }

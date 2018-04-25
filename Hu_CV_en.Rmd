@@ -159,7 +159,7 @@ BibOptions(check.entries = FALSE,
 # Publications
 ## Peer-Reviewed Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"][c(1,2,6,7)]
+bib[group = "published"]
 ```
 
 ## Journal Articles in Chinese
@@ -315,13 +315,3 @@ bib[group = "underreview"]
 * Analysis & Programming: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
 * Application:  \LaTeX, Markdown, Git(GitHub).
 * Language: English, Chinese (Mandarin)
-
-# References
-
-\begin{tabular}{ll}
-\parbox{5cm}{\textbf{Wenfang Tang (Chair)}\\Professor\\University of Iowa\\(319)335-2546\\\href{mailto:wenfang-tang@uiowa.edu}{wenfang-tang@uiowa.edu}}
- &\parbox{5cm}{\textbf{William M. Reisinger}\\Professor\\University of Iowa\\(319)335-2351\\\href{mailto:william-reisinger@uiowa.edu}{william-reisinger@uiowa.edu}}\\
-&\\
-\parbox{5cm}{\textbf{Frederick Solt}\\Associate Professor\\University of Iowa\\(319) 335-2340\\\href{mailto:frederick-solt@uiowa.edu}{frederick-solt@uiowa.edu}}
- &\parbox{5cm}{\textbf{Caroline J. Tolbert}\\Professor\\University of Iowa\\(319) 335-2471\\\href{caroline-tolbert@uiowa.edu}{caroline-tolbert@uiowa.edu}}\\
-\end{tabular}

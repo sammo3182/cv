@@ -163,7 +163,7 @@ BibOptions(check.entries = FALSE,
 # 发表
 ## 学术期刊
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"][c(1,2,6,7)]
+bib[group = "published"]
 ```
 
 胡悦和朱毓朝：《'问题与主义’ 导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。 
