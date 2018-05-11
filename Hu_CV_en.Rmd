@@ -200,6 +200,13 @@ bib[group = "underreview"]
     + "Investigating Inequality with Real-Life Data: Research Strategies and Methods." Nankai University, Tianjin, Jun., 25.
 
 # Conferences
+
+* 2018
+    + "Measuring the Influence of Language in Political Science Research."
+        + \footnotesize St. Louis Area Methods Meeting (SLAMM), Ames, Iowa, Apr. 20.
+    + "Rebuilding the Tower of Babel? The Influence of Language Policy on Political Trust."
+        + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 5--8.
+
 * 2017
     + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
         + \footnotesize Association of Chinese Political Science (ACPS) Annual Meeting, Tianjin, China, Jun., 9--11.
