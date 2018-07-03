@@ -133,13 +133,6 @@
   timestamp = {2017-08-03},
 }
 
-@Unpublished{Claypool,
-  author    = {Vicki Claypool and William Reisinger and Marina Zaloznaya and Yue Hu},
-  title     = {The Pernicious Effect of Petty Corruption on System-Supporting Political Behavior in Post-Soviet States},
-  group     = {underreview},
-  timestamp = {2017-08-09},
-}
-
 @Unpublished{Hu,
   author    = {Yue Hu},
   title     = {Strategic Communication: Why the Chinese Government Engages in Discourse about Democracy and Why It Matters},
@@ -227,8 +220,23 @@
   title   = {Are Informal Education Facilities Effective Means for Generating Political Support? A Spatial Analysis},
   journal = {Social Science Quarterly},
   year    = {2018},
-  pages   = {Forthcoming},
+  note    = {Forthcoming},
   group   = {published},
+}
+
+@Article{Claypool2018,
+  author  = {Vicki Hesli Claypool and William Reisinger and Marina Zaloznaya and Yue Hu and Jenny Juehring},
+  title   = {Tsar Putin and the `Corruption' Thorn in his Side: The Demobilization of Votes in a Competitive Authoritarian Regime},
+  journal = {Electoral Studies},
+  year    = {2018},
+  volume  = {54},
+  pages   = {182--204},
+}
+
+@Unpublished{Hua,
+  author = {Yue Hu},
+  title  = {Culture Marker vs. Authority Marker: How Do Language Attitudes Affect Political Trust?},
+  group  = {underreview},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

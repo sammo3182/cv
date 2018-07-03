@@ -140,7 +140,7 @@ BibOptions(check.entries = FALSE,
         + Committee Chair: Wenfang Tang
         + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
         + Abstract: My dissertation explores how authoritarian governments use language policy to impact public political trust. Based on a comprehensive examination through survey analyses, experiments, and large-scale text analyses, my research demonstrates that authoritarian governments, such as in China, can use language policy as a political tool to influence citizens’ political attitudes. In particular, language policy empowers the official language used by government representatives, such as street-level bureaucrats, reinforcing their political identities and enhancing citizens' trust in them. Using an original randomized experiment in China based on a new sociolinguistic technique, my research finds robust evidence that listeners hold significantly more trust in bureaucrats who speak the official language than in those who speak dialects, even if the respondent and government representative share the same dialect. Furthermore, my research shows that language not only influences citizens' political trust but also their understanding of political concepts. Using a computer-assisted text analysis of over one million articles from the official newspaper of the dominant party of China from 1946-2003, I indicate a refocusing strategy by which the official discourse about democracy manipulates the meaning of democracy in the Chinese political language without contradicting with the western democratic values, while simultaneously preserving the authoritarian regime. Drawing on multiple waves of nationally representative surveys from China, my dissertation also identifies distinctive effects of improving listening, speaking, and relative proficiencies of Putonghua on Chinese citizens' political interest, efficacy, pursuit, and institutional-based political trust.
-* M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-03
+* M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-12
 * M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
 * LL.B. in International Politics, Nankai University, China\hfill 2009-06
 
@@ -149,12 +149,12 @@ BibOptions(check.entries = FALSE,
 * Experimental Methods, National University of Singapore (IPSA), Singapore \hfill 2014-06/07
 
 # Professional Positions
-* Statistical Consultant, Iowa Social Science Research Center, University of Iowa. 2015-08/present
+* Statistical Consultant, Iowa Social Science Research Center, University of Iowa. 2015-08/2018-05
 
 # Research Interests
-* *Comparative Politics*: Language policy, political communication, public opinion.
+* *Comparative Politics*: Language policy, political communication, inequality.
 * *Political Methodology*: Survey experiment, text analysis, network analysis, spatial analysis.
-* *International Relations*: Public diplomacy, international cultural relations, Chinese foreign policy.
+* *International Relations*: Soft power, public diplomacy, Chinese foreign policy.
 
 # Publications
 ## Peer-Reviewed Journal Articles
@@ -190,7 +190,6 @@ bib[group = "underreview"]
 
 "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
-"Niche Audience: Chinese Government’s Secret Weapon in Official Media Propaganda" (with Zijie Shao).
 
 # Invited Talks
 
@@ -241,31 +240,6 @@ bib[group = "underreview"]
 * Youth Project of National Social Science Foundation of China: Assessing and Improving the Political Ecology of Grassroots Party Organizations (ID: 17CZZ041). 
     + Principal Investigator and Methodology Director\hfill 2017/06-2020/06
 
-# Research Experience
-## Data Collection
-* Online survey experiment in China.\hfill 2017-02
-    + \footnotesize Designed an online survey experiments, finished 994 surveys.
-    
-* Lab experiment in China.\hfill 2016-12
-    + \footnotesize Designed and conducted adjusted match-guise experiments in Chengdu and Meizhou of China on 421 subjects in total.
-
-* Web scrapping Newspaper Documents.\hfill 2016
-    + \footnotesize Scrapped the text content of *People's Daily* (1946-2003) from a third party website, ending with 1,371,607 documents.
-
-## Research Assistant
-* Corruption and Politics in Russia, Ukraine, and Georgia Project (Univ. of Iowa)\hfill 2015-2016
-* Standardized World Income Inequality Database Project (Univ. of Iowa)\hfill 2015-05/06
-* Survey in Eastern Asia Project (Univ. of South Carolina)\hfill 2012-05/08 
-
-
-# Teaching Interests
-* Comparative Politics: 
-    + Intro to Comparative Politics, Language Policy, Public Opinion, Chinese Politics, Asian Politics, Inequality, Democratization and Regime Transition, Nationalism.
-* Political Methodology:
-    + Intro to Quantitative Analysis in Social Science, Regression, Maximum Likelihood Estimation, Multilevel Modeling, Spatial Analysis, Network Analysis, Experimental Methods, Structural Equation Modeling, Survey Design and Analysis, Data Visualization.
-* Professionalism
-    + Research Design, Progamming in R and Stata (tutorship on Python and C++)， Professional writing with Latex and Rmarkdown.
-
 # Teaching Experience
 
 ## Instructor, University of Iowa
@@ -275,27 +249,6 @@ bib[group = "underreview"]
 * Introduction to R Workshop Series\hfill 2015-2017
 * Multilevel Modeling with Stata and R\hfill 2016-2017
 * Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill Summer 2016
-
-## Teaching Assistant, University of Iowa
-
-* Introduction to Political Behavior\hfill Spring 2015
-* Introduction to International Relations\hfill Fall 2014
-* Introduction to Comparative Politics\hfill Spring 2014
-* Political Campaigning\hfill Fall 2013
-* Political Psychology\hfill Fall 2013
-
-## Teaching Assistant, University of South Carolina
-
-* International Relations\hfill Spring 2013
-* Comparative Politics\hfill Spring 2013
-* Controversial World Politics\hfill Fall 2012
-* American National Government\hfill Spring 2012
-* Comparative Politics-Developing Countries\hfill Spring 2012
-* National Security of United States\hfill Fall 2011
-
-## Teaching Assistant, University of Regina
-
-* Introduction to Political Science\hfill Fall 2010
 
 ## Guest Lecture, University of South Carolina
 * Comparative Politics-Developing Countries\hfill Spring 2012
@@ -308,7 +261,6 @@ bib[group = "underreview"]
 * Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
 * Best Conference Paper Award of Department of Political Science\hfill 2016
 * Graduate Research Award, University of Regina\hfill 2010 
-* Graduate Studies Scholarship, University of Regina\hfill 2009-2011
 * City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
 
 
