@@ -152,8 +152,6 @@ BibOptions(check.entries = FALSE,
 <!--     \end{center} -->
 <!-- \end{wrapfigure} -->
 
-# 政治面目: 中共党员
-
 # 研究兴趣
 
 * *比较政治学*: 语言政策，政治传播，公众舆论。
