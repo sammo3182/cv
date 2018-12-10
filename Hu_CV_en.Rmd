@@ -11,13 +11,12 @@ chinese: TRUE
 title: "CV"
 author: Yue Hu
 
-address: "313 Schaeffer Hall, 20E Washington Street, Iowa City, IA, 52242"
+address: "Mingzhai 114, Qinghua Yuan, Haidian District, Beijing 100084, China"
 fontawesome: yes
 email: yue-hu-1@uiowa.edu
 github: sammo3182
-phone: "+01-803-250-1686"
 web: sammo3182.github.io
-updated: no
+updated: false
 fontfamily: mathpazo
 fontfamilyoptions: sc, osf
 fontsize: 10.5pt
