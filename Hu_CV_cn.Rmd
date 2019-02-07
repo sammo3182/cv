@@ -12,7 +12,7 @@ author: 胡悦
 
 address: "北京市海淀区清华大学明斋114, 邮编:100084"
 fontawesome: yes
-email: yue-hu-1@uiowa.edu
+email: yuehu@tsinghua.edu.cn
 github: sammo3182
 web: sammo3182.github.io
 updated: true
@@ -135,10 +135,6 @@ BibOptions(check.entries = FALSE,
 # 教育背景
 ## 学历
 * 美国爱荷华大学博士(政治学)\hfill 2018-05
-    + \footnotesize 专业领域：比较政治学、政治方法论、国际政治。
-    + \footnotesize 博士论文: "Rebuilding the Tower of Babel: Language Policy and Political Trust in China."
-        + 导师：唐文方 (Wenfang Tang)
-        + 博士论文委员会：William M. Reisinger、Frederick Solt、Caroline J. Tolbert、David Cassels Johnson
 * 美国南卡罗来纳大学硕士(政治学)\hfill 2013-03
 * 加拿大里贾纳大学硕士(政治学)\hfill 2011-03
 * 南开大学学士(国际关系)\hfill 2009-06
@@ -153,9 +149,9 @@ BibOptions(check.entries = FALSE,
 
 # 研究兴趣
 
-* *比较政治学*: 语言政策，政治传播，公众舆论。
-* *方法论*: 调查实验，文本分析，网络分析。
-* *国际政治*: 公共外交，国际文化关系。
+* *比较政治*: 语言政治、经济与社会平等、政治传播。
+* *方法论*: 政治实验、空间分析、文本分析、网络分析。
+* *国际政治*: 公共外交、国际文化关系。
 
 # 发表
 ## 学术期刊
