@@ -132,8 +132,7 @@ BibOptions(check.entries = FALSE,
 ```
 
 
-# 教育背景
-## 学历
+# 教育经历
 * 美国爱荷华大学博士(政治学)\hfill 2018-05
 * 美国南卡罗来纳大学硕士(政治学)\hfill 2013-03
 * 加拿大里贾纳大学硕士(政治学)\hfill 2011-03
@@ -146,6 +145,11 @@ BibOptions(check.entries = FALSE,
 <!--     \includegraphics[width=0.3\textwidth]{vertical_YueHu.jpg} -->
 <!--     \end{center} -->
 <!-- \end{wrapfigure} -->
+
+# 工作经历
+* 清华大学政治系助理教授\hfill 2019-01-02/今
+* 美国爱荷华社会科学研究中心统计学顾问\hfill 2015-08/2018-05
+
 
 # 研究兴趣
 
@@ -184,18 +188,10 @@ bib[group = "underreview"]
 
 "The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
-
-# 工作职务
-* 美国爱荷华社会科学研究中心统计学顾问\hfill 2015-08/2018-05
-
 # 荣誉奖励
 * Ballard and Seashore 奖学金\hfill 2017
 * 爱荷华大学Post-Comprehensive研究奖\hfill 2016
 * T. Anne Cleary国际博士论文奖学金 \hfill 2016
-* 亚太研究中心博士论文研究奖金\hfill 2016
-* 爱荷华大学政治系最佳会议论文奖\hfill 2016
-* 里贾纳大学研究生科研奖金\hfill 2010 
-* 天津市政府奖学金\hfill 2008
 
 # 专业训练
 * 信息学辅修证书, 美国爱荷华大学\hfill 2016-12
@@ -251,28 +247,15 @@ bib[group = "underreview"]
     + 项目参与人及研究方法指导 \hfill 2017/06-2020/06
 
 
-# 研究经验
-## 数据收集
-* 网络调查实验\hfill 2017-02
-    + \footnotesize 问卷、实验设计及发布，有效数据944个。
-    
-* 实验室双盲实验 \hfill 2016-12
-    + \footnotesize adjusted match-guise实验设计及实施，有效数据421个.
-
-* 大数据级文本收集\hfill 2016
-    + \footnotesize 编程收集《人民日报》1946至2003年发表的所有文章, 文章数 1,371,607篇。
-
-## 助理研究员经历
-* 俄罗斯、乌克兰、格鲁吉亚三国腐败与政治研究 (爱荷华大学)\hfill 2015-2016
-* 收入差异标准化数据库项目 (爱荷华大学)\hfill 2015-05/06
-* 东亚国家公众调查项目 (南卡罗来纳大学)\hfill 2012-05/08 
-
-
 # 教学经历
 
-* 爱荷华大学： 任课教师（政治学研究设计、R语言与社会科学研究系列讲座），教学助理（比较政治学入门等）
-* 南卡罗来纳大学：教学助理（国际关系学、争论中的世界政治、比较政治：发展中国家等）
-* 里贾纳大学：教学助理（政治学入门）
+* 清华大学：
+    + 定量政治分析初步
+    + 公共政策
+    + 平等议题：理论与测量
+* 爱荷华大学： 
+    + 政治学研究设计
+    + R语言与社会科学研究系列讲座
 
 # 技能
 * 分析与编程: R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET

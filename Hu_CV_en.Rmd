@@ -13,7 +13,7 @@ author: Yue Hu
 
 address: "Mingzhai 114, Qinghua Yuan, Haidian District, Beijing 100084, China"
 fontawesome: yes
-email: yue-hu-1@uiowa.edu
+email: yuehu@tsinghua.edu.cn
 github: sammo3182
 web: sammo3182.github.io
 updated: false
@@ -135,10 +135,6 @@ BibOptions(check.entries = FALSE,
 # Education
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05
-    + \footnotesize Dissertation: "Rebuilding the Tower of Babel: Language Policy and Political Trust in China."
-        + Committee Chair: Wenfang Tang
-        + Committee Members: William M. Reisinger, Frederick Solt, Caroline J. Tolbert, and David Cassels Johnson (Education)
-        + Abstract: My dissertation explores how authoritarian governments use language policy to impact public political trust. Based on a comprehensive examination through survey analyses, experiments, and large-scale text analyses, my research demonstrates that authoritarian governments, such as in China, can use language policy as a political tool to influence citizens’ political attitudes. In particular, language policy empowers the official language used by government representatives, such as street-level bureaucrats, reinforcing their political identities and enhancing citizens’ trust in them. Using an original randomized experiment in China based on a new sociolinguistic technique, my research finds robust evidence that listeners hold significantly more trust in bureaucrats who speak the official language than in those who speak dialects, even if the respondent and government representative share the same dialect. Furthermore, my research shows that language not only influences citizens’ political trust but also their understanding of political concepts. Using a computer-assisted text analysis of over one million articles from the official newspaper of the dominant party of China from 1946-2003, I indicate a refocusing strategy by which the official discourse about democracy manipulates the meaning of democracy in the Chinese political language without contradicting with the Western democratic values, while simultaneously preserving the authoritarian regime. Drawing on multiple waves of nationally representative surveys from China, my dissertation also identifies distinctive effects of improving listening, speaking, and relative proficiencies of Putonghua on Chinese citizens’ political interest, efficacy, pursuit, and institutional-based political trust. This study contributes to political science, and even the entire social science by justifying the important role of language in human social and political lives and turning the research focus from language content to language context.
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-12
 * M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
 * LL.B. in International Politics, Nankai University, China\hfill 2009-06
@@ -148,11 +144,12 @@ BibOptions(check.entries = FALSE,
 * Experimental Methods, National University of Singapore (IPSA), Singapore \hfill 2014-06/07
 
 # Professional Positions
-* Statistical Consultant, Iowa Social Science Research Center, University of Iowa. 2015-08/2018-05
+* Assistant Professor, Department of Political Science, Tsinghua University. \hfill 2019-01/present
+* Statistical Consultant, Iowa Social Science Research Center, University of Iowa. \hfill 2015-08/2018-05
 
 # Research Interests
-* *Comparative Politics*: Language policy, political communication, inequality.
-* *Political Methodology*: Survey experiment, text analysis, network analysis, spatial analysis.
+* *Comparative Politics*: Language politics, inequality, political communication.
+* *Political Methodology*: Political experiment, text analysis, spatial analysis, network analysis.
 * *International Relations*: Soft power, public diplomacy, Chinese foreign policy.
 
 # Publications
@@ -241,26 +238,23 @@ bib[group = "underreview"]
 
 # Teaching Experience
 
-## Instructor, University of Iowa
+## University of Tsinghua
 
-* Designing Political Research\hfill Fall 2017
-* Math Camp for Incoming Graduate Students (with Jielu Yao)\hfill Summer 2017
-* Introduction to R Workshop Series\hfill 2015-2017
-* Multilevel Modeling with Stata and R\hfill 2016-2017
-* Math Camp for Incoming Graduate Students (with Shuai Jin)\hfill Summer 2016
+* Introduction to Quantitative Political Analysis
+* Public Policy
+* Inequality: Theories and Measurements
 
-## Guest Lecture, University of South Carolina
-* Comparative Politics-Developing Countries\hfill Spring 2012
-* National Security of United States\hfill Fall 2011
+## University of Iowa
+
+* Designing Political Research
+* Math Camp for Incoming Graduate Students 
+* "Hello, R!" Workshop Series
+
 
 # Grants
 * Ballard and Seashore Fellowship\hfill 2017
 * Post-Comprehensive Research Award\hfill 2016
 * T. Anne Cleary International Dissertation Research Fellowship\hfill 2016
-* Center of Asian and Pacific Studies Graduate Dissertation Grant\hfill 2016
-* Best Conference Paper Award of Department of Political Science\hfill 2016
-* Graduate Research Award, University of Regina\hfill 2010 
-* City Administration Scholarship, Tianjin Municipal People’s Government\hfill 2008
 
 
 # Professional Affiliation
