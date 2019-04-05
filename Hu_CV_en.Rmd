@@ -136,7 +136,7 @@ BibOptions(check.entries = FALSE,
 ## Degree
 * Ph.D. in Political Science, The University of Iowa, U.S.A.\hfill 2018-05
 * M.A. in Political Science, The University of South Carolina, U.S.A.\hfill 2013-12
-* M.A. in Political Science, The University of Regina, Canada\hfill 2011-03
+* M.A. in Political Science, The University of Regina, Canada\hfill 2011-06
 * LL.B. in International Politics, Nankai University, China\hfill 2009-06
 
 ## Additional Training
