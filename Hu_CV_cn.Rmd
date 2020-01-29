@@ -26,105 +26,11 @@ photo: verticalYueHu.jpg
 
 ```{r setup, include=FALSE}
 library(RefManageR)
-ajps_mimic <- RefManageR:::MakeBibLaTeX()
-with(ajps_mimic,{
-  ajps_mimic$fmtJournal <- function(s){
-                                if (length(s$journaltitle)) {
-                                    res <- emph(cleanupLatex(s$journaltitle))
-                                    if (length(s$journalsubtitle))
-                                        res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
-                                    return(res)
-                                }
-                                else if (!is.null(s$journal)) {
-                                    emph(cleanupLatex(s$journal))
-                                }
-     }
-     
-     ajps_mimic$fmtURL <- function (paper) {
-        if (length(paper[["url"]])) {
-            res <- paper$url
-            res <- switch(docstyle, html = paste0("\\url{", 
-                res, "}"), markdown = paste0("[", res, "](", 
-                res, ")"), paste0("\\url{", res, "}"))
-            if (length(paper$urldate)) {
-                fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
-                if (!is.null(fDate) && !inherits(fDate, "try-error")) 
-                    res <- paste0(res, " (visited on ", DateFormatter(fDate, 
-                      TRUE), ")")
-            }
-            addPeriod(res)
-        }
-        else if (length(paper$urldate)) {
-            fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
-            if (!is.null(fDate) && !inherits(fDate, "try-error")) 
-                paste0("(Visited on ", DateFormatter(fDate, TRUE), 
-                    ").")
-        }
-     }
-     
-     ajps_mimic$fmtLanguage <- function(lang) {
-    if (length(lang) && tolower(lang) != "english") 
-        paste0("[", sub("\\b(\\w)", "\\U\\1", lang, perl = TRUE, 
-            useBytes = TRUE),"]")
-       }
-     
-     ajps_mimic$formatArticle <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
-        fmtAddOn(paper$titleaddon),
-        fmtTranslator(paper), fmtCommentator(paper$commentator), 
-        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
-        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
-            collapse = ""), fmtVolume(paper$volume, paper$number), 
-            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
-            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
-            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
-            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
-            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
-        fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatArticle <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
-        fmtAddOn(paper$titleaddon),
-        fmtTranslator(paper), fmtCommentator(paper$commentator), 
-        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
-        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
-            collapse = ""), fmtVolume(paper$volume, paper$number), 
-            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
-            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
-            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
-            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
-            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
-        fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatUnpublished <- function (paper) {
-        collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
-            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
-            fmtHowPublished(paper$howpublished), fmtNote(paper$note), 
-            sentence(fmtPublisher(NULL, paper$location, paper$address), sep = ""), fmtDOI(paper$doi), 
-            fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatMisc <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
-            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
-        fmtEditor(paper, !length(paper$author)), fmtHowPublished(paper$howpublished), 
-        addPeriod(fmtType(paper$type)), fmtVersion(paper$version), 
-        fmtNote(paper$note), sentence(fmtPublisher(paper$organization, 
-            paper$location, paper$address), fmtDate(attr(paper, 
-            "dateobj")), sep = ""), fmtDOI(paper$doi), fmtEprint(paper), 
-        fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
-}
-})
 
-
-tools::bibstyle("ajps_mimic", ajps_mimic)
-
-bib <- ReadBib("publication.bib", check = FALSE)
+bib <- ReadBib("My_Publications.bib", check = FALSE)
 BibOptions(check.entries = FALSE, 
            first.inits = FALSE,
-           bib.style = "ajps_mimic",
+           bib.style = "authoryear",
            style = "latex",
            max.names = 4,
            dashed = FALSE,
@@ -160,7 +66,7 @@ BibOptions(check.entries = FALSE,
 # 发表
 ## 学术期刊
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"]
+bib[bibtype = "article"]
 ```
 
 胡悦和朱毓朝：《'问题与主义’ 导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。 
@@ -171,22 +77,15 @@ bib[group = "published"]
 
 ## 研发软件
 ```{r echo = FALSE, results = "asis"}
-bib[group = "software"]
-```
-
-## 期刊在审
-
-```{r echo = FALSE, results = "asis"}
-bib[group = "underreview"]
+bib[bibtype = "misc"]
 ```
 
 ## 工作论文
 
-"Measure Political Desirability: An Experimental Method" (with Wenfang Tang).
+```{r echo = FALSE, results = "asis"}
+bib[bibtype = "unpublished"]
+```
 
-"The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
-
-"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
 
 # 荣誉奖励
 * Ballard and Seashore 奖学金\hfill 2017
@@ -206,6 +105,12 @@ bib[group = "underreview"]
 
 # 会议活动
 
+* 2019
+    + "Breaking Through the Linguistic Barrier: The Role of Language Policy in Migration Decisions."
+        + \footnotesize American Political Science Association (APSA) Annual Meeting, Washington D.C., Aug. 29--Sep. 01.
+    + "Visualization and Going Against P-Hacking."
+        + \footnotesize China R Conference, Beijing, May 25--26.
+        
 * 2018
     + "Measuring the Influence of Language in Political Science Research."
         + \footnotesize St. Louis Area Methods Meeting (SLAMM), Ames, Iowa, Apr. 20.
@@ -250,9 +155,9 @@ bib[group = "underreview"]
 # 教学经历
 
 * 清华大学：
-    + 定量政治分析初步
-    + 公共政策
-    + 平等议题：理论与测量
+    + 治理技术专题：政治数据分析
+    + 公共政策分析：视角与方法
+    + 政务大数据应用与分析
 * 爱荷华大学： 
     + 政治学研究设计
     + R语言与社会科学研究系列讲座

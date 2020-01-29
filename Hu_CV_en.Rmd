@@ -26,105 +26,11 @@ urlcolor: blue
 
 ```{r setup, include=FALSE}
 library(RefManageR)
-ajps_mimic <- RefManageR:::MakeBibLaTeX()
-with(ajps_mimic,{
-  ajps_mimic$fmtJournal <- function(s){
-                                if (length(s$journaltitle)) {
-                                    res <- emph(cleanupLatex(s$journaltitle))
-                                    if (length(s$journalsubtitle))
-                                        res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
-                                    return(res)
-                                }
-                                else if (!is.null(s$journal)) {
-                                    emph(cleanupLatex(s$journal))
-                                }
-     }
-     
-     ajps_mimic$fmtURL <- function (paper) {
-        if (length(paper[["url"]])) {
-            res <- paper$url
-            res <- switch(docstyle, html = paste0("\\url{", 
-                res, "}"), markdown = paste0("[", res, "](", 
-                res, ")"), paste0("\\url{", res, "}"))
-            if (length(paper$urldate)) {
-                fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
-                if (!is.null(fDate) && !inherits(fDate, "try-error")) 
-                    res <- paste0(res, " (visited on ", DateFormatter(fDate, 
-                      TRUE), ")")
-            }
-            addPeriod(res)
-        }
-        else if (length(paper$urldate)) {
-            fDate <- try(ProcessDate(paper$urldate, NULL), TRUE)
-            if (!is.null(fDate) && !inherits(fDate, "try-error")) 
-                paste0("(Visited on ", DateFormatter(fDate, TRUE), 
-                    ").")
-        }
-     }
-     
-     ajps_mimic$fmtLanguage <- function(lang) {
-    if (length(lang) && tolower(lang) != "english") 
-        paste0("[", sub("\\b(\\w)", "\\U\\1", lang, perl = TRUE, 
-            useBytes = TRUE),"]")
-       }
-     
-     ajps_mimic$formatArticle <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
-        fmtAddOn(paper$titleaddon),
-        fmtTranslator(paper), fmtCommentator(paper$commentator), 
-        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
-        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
-            collapse = ""), fmtVolume(paper$volume, paper$number), 
-            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
-            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
-            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
-            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
-            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
-        fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatArticle <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper$title), fmtLanguage(paper$language), 
-        fmtAddOn(paper$titleaddon),
-        fmtTranslator(paper), fmtCommentator(paper$commentator), 
-        fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
-        sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
-            collapse = ""), fmtVolume(paper$volume, paper$number), 
-            fmtJournDate(paper)), collapse = " "), fmtBTitle(paper$issuetitle, 
-            paper$issuesubtitle), fmtEditor(paper, suffix = NULL, 
-            prefix = ". "), fmtNote(paper$note, prefix = ". ", 
-            suffix = NULL), pgs = fmtPages(paper$pages, paper$pagination), 
-            sep = ""),fmtURL(paper), fmtAddendum(paper$addendum), 
-        fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatUnpublished <- function (paper) {
-        collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
-            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
-            fmtHowPublished(paper$howpublished), fmtNote(paper$note), 
-            sentence(fmtPublisher(NULL, paper$location, paper$address), sep = ""), fmtDOI(paper$doi), 
-            fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
-     }
-     
-     ajps_mimic$formatMisc <- function (paper) {
-    collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtIBTitle(paper$title, 
-            paper$subtitle, FALSE), fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
-        fmtEditor(paper, !length(paper$author)), fmtHowPublished(paper$howpublished), 
-        addPeriod(fmtType(paper$type)), fmtVersion(paper$version), 
-        fmtNote(paper$note), sentence(fmtPublisher(paper$organization, 
-            paper$location, paper$address), fmtDate(attr(paper, 
-            "dateobj")), sep = ""), fmtDOI(paper$doi), fmtEprint(paper), 
-        fmtURL(paper), fmtAddendum(paper$addendum), fmtPubstate(paper$pubstate)))
-}
-})
 
-
-tools::bibstyle("ajps_mimic", ajps_mimic)
-
-bib <- ReadBib("publication.bib", check = FALSE)
+bib <- ReadBib("My_Publications.bib", check = FALSE)
 BibOptions(check.entries = FALSE, 
            first.inits = FALSE,
-           bib.style = "ajps_mimic",
+           bib.style = "authoryear",
            style = "latex",
            max.names = 4,
            dashed = FALSE,
@@ -150,13 +56,15 @@ BibOptions(check.entries = FALSE,
 # Research Interests
 * *Comparative Politics*: Language politics, inequality, political communication.
 * *Political Methodology*: Political experiment, text analysis, spatial analysis, network analysis.
-* *International Relations*: Soft power, public diplomacy, Chinese foreign policy.
+
 
 # Publications
 ## Peer-Reviewed Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[group = "published"]
+bib[bibtype = "article"]
 ```
+
+\vspace{\baselineskip}
 
 ## Journal Articles in Chinese
 Yue Hu and Yuchao Zhu. “‘Issue-Oriented’ vs. ‘Ism-Oriented’: Indigenizing Political Science in China?”. *Tianjin Social Science* 3 (2011), pp. 46-50. (胡悦和朱毓朝：《"问题与主义"导向之争: 西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
@@ -167,25 +75,20 @@ Tongshun Cheng and Yue Hu. “The Cultural Props of Foreign Policy”. *Tribune 
 Yue Hu. “An Analysis of Politics Fixed Position of CPPCC from the Political Scientific Angle”. *Journal of Tianjin Institute of Socialism* (2009), pp. 19--23.
 (《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》 2009年第1期，第19-23页。)
 
+\vspace{\baselineskip}
+
 ## Software
 ```{r echo = FALSE, results = "asis"}
-bib[group = "software"]
+bib[bibtype = "misc"]
 ```
+
+\vspace{\baselineskip}
 
 ## Under Review
 
 ```{r echo = FALSE, results = "asis"}
-bib[group = "underreview"]
+bib[bibtype = "unpublished"]
 ```
-
-## Working Projects
-
-"Measure Political Desirability: An Experimental Method" (with Wenfang Tang).
-
-"The Logic of Peaceful Rise: Revisiting the Power-Peace Relationship in International Politics" (with Ray Ou-Yang)
-
-"The Popularity of Political Propaganda in Modern China: A Model of Demands" (with Zijie Shao).
-
 
 # Invited Talks
 
@@ -196,11 +99,16 @@ bib[group = "underreview"]
 
 # Conferences
 
+* 2019
+    + "Breaking Through the Linguistic Barrier: The Role of Language Policy in Migration Decisions."
+        + \footnotesize American Political Science Association (APSA) Annual Meeting, Washington D.C., Aug. 29--Sep. 01.
+    + "Visualization and Going Against P-Hacking."
+        + \footnotesize China R Conference, Beijing, May 25--26.
 * 2018
     + "Measuring the Influence of Language in Political Science Research."
         + \footnotesize St. Louis Area Methods Meeting (SLAMM), Ames, Iowa, Apr. 20.
     + "Rebuilding the Tower of Babel? The Influence of Language Policy on Political Trust."
-        + \footnotesize Midwest Political Science Association (MPSA) Annual Convention,  Chicago, Illinois, Apr. 5--8.
+        + \footnotesize Midwest Political Science Association (MPSA) Annual Convention, Chicago, Illinois, Apr. 5--8.
 
 * 2017
     + "Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust."
@@ -240,9 +148,9 @@ bib[group = "underreview"]
 
 ## University of Tsinghua
 
-* Introduction to Quantitative Political Analysis
-* Public Policy
-* Inequality: Theories and Measurements
+* Analysis of Political Data
+* Analysis of Public Policy: Perspectives and Methods
+* Governmental Big Data
 
 ## University of Iowa
 
@@ -258,7 +166,7 @@ bib[group = "underreview"]
 
 
 # Professional Affiliation
-* Member of American Political Science Association (& Political Communication Section).
+* Member of American Political Science Association.
 * Member of Midwest Political Science Association.
 * Member of Association of Chinese Political Science
 * Member of American Association for Chinese Studies.
