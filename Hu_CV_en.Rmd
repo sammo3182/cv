@@ -1,7 +1,6 @@
 ---
 output: 
   rticles::ctex:
-  ## pdf_document:
     keep_tex: yes
     template: svm-latex-cv.tex
 geometry: margin=1in
@@ -61,7 +60,8 @@ BibOptions(check.entries = FALSE,
 # Publications
 ## Peer-Reviewed Journal Articles
 ```{r echo = FALSE, results = "asis", warning=FALSE}
-bib[bibtype = "article"]
+bib[bibtype = "article", 
+    language = "en"]
 ```
 
 \vspace{\baselineskip}
@@ -84,11 +84,6 @@ bib[bibtype = "misc"]
 
 \vspace{\baselineskip}
 
-## Under Review
-
-```{r echo = FALSE, results = "asis"}
-bib[bibtype = "unpublished"]
-```
 
 # Invited Talks
 
