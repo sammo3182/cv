@@ -50,6 +50,7 @@ BibOptions(check.entries = FALSE,
 
 # Professional Positions
 * Assistant Professor, Department of Political Science, Tsinghua University. \hfill 2019-01/present
+    + Deputy Director, Center on Data and Governance of Tsinghua University.
 * Statistical Consultant, Iowa Social Science Research Center, University of Iowa. \hfill 2015-08/2018-05
 
 # Research Interests
