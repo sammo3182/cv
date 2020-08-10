@@ -1,0 +1,496 @@
+---
+title: "Yue Hu's resume"
+author: Yue Hu
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: True
+---
+
+Aside
+================================================================================
+
+联系方式 {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> yuehu@tsinghua.edu.cn
+- <i class="fa fa-github"></i> [sammo3182](https://github.com/sammo3182)
+- <i class="fas fa-globe-asia"></i> [sammo3182.github.io](https://sammo3182.github.io/)
+- <i class="fa fa-home"></i> 北京市海淀区清华大学明斋114, 邮编:100084
+
+技能
+--------------------------------
+**分析与编程**
+
+R, Stata, Python, C++, Mathematica, NetLogo, JAGS, UCINET
+
+**应用**
+
+LaTeX, Markdown, Git(GitHub)
+
+
+研究兴趣
+-----------------------------
+
+**比较政治**：语言政治、经济与社会平等、政治传播
+
+**方法论**：政治实验、空间分析、文本分析、网络分析
+
+**国际政治**：公共外交、国际文化关系
+
+
+Main
+================================================================================
+
+胡悦{#title}
+--------------------------------------------------------------------------------
+
+教育经历 {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### 美国爱荷华大学博士（政治学）
+
+N/A
+
+N/A
+
+2018-05
+
+### 美国南卡罗来纳大学硕士(政治学)
+
+N/A
+
+N/A
+
+2013-12
+
+### 加拿大里贾纳大学硕士(政治学)
+
+N/A
+
+N/A
+
+2011-06
+
+### 南开大学学士(国际关系)
+
+N/A
+
+N/A
+
+2009-06
+
+工作经历 {data-icon=suitcase}
+-------------------------------------------------------------------------------
+### 清华大学政治系助理教授
+
+N/A
+
+N/A
+
+2019-01 - 今
+
+### 美国爱荷华社会科学研究中心统计学顾问
+
+N/A
+
+N/A
+
+2015-08 - 2018-05
+
+
+学术期刊发表 {data-icon=file}
+-------------------------------
+
+### Culture Marker Versus Authority Marker: How Do Language Attitudes Affect Political Trust?
+
+Political Psychology Early View, p. Forthcoming
+
+N/A
+
+2020
+
+Hu, Yue
+
+### The Effects of Foreign Language Proficiency on Public Attitudes: Evidence from the Chinese-Speaking World
+
+Journal of East Asian Studies 20.1
+
+N/A
+
+N/A
+
+**Hu, Yue**, Amy H. Liu
+
+### Are Informal Education Facilities Effective Means for Generating Political Support? A Spatial Analysis
+
+Social Science Quarterly 100.3
+
+N/A
+
+2019
+
+Hu, Yue
+
+### Refocusing Democracy: The Chinese Government’s Framing Strategy in Political Language
+
+Democratization 72.2
+
+N/A
+
+N/A
+
+Hu, Yue
+
+### Tsar Putin and the ‘Corruption’ Thorn in His Side: The Demobilization of Votes in a Competitive Authoritarian Regime
+
+Electoral Studies 54
+
+N/A
+
+2018
+
+Claypool, Vicki Hesli, William Reisinger, Marina Zaloznaya, **Yue Hu**
+
+### Economic Inequality and Class Consciousness
+
+The Journal of Politics 79.3,
+
+N/A
+
+2017
+
+Solt, Frederick, **Yue Hu**, Kevan Hudson, Jungmin Song, et al.
+
+### Economic Inequality and Belief in Meritocracy in the United States
+
+Research & Politics 3.4
+
+N/A
+
+2016
+
+Solt, Frederick, **Yue Hu**, Kevan Hudson, Jungmin Song, et al.
+
+### Aﬀirmative Inaction: Language Education and Labor Mobility among China’s Muslim Minorities
+
+Chinese Sociological Review 48.4
+
+N/A
+
+N/A
+
+Tang, Wenfang, **Yue Hu**, and Shuai Jin
+
+### Institutional Difference and Cultural Difference: A Comparative Study of Canadian and Chinese Cultural Diplomacy
+
+Journal of American-East Asian Relations 20.2-3
+
+N/A
+
+2013
+
+Hu, Yue
+
+### 《“问题与主义” 导向之争: 西方比较政治学沿革及其借鉴意义》
+
+《天津社会科学》2011 年第 3 期
+
+N/A
+
+2011
+
+胡悦，朱毓朝 
+
+### 《对外政策的文化道具:浅析文明冲突论的工具性》
+
+《学习论坛》2010 年第 26 期
+
+N/A
+
+2010
+
+程同顺,胡悦 
+
+### 《从政治科学角度分析人民政协的政治定位》
+
+《天津市社会主义学院学报》2009 年第 1 期
+
+N/A
+
+2009
+
+胡悦 
+
+研发软件 {data-icon=file}
+-------------------
+### Pewdata: Reproducible Retrieval of Pew Research Center Datasets. Available at The Comprehensive R Archive Network (CRAN)
+
+http://CRAN.R-project.org/package=pewdata.
+
+N/A
+
+2016
+
+Solt, Frederick and **Yue Hu**
+
+### Dotwhisker: Dot-and-Whisker Plots of Regression Results. Available at The Comprehensive R Archive Network
+
+http://CRAN.R-project.org/package=dotwhisker
+
+N/A
+
+2015
+
+
+Solt, Frederick and **Yue Hu**
+
+### Interplot: Plot the Effects of Variables in Interaction Terms. Available at The Comprehensive R Archive Network
+
+http://CRAN.R-project.org/package=interplot
+
+N/A
+
+2015
+
+Solt, Frederick and **Yue Hu**
+
+工作论文 {data-icon=file}
+-------------------------------------
+### How to Design a Reliable List Experiment: An Empirical View
+
+N/A
+
+N/A
+
+2016
+
+Hu, Yue and Wenfang Tang
+
+### Measure Political Desirability: An Experimental Method
+
+N/A
+
+N/A
+
+2016
+
+Hu,Yue and Wenfang Tang
+
+荣誉奖励 {data-icon=award}
+-------
+### Ballard and Seashore 奖学金
+
+N/A
+
+N/A
+
+2017
+
+### 爱荷华大学 Post-Comprehensive 研究奖
+
+N/A
+
+N/A
+
+2016
+
+### T. Anne Cleary 国际博士论文奖学金
+
+N/A
+
+N/A
+
+N/A
+
+专业训练 {data-icon=book data-concise=true}
+--------------------------------------------------------------------------------
+### 信息学辅修证书
+
+N/A
+
+美国爱荷华大学
+
+2016-12
+
+### 实验研究方法
+
+N/A
+
+新加坡国立大学
+
+2014-06/07
+
+
+特邀讲座 {data-icon=file}
+------------------------
+### Culture Marker vs. Authority Marker: How Does Language Attitude Affect Political Trust?
+
+N/A
+
+中山大学，广州，1月3日
+
+2018
+
+### 对社会经济不平等问题的实证研究：策略与方法
+
+N/A
+
+南开大学，天津，6月25日
+
+2017
+
+会议活动 {data-icon=microphone}
+------------------------
+### Breaking Through the Linguistic Barrier: The Role of Language Policy in Migration Decisions.
+
+American Political Science Association (APSA) Annual Meeting
+
+Washington D.C., Aug. 29--Sep. 01
+
+2019
+
+### Visualization and Going Against P-Hacking.
+
+China R Conference
+
+Beijing, May 25--26
+
+N/A
+
+### Measuring the Influence of Language in Political Science Research
+
+St. Louis Area Methods Meeting (SLAMM)
+
+Ames, Iowa, Apr. 20
+
+2018
+
+### Rebuilding the Tower of Babel? The Influence of Language Policy on Political Trust
+
+Midwest Political Science Association (MPSA) Annual Convention
+
+Chicago, Illinois, Apr. 5--8
+
+N/A
+
+### Cultural Accent vs. Authority Accent: How Does Language Attitude Affect Political Trust.
+
+:::concise
+- 中国政治研究年会 (ACPS)，天津，6月9–11日
+- 中国政治科学研究与方法工作坊，上海，7月8–9日
+- “政治文化、心理与行为研究” 工作坊，南京，7月9–11日
+:::
+
+N/A
+
+\ 
+
+2017
+
+### The Weight of History: Explaining the Anti-Japanese Sentiments in the Chinese Circle (with Amy Liu)
+
+美国中西部政治学会 (MPSA)
+
+芝加哥，伊利诺伊，4月7–9日
+
+N/A
+
+### The Popularity of Political Propaganda in Modern China: A Model of Demands (with Zijie Shao)
+
+美国中西部政治学会 (MPSA)
+
+芝加哥，伊利诺伊，4月7–9日
+
+N/A
+
+### The Logic of Peaceful Rise (with Ray Ou-Yang)
+
+:::consice
+- 美国中西部政治学会 (MPSA)，芝加哥，伊利诺伊，4月7–9日
+- 国际研究年会 (ISA)，巴尔的摩，马里兰，4月22–25日
+:::
+
+N/A
+
+### Measure Political Desirability: A List Experimental Method(with Wenfang Tang); Propaganda with Museums: A Spatial Analysis of Patriotic Educational Demonstration Bases in China.
+
+中国政治研究年会 (ACPS)
+
+蒙特利，加利福尼亚，10月10–11日
+
+2016
+
+### Value Promotion, Justification, or Mobilization? The Dynamic of the Discourse on Democracy in Modern China.
+
+美国中西部政治学会 (MPSA)
+
+芝加哥，伊利诺伊，4月7-10日
+
+N/A
+
+### Affirmative Inaction: Education, Social Mobility, and Ethnic Inequality in China (with Wenfang Tang and Shuai Jin); Language and Political Trust.
+
+美国中西部政治学会 (MPSA)
+
+芝加哥，伊利诺伊，4月16–19日
+
+2015
+
+### Connecting Nationalism and Political Transition:A Study of Nationalist Influence on Political Transition based on the China Case
+
+南卡罗莱纳达研究生学会年会
+
+哥伦比亚，南卡罗来纳
+
+2013
+
+### Twofold-Affecting Model: A Cultural Pattern of Social Change from a Comparative Study between the China and Russia Cases
+
+美国中国研究年会 (AACS)
+
+奥特兰，佐治亚，10 月 12-14 日
+
+2012
+
+教学经历 {data-icon=chalkboard}
+---------
+### 清华大学
+
+:::concise
+- 治理技术专题:政治数据分析
+- 公共政策分析:视角与方法
+- 政务大数据应用与分析
+:::
+
+N/A
+
+
+### 爱荷华大学
+
+:::concise
+- 政治学研究设计
+- R 语言与社会科学研究系列讲座
+:::
+
+N/A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
