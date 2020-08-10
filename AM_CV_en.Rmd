@@ -3,13 +3,21 @@ title: "Yue Hu's resume"
 author: Yue Hu
 date: "`r Sys.Date()`"
 output:
-  pagedown::html_resume:
+    pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: True
 ---
 
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  background: white;
+}
+```
+
 Aside
 ================================================================================
+
+<i class="fas fa-download"></i> Download this resume in [PDF](https://github.com/sammo3182/cv/raw/master/Yue%20Hu%E2%80%99s%20resume.pdf)  version.
 
 Contact Info {#contact}
 --------------------------------------------------------------------------------

@@ -8,8 +8,14 @@ output:
     self_contained: True
 ---
 
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  background: white;
+}
+```
 Aside
 ================================================================================
+<i class="fas fa-download"></i> Download this resume in [PDF](https://github.com/sammo3182/cv/raw/master/Yue%20Hu%E2%80%99s%20resume_cn.pdf)  version.
 
 联系方式 {#contact}
 --------------------------------------------------------------------------------
