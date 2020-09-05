@@ -1,0 +1,60 @@
+---
+name: Yue Hu
+position: ""
+address: "Mingzhai 114, Qinghua Yuan, Haidian District, Beijing 100084, China"
+www: sammo3182.github.io
+email: yuehu@tsinghua.edu.cn
+github: sammo3182
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "000000"
+output: 
+  vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE,
+                      message = FALSE)
+source("../script/install.R")
+```
+
+```{r get data, include=FALSE}
+## Education
+edu <- read_csv(here("data", "education_AM.csv"))
+
+## jobs
+ProfessionalPositions <- read_csv(here::here("data", "Professional Positions_AM.csv"))
+
+```
+
+# Education
+```{r Education}
+detailed_entries(edu, 
+                 when = end,
+                 what = uni,
+                 where = loc,
+                 with = degree)
+
+```
+
+# Professional Positions
+```{r ProfessionalPositions}
+ProfessionalPositions %>% 
+  detailed_entries(
+    what = company,
+    when = glue("{start_date}--{end_date}"),
+    with = role,
+    where = where,
+    why = details)
+```
+
+
+
+
+
+
+
+
+
+
+
