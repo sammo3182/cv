@@ -10,8 +10,8 @@ p_load(lubridate)
 p_load(here)
 p_load(readxl)
 p_load(glue)
-p_load(bib2df)
-
+p_load(bibtex)
+p_load(rorcid)
 
 # Get latex ---------------------------------------------------------------
 
