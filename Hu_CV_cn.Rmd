@@ -53,7 +53,7 @@ BibOptions(check.entries = FALSE,
 <!-- \end{wrapfigure} -->
 
 # 工作经历
-* 清华大学政治系助理教授\hfill 2019-01-02/今
+* 清华大学政治系助理教授, 博士生导师\hfill 2019-01-02/今
     + 清华大学数据治理研究中心副主任
 * 美国爱荷华社会科学研究中心统计学顾问\hfill 2015-08/2018-05
 
@@ -82,11 +82,11 @@ bib[bibtype = "article",
 bib[bibtype = "misc"]
 ```
 
-## 工作论文
+<!-- ## 工作论文 -->
 
-```{r echo = FALSE, results = "asis"}
-bib[bibtype = "unpublished"]
-```
+<!-- ```{r echo = FALSE, results = "asis"} -->
+<!-- bib[bibtype = "unpublished"] -->
+<!-- ``` -->
 
 
 # 荣誉奖励
