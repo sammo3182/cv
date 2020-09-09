@@ -8,14 +8,19 @@ github: sammo3182
 twitter: yuehupolisci
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
-output: 
-  vitae::awesomecv
+output: vitae::awesomecv
+header-includes:
+- \usepackage{ctex}
+
+  
+  
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE,
-                      message = FALSE)
+                      message = FALSE,
+                      encoding = "UTF-8")
 source("../script/install.R")
 
 ```
@@ -25,19 +30,19 @@ source("../script/install.R")
 orcidID<-"0000-0002-2829-3971"
 
 ## Education
-edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries
+df_edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
+  rbindlist(fill=T)
 
-edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
+### edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
 
-df_edu<-rbind(edu[[1]][edu_info],edu[[2]][edu_info],edu[[3]][edu_info])
+
 
 ## Qualifications
 
-qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries
+df_qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
+  rbindlist(fill=T)
 
-qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
-
-df_qualifications<-rbind(qualifications[[1]][qualifications_info],qualifications[[2]][qualifications_info])
+### qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
 
 ## jobs
 ProfessionalPositions <- orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
@@ -46,28 +51,46 @@ for (i in 1:length(ProfessionalPositions)) {
   if(length(ProfessionalPositions[[i]])==27)
       {ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <- "Present"
       ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <- ""}
-    
 }
 
-position_info<-c("employment-summary.role-title","employment-summary.organization.name","employment-summary.organization.address.country","employment-summary.start-date.year.value","employment-summary.start-date.month.value","employment-summary.end-date.year.value","employment-summary.end-date.month.value")
-
-df_position<-rbind(ProfessionalPositions[[1]][position_info],ProfessionalPositions[[2]][position_info])
-
+df_position<-rbindlist(ProfessionalPositions,fill = T)
 
 
 ## works
+benchmark_orcid <- function(id) {
+  tictoc::tic()
 
-list_works_raw <- rorcid::orcid_works(orcidID)
-df_works<-orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[["0000-0002-2829-3971"]][["works"]]
-bib_citations<-orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[[1]]$works$`work.citation.citation-value`
-authors<-str_extract(bib_citations,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
-  as.data.frame()
-works<-cbind(df_works,authors)
-names(works)[30]<-"authors"
+  # Get put-codes
+  put_codes = orcid_works(id)[[1]] %>%  
+    bind_rows() %>% 
+    pull(`put-code`)
+
+  # Get info of those put codes
+  list_orcid <- orcid_works(id, put_code = put_codes) #%>% bind_rows()
+  cat(id, " - ")
+
+  tictoc::toc()
+
+  list_orcid
+}
+
+works_raw<-benchmark_orcid(orcidID)[[orcidID]][["works"]]
+df_works <-within(works_raw,{
+  authors<-NA
+  authors <- str_extract(`work.citation.citation-value`,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
+    str_replace_all(c("\\{"="","\\}"=""))
+})
 
 ##membership
+df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
+  rbindlist(fill=T)
+# membership_info <- c("membership-summary.organization.name","membership-summary.organization.address.country")
 
-df_membership <- orcid_memberships(orcidID)
+#Grants
+
+df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
+  rbindlist(fill = T)
+
 ```
 
 # Education and Qualifications
@@ -107,31 +130,67 @@ df_position %>%
 # Publications
 **Peer-Reviewed Journal Articles**
 ```{r PeerReview}
-works %>%
+df_works %>%
   filter(work.type=="journal-article")%>%
   arrange(desc(`work.publication-date.year.value`))%>%
   detailed_entries(
     with=`work.title.title.value`,
-    where=`work.journal-title.value`,
+    what=`work.journal-title.value`,
     when=`work.publication-date.year.value`,
-    what=authors
+    where=authors
   )
 
 ```
 
 **Software**
 ```{r Software}
-works %>%
+df_works %>%
   filter(work.type=="software"|work.type=="other")%>%
   arrange(desc(`work.publication-date.year.value`))%>%
   detailed_entries(
-    with=`work.title.title.value`,
-    where=`work.journal-title.value`,
-    when=`work.publication-date.year.value`,
-    what=authors
+    with =`work.title.title.value`,
+    where =`work.journal-title.value`,
+    when =`work.publication-date.year.value`,
+    what = authors
   )
 
 ```
+
+# Conferences
+```{r conferences}
+df_works %>%
+  filter(work.type=="conference-paper")%>%
+  arrange(desc(`work.publication-date.year.value`))%>%
+  detailed_entries(
+    with=`work.title.title.value`,
+    what=`work.journal-title.value`,
+    when=`work.publication-date.year.value`,
+    where=authors 
+  )
+```
+
+
+# Grants
+```{r grants}
+df_grants%>%
+  detailed_entries(
+    with = `distinction-summary.role-title`,
+    what = `distinction-summary.organization.name`,
+    when = `distinction-summary.start-date.year.value`,
+    )
+```
+
+
+# Professional Affiliation
+```{r ProfessionalAffilication}
+df_membership%>%
+  detailed_entries(
+    with = `membership-summary.organization.name`,
+    where = `membership-summary.organization.address.country`
+  )
+```
+
+
 
 
 

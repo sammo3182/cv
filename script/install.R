@@ -12,6 +12,9 @@ p_load(readxl)
 p_load(glue)
 p_load(bibtex)
 p_load(rorcid)
+p_load(data.table)
+p_load(RefManageR)
+p_load(tictoc)
 
 # Get latex ---------------------------------------------------------------
 
