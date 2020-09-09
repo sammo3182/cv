@@ -149,9 +149,9 @@ df_works %>%
   arrange(desc(`work.publication-date.year.value`))%>%
   detailed_entries(
     with =`work.title.title.value`,
-    where =`work.journal-title.value`,
+    what =`work.journal-title.value`,
     when =`work.publication-date.year.value`,
-    what = authors
+    where = authors
   )
 
 ```
