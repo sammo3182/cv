@@ -9,61 +9,110 @@ twitter: yuehupolisci
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
 output: 
-  vitae::awesomecv
+  vitae::awesomecv:
+    keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE,
                       message = FALSE)
-source("../script/install.R")
+
+# R packages --------------------------------------------------------------
+if (!require(pacman)) install.packages("pacman"); library(pacman)
+
+p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
+p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate)
+
+
+# Get latex ---------------------------------------------------------------
+
+## This needs to be run manually if LaTex is not installed locally.
+##tinytex::install_tinytex()
 
 ```
 
-```{r get data, include=FALSE}
+```{r orcidData, include=FALSE}
 
-orcidID<-"0000-0002-2829-3971"
+orcidID <- "0000-0002-2829-3971"
 
 ## Education
-edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries
+edu <-
+  rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries
 
-edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
+edu_info <-
+  c(
+    "education-summary.department-name",
+    "education-summary.role-title",
+    "education-summary.start-date.year.value",
+    "education-summary.end-date.year.value",
+    "education-summary.organization.name",
+    "education-summary.organization.address.country"
+  )
 
-df_edu<-rbind(edu[[1]][edu_info],edu[[2]][edu_info],edu[[3]][edu_info])
+df_edu <-
+  rbind(edu[[1]][edu_info], edu[[2]][edu_info], edu[[3]][edu_info])
 
 ## Qualifications
 
-qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries
+qualifications <-
+  rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries
 
-qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
+qualifications_info <-
+  c(
+    "qualification-summary.organization.name",
+    "qualification-summary.role-title",
+    "qualification-summary.end-date.year.value",
+    "qualification-summary.end-date.month.value",
+    "qualification-summary.organization.address.country"
+  )
 
-df_qualifications<-rbind(qualifications[[1]][qualifications_info],qualifications[[2]][qualifications_info])
+df_qualifications <-
+  rbind(qualifications[[1]][qualifications_info], qualifications[[2]][qualifications_info])
 
 ## jobs
-ProfessionalPositions <- orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
+ProfessionalPositions <-
+  orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
 
 for (i in 1:length(ProfessionalPositions)) {
-  if(length(ProfessionalPositions[[i]])==27)
-      {ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <- "Present"
-      ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <- ""}
-    
+  if (length(ProfessionalPositions[[i]]) == 27)
+  {
+    ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <-
+      "Present"
+    ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <-
+      ""
+  }
+  
 }
 
-position_info<-c("employment-summary.role-title","employment-summary.organization.name","employment-summary.organization.address.country","employment-summary.start-date.year.value","employment-summary.start-date.month.value","employment-summary.end-date.year.value","employment-summary.end-date.month.value")
+position_info <-
+  c(
+    "employment-summary.role-title",
+    "employment-summary.organization.name",
+    "employment-summary.organization.address.country",
+    "employment-summary.start-date.year.value",
+    "employment-summary.start-date.month.value",
+    "employment-summary.end-date.year.value",
+    "employment-summary.end-date.month.value"
+  )
 
-df_position<-rbind(ProfessionalPositions[[1]][position_info],ProfessionalPositions[[2]][position_info])
+df_position <-
+  rbind(ProfessionalPositions[[1]][position_info], ProfessionalPositions[[2]][position_info])
 
 
 
 ## works
 
 list_works_raw <- rorcid::orcid_works(orcidID)
-df_works<-orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[["0000-0002-2829-3971"]][["works"]]
-bib_citations<-orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[[1]]$works$`work.citation.citation-value`
-authors<-str_extract(bib_citations,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
+df_works <-
+  orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[["0000-0002-2829-3971"]][["works"]]
+bib_citations <-
+  orcid_works(orcidID, put_code = list_works_raw[[1]]$works$`put-code`)[[1]]$works$`work.citation.citation-value`
+authors <-
+  str_extract(bib_citations, "(?<=author=\\s\\{).*(?=\\}, year)") %>%
   as.data.frame()
-works<-cbind(df_works,authors)
-names(works)[30]<-"authors"
+works <- cbind(df_works, authors)
+names(works)[30] <- "authors"
 
 ##membership
 
