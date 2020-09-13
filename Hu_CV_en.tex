@@ -1,610 +1,366 @@
-\documentclass[10.5pt,]{article}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
 
-\usepackage{multicol} % for multiple columns
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Yue}{Hu}
+
+\position{Assistant Professor}
+\address{Department of Political Science, Tsinghua University, China}
+
+\email{\href{mailto:yuehu@tsinghua.edu.cn}{\nolinkurl{yuehu@tsinghua.edu.cn}}}
+\homepage{sammo3182.github.io}
+\github{sammo3182}
+\twitter{yuehupolisci}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
 
 
+\usepackage{booktabs}
 
-\usepackage[sc, osf]{mathpazo}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-\ifxetex
-\usepackage{xltxtra,xunicode} %originally, \usepackage{mathspec}. This change is to produce Chinese
-\else
-\usepackage{fontspec}
-\fi
-\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-\fi
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-	\usepackage{microtype}
-	\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\usepackage[margin=1in]{geometry}
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}\ifx#5\empty{\vspace{-4.0mm}}\else\fi}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
 
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
 
-
-
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
 	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
 
-% Now begins the stuff that I added.
-% ----------------------------------
+%------------------------------------------------------------------------------
 
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\large\bf}
-\subsectionfont{\rmfamily\mdseries\normalsize\itshape}
-
-
-% Make lists without bullets
-\renewenvironment{itemize}{
-	\begin{list}{}{
-			\setlength{\leftmargin}{1.5em}
-		}
-	}{
-	\end{list}
-}
-
-
-% Make parskips rather than indent with lists.
-\usepackage{parskip}
-\usepackage{titlesec}
 
 \usepackage{ctex}
-% Siyuan Font
-%\setCJKmainfont[BoldFont = Noto Sans CJK SC]{Noto Serif CJK SC}
-%\setCJKsansfont{Noto Sans CJK SC}
-%\setCJKfamilyfont{zhsong}{Noto Serif CJK SC}
-%\setCJKfamilyfont{zhhei}{Noto Sans CJK SC}
-%\setCJKfamilyfont{zhkai}{simkai.ttf}
-
-% less space for the Chinese format
-\titlespacing\section{0pt}{1pt plus 4pt minus 2pt}{1pt plus 2pt minus 2pt}
-\titlespacing\subsection{0pt}{5pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
-
-
-% Use fontawesome. Note: you'll need TeXLive 2015. Update.
-\usepackage{fontawesome}
-\newfontfamily\FA{FontAwesome.otf} % Explicitly provide .otf
-
-% Fancyhdr, as I tend to do with these personal documents.
-\usepackage{fancyhdr,lastpage}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0.0pt}
-\renewcommand{\footrulewidth}{0.0pt}
-\lhead{}
-\chead{}
-\rhead{}
-\lfoot{
-	\cfoot{\scriptsize  Yue Hu - CV }}
-\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
-
-% Always load hyperref last.
-\usepackage{hyperref}
-\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
-
-\hypersetup{unicode=true,
-		pdftitle={Yue Hu:  CV (Curriculum Vitae)},
-			pdfauthor={Yue Hu},
-			colorlinks=true,
-	linkcolor=blue,
-	citecolor=Blue,
-	urlcolor=blue,
-	breaklinks=true, bookmarks=true}
-\urlstyle{same}  % don't use monospace font for urls
-
-% try to fit picture
-
 
 \begin{document}
-	
-	
-	\centerline{\huge \bf Yue Hu}
-	
-	
-	
-	\vspace{2 mm}
-	
-	\hrule
-	
-	\vspace{2 mm}
-	
-	
-	\moveleft.5\hoffset\centerline{Mingzhai 114, Qinghua Yuan, Haidian District, Beijing 100084, China}
-	\moveleft.5\hoffset\centerline{ {\FA\faEnvelope} \hspace{1 mm} \href{mailto:}{\tt \href{mailto:yuehu@tsinghua.edu.cn}{\nolinkurl{yuehu@tsinghua.edu.cn}}} \hspace{1 mm}  {\FA\faGithub} \hspace{1 mm} \href{http://github.com/sammo3182}{\tt sammo3182} \hspace{1 mm}    {\FA\faGlobe} \hspace{1 mm} \href{http://sammo3182.github.io}{\tt sammo3182.github.io}   }
-	
-	\vspace{2 mm}
-	
-	\hrule
-	
-		
-	\hypertarget{education}{%
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {九月 2020}
+    {Yue Hu~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
 \section{Education}\label{education}}
 
-\hypertarget{degree}{%
-\subsection{Degree}\label{degree}}
+\detailedsection{\detaileditem{University of Iowa}{2013 - 2018}{Ph.D. (Political Science) }{US}{\empty}\detaileditem{University of South Carolina}{2011 - 2013}{M.A. (Political Science) }{US}{\empty}\detaileditem{University of Regina}{2009 - 2011}{M.A. (Political Science) }{CA}{\empty}\detaileditem{Nankai University}{2005 - 2009}{B.L.L. (Zhou Enlai School of Governance) }{CN}{\empty}}
 
-\begin{itemize}
-\tightlist
-\item
-  Ph.D.~in Political Science, The University of Iowa,
-  U.S.A.\hfill 2018-05
-\item
-  M.A.~in Political Science, The University of South Carolina,
-  U.S.A.\hfill 2013-12
-\item
-  M.A.~in Political Science, The University of Regina,
-  Canada\hfill 2011-06
-\item
-  LL.B. in International Politics, Nankai University,
-  China\hfill 2009-06
-\end{itemize}
+\hypertarget{professional-training}{%
+\subsection{Professional Training}\label{professional-training}}
 
-\hypertarget{additional-training}{%
-\subsection{Additional Training}\label{additional-training}}
-
-\begin{itemize}
-\tightlist
-\item
-  Certificate in Informatics, The University of Iowa,
-  U.S.A.\hfill 2016-12
-\item
-  Experimental Methods, National University of Singapore (IPSA),
-  Singapore \hfill 2014-06/07
-\end{itemize}
+\detailedsection{\detaileditem{University of Iowa}{2016 - 12}{Certificate in Informatics}{US}{\empty}\detaileditem{National University of Singapore}{2014 - 06}{Experimental Methods}{SG}{\empty}}
 
 \hypertarget{professional-positions}{%
 \section{Professional Positions}\label{professional-positions}}
 
-\begin{itemize}
-\tightlist
-\item
-  Assistant Professor, Department of Political Science, Tsinghua
-  University. \hfill 2019-01/present
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Deputy Director, Center on Data and Governance of Tsinghua
-    University.
-  \end{itemize}
-\item
-  Statistical Consultant, Iowa Social Science Research Center,
-  University of Iowa. \hfill 2015-08/2018-05
-\end{itemize}
-
-\hypertarget{research-interests}{%
-\section{Research Interests}\label{research-interests}}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Comparative Politics}: Language politics, inequality, political
-  communication.
-\item
-  \emph{Political Methodology}: Political experiment, text analysis,
-  spatial analysis, network analysis.
-\end{itemize}
+\detailedsection{\detaileditem{Tsinghua University}{2019.01--Present.}{Assistant Professor}{CN}{\empty}\detaileditem{Iowa Social Science Research Center}{2015.05--2018.05}{Statistical Consultant}{US}{\empty}}
 
 \hypertarget{publications}{%
 \section{Publications}\label{publications}}
 
-\hypertarget{peer-reviewed-journal-articles}{%
-\subsection{Peer-Reviewed Journal
-Articles}\label{peer-reviewed-journal-articles}}
+\hypertarget{peer-reviewed-articles}{%
+\subsection{Peer-Reviewed Articles}\label{peer-reviewed-articles}}
 
-Hu, Yue (2020). ``Culture Marker Versus Authority Marker: How Do
-Language Attitudes Affect Political Trust?'' En. In:
-\emph{Political Psychology} Early View, p.~Forthcoming. ISSN: 1467-9221.
-DOI: 10.1111/pops.12646.
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
-Hu, Yue and Amy H. Liu (2020). ``The Effects of Foreign Language
+\hypertarget{refs_published}{}
+\leavevmode\hypertarget{ref-Hu2019}{}%
+Hu, Y. (2019). Are Informal Education Facilities Effective Means for
+Generating Political Support? A Spatial Analysis. \emph{Social Science
+Quarterly}, \emph{100}(3), 701--724.
+\url{https://doi.org/10.1111/ssqu.12589}
+
+\leavevmode\hypertarget{ref-SoltEtAl2017}{}%
+Solt, F., Hu, Y., Hudson, K., Song, J., \& Yu, D. ``. (2017). Economic
+Inequality and Class Consciousness. \emph{The Journal of Politics},
+\emph{79}(3), 1079--1083. \url{https://doi.org/10.1086/690971}
+
+\leavevmode\hypertarget{ref-Hu2020}{}%
+Hu, Y. (2020). Culture Marker Versus Authority Marker: How Do Language
+Attitudes Affect Political Trust? \emph{Political Psychology},
+\emph{41}(4), 699--716. \url{https://doi.org/10.1111/pops.12646}
+
+\leavevmode\hypertarget{ref-Hu2020a}{}%
+Hu, Y. (2020). Refocusing Democracy: The Chinese Government's Framing
+Strategy in Political Language. \emph{Democratization}, \emph{72}(2),
+302--320. \url{https://doi.org/10.1080/13510347.2019.1690461}
+
+\leavevmode\hypertarget{ref-HuLiu2020}{}%
+Hu, Y., \& Liu, A. H. (2020). The Effects of Foreign Language
 Proficiency on Public Attitudes: Evidence from the Chinese-Speaking
-World''. En. In: \emph{Journal of East Asian Studies} 20.1, pp.~1--23.
-ISSN: 1598-2408, 2234-6643. DOI: 10.1017/jea.2019.41.
+World. \emph{Journal of East Asian Studies}, \emph{20}(1), 1--23.
+\url{https://doi.org/10.1017/jea.2019.41}
 
-Hu, Yue (2019a). ``Are Informal Education Facilities Effective Means for
-Generating Political Support? A Spatial Analysis''. En. In:
-\emph{Social Science Quarterly} 100.3, pp.~701--724. ISSN: 1540-6237.
-DOI: 10.1111/ssqu.12589.
+\leavevmode\hypertarget{ref-ClaypoolEtAl2018}{}%
+Claypool, V. H., Reisinger, W., Zaloznaya, M., Hu, Y., \& Juehring, J.
+(2018). Tsar Putin and the 'Corruption' Thorn in his Side: The
+Demobilization of Votes in a Competitive Authoritarian Regime.
+\emph{Electoral Studies}, \emph{54}, 182--204.
 
-Hu, Yue (2019b). ``Refocusing Democracy: The Chinese Government's
-Framing Strategy in Political Language''. En. In: \emph{Democratization}
-72.2, pp.~302--320. ISSN: 1351-0347. DOI: 10.1080/13510347.2019.1690461.
+\leavevmode\hypertarget{ref-Hu2018c}{}%
+Hu, Y. (2018). \emph{Rebuilding the Tower of Babel: Language Policy and
+Political Trust in China} {[}Ph.D.{]}. The University of Iowa.
 
-Claypool, Vicki Hesli, William Reisinger, Marina Zaloznaya, Yue Hu, et
-al. (2018). ``Tsar Putin and the `Corruption' Thorn in His Side: The
-Demobilization of Votes in a Competitive Authoritarian Regime''. En. In:
-\emph{Electoral Studies} 54, pp.~182--204.
+\leavevmode\hypertarget{ref-SoltEtAl2016}{}%
+Solt, F., Hu, Y., Hudson, K., Song, J., \& Yu, D. E. (2016). Economic
+Inequality and Belief in Meritocracy in the United States.
+\emph{Research \& Politics}, \emph{3}(4), 1--7.
+\url{https://doi.org/10.1177/2053168016672101}
 
-Solt, Frederick, Yue Hu, Kevan Hudson, Jungmin Song, et al. (2017).
-``Economic Inequality and Class Consciousness''. En. In:
-\emph{The Journal of Politics} 79.3, pp.~1079--1083. ISSN: 0022-3816,
-1468-2508. DOI: 10.1086/690971.
+\leavevmode\hypertarget{ref-TangEtAl2016a}{}%
+Tang, W., Hu, Y., \& Jin, S. (2016). Affirmative Inaction: Language
+Education and Labor Mobility among China's Muslim Minorities.
+\emph{Chinese Sociological Review}, \emph{48}(4), 346--366.
 
-Solt, Frederick, Yue Hu, Kevan Hudson, Jungmin Song, et al. (2016).
-``Economic Inequality and Belief in Meritocracy in the United States''.
-En. In: \emph{Research \& Politics} 3.4, pp.~1--7. DOI:
-10.1177/2053168016672101. eprint:
-\url{http://rap.sagepub.com/content/3/4/2053168016672101.full.pdf}.
+\leavevmode\hypertarget{ref-Hu2013}{}%
+Hu, Y. (2013). Institutional Difference and Cultural Difference: A
+Comparative Study of Canadian and Chinese Cultural Diplomacy.
+\emph{Journal of American-East Asian Relations}, \emph{20}(2-3),
+256--268. \url{https://doi.org/10.1163/18765610-02003011}
 
-Tang, Wenfang, Yue Hu, and Shuai Jin (2016). ``Affirmative Inaction:
-Language Education and Labor Mobility among China's Muslim Minorities''.
-En. In: \emph{Chinese Sociological Review} 48.4, pp.~346--366.
+\leavevmode\hypertarget{ref-Hu2011}{}%
+Hu, Y. (2011). \emph{Culture and Cultural Diplomacy: A Comparative Study
+of a Canadian and Chinese Case} {[}M.A.{]}. The University of Regina
+(Canada).
 
-Hu, Yue (2013). ``Institutional Difference and Cultural Difference: A
-Comparative Study of Canadian and Chinese Cultural Diplomacy''. En. In:
-\emph{Journal of American-East Asian Relations} 20.2-3, pp.~256--268.
-DOI: 10.1163/18765610-02003011.
+\leavevmode\hypertarget{ref-Hu2009}{}%
+Hu, Y. (2009). An Analysis of Politics Fixed Position of CPPCC from the
+Political Scientific Angle. \emph{Journal of Tianjin Institute of
+Socialism}, \emph{1}, 19--23.
 
-\vspace{\baselineskip}
+\endgroup
 
-\hypertarget{journal-articles-in-chinese}{%
-\subsection{Journal Articles in
-Chinese}\label{journal-articles-in-chinese}}
+\hypertarget{chinese-articles}{%
+\subsection{Chinese Articles}\label{chinese-articles}}
 
-Yue Hu and Yuchao Zhu. ``\,`Issue-Oriented' vs.~`Ism-Oriented':
-Indigenizing Political Science in China?''. \emph{Tianjin Social
-Science} 3 (2011), pp.~46-50. (胡悦和朱毓朝：《``问题与主义''导向之争:
-西方比较政治学沿革及其借鉴意义》，载《天津社会科学》，2011年第3期，第46-50页。)
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
-Tongshun Cheng and Yue Hu. ``The Cultural Props of Foreign Policy''.
-\emph{Tribune of Study} (2010), pp.~33--37.
-(程同顺和胡悦：《对外政策的文化道具：浅析文明冲突论的工具性》，载《学习论坛》2010年第26期，第33-37页。)
+\hypertarget{refs_chinese}{}
+\leavevmode\hypertarget{ref-HuYueZhuYuZhao2011}{}%
+胡悦, \& 朱毓朝. (2011).
+"问题与主义"导向之争西方比较政治学沿革及其借鉴意义. \emph{天津社会科学},
+\emph{03}, 46--50.
+\url{https://doi.org/10.16240/j\%20.cnki\%20.1002-3976.2011.03.013}
 
-Yue Hu. ``An Analysis of Politics Fixed Position of CPPCC from the
-Political Scientific Angle''. \emph{Journal of Tianjin Institute of
-Socialism} (2009), pp.~19--23.
-(《从政治科学角度分析人民政协的政治定位》，载《天津市社会主义学院学报》
-2009年第1期，第19-23页。)
+\leavevmode\hypertarget{ref-ChengTongShunHuYue2010}{}%
+程同顺, \& 胡悦. (2010). 对外政策的文化道具浅析文明冲突论的工具性.
+\emph{学习论坛}, \emph{26}(02), 33--37.
 
-\vspace{\baselineskip}
+\leavevmode\hypertarget{ref-HuYue2009}{}%
+胡悦. (2009). 从政治科学角度分析人民政协的政治定位.
+\emph{天津市社会主义学院学报}, \emph{01}, 19--23.
+
+\endgroup
 
 \hypertarget{software}{%
 \subsection{Software}\label{software}}
 
-Solt, Frederick and Yue Hu (2016).
-\emph{Pewdata: Reproducible Retrieval of Pew Research Center Datasets}.
-Available at The Comprehensive R Archive Network (CRAN).
-\url{http://CRAN.R-project.org/package=pewdata}.
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
-Solt, Frederick and Yue Hu (2015a).
-\emph{Dotwhisker: Dot-and-Whisker Plots of Regression Results}.
-Available at The Comprehensive R Archive Network (CRAN).
-\url{http://CRAN.R-project.org/package=dotwhisker} (visited on 9月. 20,
-2016).
+\hypertarget{refs_software}{}
+\leavevmode\hypertarget{ref-SoltHu2016}{}%
+Solt, F., \& Hu, Y. (2016). \emph{Pewdata: Reproducible Retrieval of Pew
+Research Center Datasets}. Available at The Comprehensive R Archive
+Network (CRAN).
 
-Solt, Frederick and Yue Hu (2015b).
-\emph{Interplot: Plot the Effects of Variables in Interaction Terms}.
-Available at The Comprehensive R Archive Network (CRAN).
-\url{http://CRAN.R-project.org/package=interplot} (visited on 9月. 19,
-2016).
+\leavevmode\hypertarget{ref-SoltHu2015}{}%
+Solt, F., \& Hu, Y. (2015). \emph{Dotwhisker: Dot-and-Whisker Plots of
+Regression Results}. Available at The Comprehensive R Archive Network
+(CRAN).
 
-\vspace{\baselineskip}
+\leavevmode\hypertarget{ref-SoltHu2015a}{}%
+Solt, F., \& Hu, Y. (2015). \emph{Interplot: Plot the Effects of
+Variables in Interaction Terms}. Available at The Comprehensive R
+Archive Network (CRAN).
 
-\hypertarget{invited-talks}{%
-\section{Invited Talks}\label{invited-talks}}
-
-\begin{itemize}
-\tightlist
-\item
-  2018
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Culture Marker vs.~Authority Marker: How Does Language Attitude
-    Affect Political Trust?'' Sun Yat-Sen University, Guangzhou, Jan.,
-    3.
-  \end{itemize}
-\item
-  2017
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Investigating Inequality with Real-Life Data: Research Strategies
-    and Methods.'' Nankai University, Tianjin, Jun., 25.
-  \end{itemize}
-\end{itemize}
+\endgroup
 
 \hypertarget{conferences}{%
 \section{Conferences}\label{conferences}}
 
-\begin{itemize}
-\tightlist
-\item
-  2019
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Breaking Through the Linguistic Barrier: The Role of Language
-    Policy in Migration Decisions.''
+\hypertarget{refs_conference}{}
+\leavevmode\hypertarget{ref-HuYue2019}{}%
+胡悦. (2019, November). 新型城镇化中的语言治理：个体、群体与国家.
+\emph{第六届``政治科学前沿理论与方法''论坛}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize American Political Science Association (APSA) Annual
-      Meeting, Washington D.C., Aug.~29--Sep.~01.
-    \end{itemize}
-  \item
-    ``Visualization and Going Against P-Hacking.''
+\leavevmode\hypertarget{ref-Hu2019a}{}%
+Hu, Y. (2019, August). Breaking Through the Linguistic Barrier: The Role
+of Language Policy in Migration Decisions. \emph{American Political
+Science Association (APSA) Annual Meeting}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize China R Conference, Beijing, May 25--26.
-    \end{itemize}
-  \end{itemize}
-\item
-  2018
+\leavevmode\hypertarget{ref-PizziHu2019}{}%
+Pizzi, E., \& Hu, Y. (2019, August). Are Strict Rules a Deterrent?
+Political Restrictions and Migration in China. \emph{American Political
+Science Association's 2019 Annual Meeting and Exhibition (APSA)}.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Measuring the Influence of Language in Political Science
-    Research.''
+\leavevmode\hypertarget{ref-HuPizzi2019}{}%
+Hu, Y., \& Pizzi, E. (2019, June). Breaking through the Barrier: Effects
+of Language Policy on Migration Decision-Making. \emph{The 32nd
+Association of Chinese Political Studies (ACPS) Annual Meeting and
+International Symposium}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize St.~Louis Area Methods Meeting (SLAMM), Ames, Iowa,
-      Apr.~20.
-    \end{itemize}
-  \item
-    ``Rebuilding the Tower of Babel? The Influence of Language Policy on
-    Political Trust.''
+\leavevmode\hypertarget{ref-HuPizzi2019a}{}%
+Hu, Y., \& Pizzi, E. (2019, June). Replacement or Bypass: How the
+Governmental Policy Affects the Language Barriers in Migration
+Decisions. \emph{The 32nd Annual Meeting and International Symposium of
+Association of Chinese Political Studies}.\\
+International Workshop on Visions of China's Future Governance: An
+International Perspective
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Convention, Chicago, Illinois, Apr.~5--8.
-    \end{itemize}
-  \end{itemize}
-\item
-  2017
+\leavevmode\hypertarget{ref-HuYue2019b}{}%
+胡悦. (2019, May). 数据可视化与反p-hacking：以政治科学研究为例.
+\emph{中国R会议}.
 
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Cultural Accent vs.~Authority Accent: How Does Language Attitude
-    Affect Political Trust.''
+\leavevmode\hypertarget{ref-HuYueShaoZiJie2019}{}%
+胡悦, \& 邵梓捷. (2019, May). Supply vs. Demand: Why People Watch
+State-Media Broadcasts in China.
+\emph{政治传播与社会发展论坛暨``政治传播：
+回到原点，守正创新``学术研讨会}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Association of Chinese Political Science (ACPS)
-      Annual Meeting, Tianjin, China, Jun., 9--11.
-    \item
-      \footnotesize Chinese Political Science and Methods Workshop,
-      Shanghai, China, Jul., 8--9.
-    \item
-      \footnotesize Political Culture, Psychology, and Behavior Research
-      Workshop, Nanjing, China, Jul., 9--11.
-    \end{itemize}
-  \item
-    ``The Weight of History: Explaining the Anti-Japanese Sentiments in
-    the Chinese Circle'' (with Amy Liu).
+\leavevmode\hypertarget{ref-TangHu2018}{}%
+Tang, W., \& Hu, Y. (2018, June). Informal Economic Behavior and
+Authoritarian Regime Instability. \emph{Workshop on Chinese Politics and
+Society}.\\
+``实证研究中国''国际研讨会
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Convention, Chicago, Illinois, Apr.~7--9.
-    \end{itemize}
-  \item
-    ``The Popularity of Political Propaganda in Modern China: A Model of
-    Demands'' (with Zijie Shao).
+\leavevmode\hypertarget{ref-Hu2018b}{}%
+Hu, Y. (2018, April). Rebuilding the Tower of Babel? The Influence of
+Language Policy on Political Trust. \emph{The 76th Midwest Political
+Science Association (MPSA) Annual Convention}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Convention, Chicago, Illinois, Apr.~7--9.
-    \end{itemize}
-  \item
-    ``The Logic of Peaceful Rise'' (with Ray Ou-Yang).
+\leavevmode\hypertarget{ref-HuTang2016a}{}%
+Hu, Y., \& Tang, W. (2016, October). Measure Political Desirability: An
+Experimental Method. \emph{The 30nd Association of Chinese Political
+Studies (ACPS) Annual Meeting}.
 
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Convention, Chicago, Illinois, Apr.~7--9.
-    \item
-      \footnotesize International Studies Association (ISA) Annual
-      Convention, Baltimore, Maryland, Feb.~22--25.
-    \end{itemize}
-  \end{itemize}
-\item
-  2016
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Measure Political Desirability: A List Experimental Method'' (with
-    Wenfang Tang);
-  \item
-    ``Propaganda with Museums: A Spatial Analysis of Patriotic
-    Educational Demonstration Bases in China''.
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Association of Chinese Political Science (ACPS)
-      Annual Meeting, Monterey, California, Oct, 10--11.
-    \end{itemize}
-  \item
-    ``Value Promotion, Justification, or Mobilization? The Dynamic of
-    the Discourse on Democracy in Modern China.''
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Conference, Chicago, Apr., 7-10.
-    \end{itemize}
-  \end{itemize}
-\item
-  2015
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Affirmative Inaction: Education, Social Mobility, and Ethnic
-    Inequality in China'' (with Wenfang Tang and Shuai Jin).
-  \item
-    ``Language and Political Trust.''
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize Midwest Political Science Association (MPSA) Annual
-      Conference, Chicago, Apr., 16--19.
-    \end{itemize}
-  \end{itemize}
-\item
-  2013
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Connecting Nationalism and Political Transition:A Study of
-    Nationalist Influence on Political Transition based on the China
-    Case.''
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize University of South Carolina Inaugural Graduate
-      Student Conference, Columbia, South Carolina.
-    \end{itemize}
-  \end{itemize}
-\item
-  2012
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ``Twofold-Affecting Model: A Cultural Pattern of Social Change from
-    a Comparative Study between the China and Russia Cases.''
-
-    \begin{itemize}
-    \tightlist
-    \item
-      \footnotesize American Association for Chinese Studies (AACS)
-      Annual Conference, Atlanta, Georgia, Oct.~12-14.
-    \end{itemize}
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{researching-program}{%
-\section{Researching Program}\label{researching-program}}
-
-\begin{itemize}
-\tightlist
-\item
-  Youth Project of National Social Science Foundation of China:
-  Assessing and Improving the Political Ecology of Grassroots Party
-  Organizations (ID: 17CZZ041).
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Principal Investigator and Methodology
-    Director\hfill 2017/06-2020/06
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{teaching-experience}{%
-\section{Teaching Experience}\label{teaching-experience}}
-
-\hypertarget{university-of-tsinghua}{%
-\subsection{University of Tsinghua}\label{university-of-tsinghua}}
-
-\begin{itemize}
-\tightlist
-\item
-  Analysis of Political Data
-\item
-  Analysis of Public Policy: Perspectives and Methods
-\item
-  Governmental Big Data
-\end{itemize}
-
-\hypertarget{university-of-iowa}{%
-\subsection{University of Iowa}\label{university-of-iowa}}
-
-\begin{itemize}
-\tightlist
-\item
-  Designing Political Research
-\item
-  Math Camp for Incoming Graduate Students
-\item
-  ``Hello, R!'' Workshop Series
-\end{itemize}
+\endgroup
 
 \hypertarget{grants}{%
 \section{Grants}\label{grants}}
 
-\begin{itemize}
-\tightlist
-\item
-  Ballard and Seashore Fellowship\hfill 2017
-\item
-  Post-Comprehensive Research Award\hfill 2016
-\item
-  T. Anne Cleary International Dissertation Research
-  Fellowship\hfill 2016
-\end{itemize}
-
-\hypertarget{professional-affiliation}{%
-\section{Professional Affiliation}\label{professional-affiliation}}
-
-\begin{itemize}
-\tightlist
-\item
-  Member of American Political Science Association.
-\item
-  Member of Midwest Political Science Association.
-\item
-  Member of Association of Chinese Political Science
-\item
-  Member of American Association for Chinese Studies.
-\end{itemize}
+\detailedsection{\detaileditem{The University of Iowa}{2017}{Ballard and Seashore Fellowship}{}{\empty}\detaileditem{The University of Iowa University College}{2016}{T. Anne Cleary International Dissertation Research Fellowship}{}{\empty}\detaileditem{The University of Iowa University College}{2016}{Post-Comprehensive Research Award}{}{\empty}}
 
 \hypertarget{skills}{%
 \section{Skills}\label{skills}}
 
+\hypertarget{analytical}{%
+\subsection{Analytical}\label{analytical}}
+
+R, STATA, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
+
+\hypertarget{application}{%
+\subsection{Application}\label{application}}
+
+LaTeX, Markdown, Git
+
+\hypertarget{language}{%
+\subsection{Language}\label{language}}
+
+Language: English, Chinese (Mandarin)
+
+\hypertarget{professional-affiliation}{%
+\section{Professional Affiliation}\label{professional-affiliation}}
+
+Member of
+
 \begin{itemize}
 \tightlist
 \item
-  Analysis \& Programming: R, Stata, Python, C++, Mathematica, NetLogo,
-  JAGS, UCINET.
+  American Political Science Association
 \item
-  Application: \LaTeX, Markdown, Git(GitHub).
+  Midwest Political Science Association
 \item
-  Language: English, Chinese (Mandarin)
+  Association of Chinese Political Studies
 \end{itemize}
-	
-			\end{document}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\detailedsection{\detaileditem{}{Fall}{70700173: Analysis of Political Data}{Tsinghua University}{\empty}\detaileditem{}{Fall}{80700673: Governmental Big Data}{Tsinghua University}{\empty}\detaileditem{}{Spring}{30700953: Analysis of Public Policy: Perspectives and Methods}{Tsinghua University}{\empty}\detaileditem{}{Summer}{Workshop: Data Visualization}{Tsinghua University}{\empty}\detaileditem{}{Summer}{Workshop: Learning R with Dr. Hu}{Tsinghua University}{\empty}\detaileditem{}{Fall 2018}{POLI301: Analysis of Political Data}{University of Iowa}{\empty}}
+
+\end{document}

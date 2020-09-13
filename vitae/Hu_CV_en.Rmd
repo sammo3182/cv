@@ -1,0 +1,240 @@
+---
+name: Yue
+surname: Hu
+position: "Assistant Professor"
+address: "Department of Political Science, Tsinghua University, China"
+www: sammo3182.github.io
+email: yuehu@tsinghua.edu.cn
+github: sammo3182
+twitter: yuehupolisci
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "414141"
+output: 
+  vitae::awesomecv:
+    pandoc_args: ["--lua-filter=multiple-bibliographies.lua"] # used for creating bibliographies for multiple section
+header-includes:
+- \usepackage{ctex}
+csl: apa.csl # to show the entire list of the authors
+bibliography_published: "My_Publications.bib" # use separate .bib files and assign each of them a unique key: bibliography_*
+bibliography_chinese: "My_Chinese.bib"
+bibliography_software: "My_Software.bib"
+bibliography_conference: "My_Conference.bib"
+nocite: '@*' # don't change this if you want to print out all the refs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE,
+                      message = FALSE)
+
+# R packages --------------------------------------------------------------
+if (!require(pacman)) install.packages("pacman"); library(pacman)
+
+p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
+p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
+
+
+# Get latex ---------------------------------------------------------------
+
+## This needs to be run manually if LaTex is not installed locally.
+##tinytex::install_tinytex()
+
+```
+
+```{r orcidData, include=FALSE}
+
+orcidID <- "0000-0002-2829-3971"
+
+## Education
+df_edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
+  data.table::rbindlist(fill=T)
+
+### edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
+
+## Qualifications
+
+df_qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
+  data.table::rbindlist(fill=T)
+
+### qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
+
+## jobs
+ProfessionalPositions <-
+  orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
+
+for (i in 1:length(ProfessionalPositions)) {
+  if(length(ProfessionalPositions[[i]])==27)
+      {ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <- "Present"
+      ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <- ""}
+}
+
+df_position<-data.table::rbindlist(ProfessionalPositions,fill = T)
+
+# ## works
+# benchmark_orcid <- function(id) {
+#   tictoc::tic()
+# 
+#   # Get put-codes
+#   put_codes = orcid_works(id)[[1]] %>%  
+#     bind_rows() %>% 
+#     pull(`put-code`)
+# 
+#   # Get info of those put codes
+#   list_orcid <- orcid_works(id, put_code = put_codes) #%>% bind_rows()
+#   cat(id, " - ")
+# 
+#   tictoc::toc()
+#   list_orcid
+# }
+# 
+# works_raw<-benchmark_orcid(orcidID)[[orcidID]][["works"]]
+# df_works <-within(works_raw,{
+#   authors<-NA
+#   authors <- str_extract(`work.citation.citation-value`,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
+#     str_replace_all(c("\\{"="","\\}"=""))
+# })
+
+##membership
+df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
+  data.table::rbindlist(fill=T)
+# membership_info <- c("membership-summary.organization.name","membership-summary.organization.address.country")
+
+#Grants
+
+df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
+  data.table::rbindlist(fill = T)
+
+```
+
+# Education 
+
+```{r Education}
+df_edu %>%
+  detailed_entries(
+    with = glue::glue("{`education-summary.role-title`} ({`education-summary.department-name`}) "),
+    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+    what = `education-summary.organization.name`,
+    where = `education-summary.organization.address.country`
+  )
+```
+
+## Professional Training
+
+```{r Qualifications}
+df_qualifications%>%
+  detailed_entries(
+    with = `qualification-summary.role-title`,
+    when = glue::glue("{`qualification-summary.end-date.year.value`} - {`qualification-summary.end-date.month.value`}"),
+    what = `qualification-summary.organization.name`,
+    where = `qualification-summary.organization.address.country`
+  )
+```
+
+# Professional Positions
+```{r ProfessionalPositions}
+df_position %>% 
+  detailed_entries(
+    what = `employment-summary.organization.name`,
+    when = glue("{`employment-summary.start-date.year.value`}.{`employment-summary.start-date.month.value`}--{`employment-summary.end-date.year.value`}.{`employment-summary.end-date.month.value`}"),
+    with = `employment-summary.role-title`,
+    where = `employment-summary.organization.address.country`,)
+```
+
+# Publications
+
+## Peer-Reviewed Articles
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_published}
+:::
+
+\endgroup
+
+## Chinese Articles
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_chinese}
+:::
+
+\endgroup
+
+## Software
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_software}
+:::
+
+\endgroup
+
+# Conferences
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_conference}
+:::
+
+\endgroup
+
+
+# Grants
+```{r grants}
+df_grants%>%
+  detailed_entries(
+    with = `distinction-summary.role-title`,
+    what = `distinction-summary.organization.name`,
+    when = `distinction-summary.start-date.year.value`,
+    )
+```
+
+# Skills
+
+## Analytical
+
+R, STATA, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
+
+## Application
+
+LaTeX, Markdown, Git
+
+## Language
+
+Language: English, Chinese (Mandarin)
+
+
+# Professional Affiliation
+
+Member of 
+
+* American Political Science Association
+* Midwest Political Science Association
+* Association of Chinese Political Studies
+
+# Teaching
+
+```{r teaching}
+tribble(
+  ~Year, ~Name, ~Institution,
+  'Fall', "70700173: Analysis of Political Data","Tsinghua University",
+  'Fall', "80700673: Governmental Big Data","Tsinghua University",
+  'Spring', "30700953: Analysis of Public Policy: Perspectives and Methods","Tsinghua University",
+  'Summer', "Workshop: Data Visualization","Tsinghua University",
+  'Summer', "Workshop: Learning R with Dr. Hu","Tsinghua University",
+  'Fall 2018', "POLI301: Analysis of Political Data","University of Iowa",
+) %>% 
+  detailed_entries(
+    when = Year,
+    with = Name, 
+    where = Institution
+  )
+```
