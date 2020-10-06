@@ -1,0 +1,90 @@
+---
+title: "cv"
+output: word_document
+---
+
+## Contact
+
+Email: yuehu@tsinghua.edu.cn
+
+Website: https://sammo3182.github.io/
+
+
+## Research Areas
+
+**Comparative Politics**: Political Linguistics, political psychology, identity politics, inequality, political communication.
+
+**Methodology**: Lab and survey experiment, spatial analysis, text analysis, social network analysis, IRT
+
+**International Relations**：Cultural diplomacy, soft power.
+
+
+
+## Education
+
+2018-05 Ph.D. in Political Science, University of Iowa      
+2016-12 Certificate in Informatics,  University of Iowa        
+2013-12 M.A. in Political Science, University of South Carolina    
+2011-06 M.A. in Political Science, University of Regina    
+2009-06 B.L.L. in International Relations, Nankai University        
+
+
+
+## Professional Positions  
+
+* 2019-01 Assistant Professor, Tsinghua University
+    + 2020-09 Director of Graduate Study, Tsinghua University
+* 2015-08~2018-05 Statistical Consultant, Iowa Social Science Research Center, University of Iowa
+
+
+
+## Publication
+
+### Pear-reviewed Articles
+
+Hu, Y., & Liu, A. H. (2020). The Effects of Foreign Language Proficiency on Public Attitudes: Evidence from the Chinese-Speaking World. Journal of East Asian Studies, 20(1), 1–23. https://doi.org/10.1017/jea.2019.41
+
+Hu, Y. (2020a). Culture Marker Versus Authority Marker: How Do Language Attitudes Affect Political Trust? Political Psychology, 41(4), 699–716. https://doi.org/10.1111/pops.12646
+
+Hu, Y. (2020b). Refocusing Democracy: The Chinese Government’s Framing Strategy in Political Language. Democratization, 72(2), 302–320. https://doi.org/10.1080/13510347.2019.1690461
+
+Hu, Y. (2019). Are Informal Education Facilities Effective Means for Generating Political Support? A Spatial Analysis. Social Science Quarterly, 100(3), 701–724. https://doi.org/10.1111/ssqu.12589
+
+Claypool, V. H., Reisinger, W., Zaloznaya, M., Hu, Y., & Juehring, J. (2018). Tsar Putin and the “Corruption” Thorn in his Side: The Demobilization of Votes in a Competitive Authoritarian Regime. Electoral Studies, 54, 182–204.
+
+Solt, F., Hu, Y., Hudson, K., Song, J., & Yu, D. “Erico.” (2017). Economic Inequality and Class Consciousness. The Journal of Politics, 79(3), 1079–1083. https://doi.org/10.1086/690971
+
+Tang, W., Hu, Y., & Jin, S. (2016). Affirmative Inaction: Language Education and Labor Mobility among China’s Muslim Minorities. Chinese Sociological Review, 48(4), 346–366.
+
+Solt, F., Hu, Y., Hudson, K., Song, J., & Yu, D. E. (2016). Economic Inequality and Belief in Meritocracy in the United States. Research & Politics, 3(4), 1–7. https://doi.org/10.1177/2053168016672101
+
+Hu, Y. (2013). Institutional Difference and Cultural Difference: A Comparative Study of Canadian and Chinese Cultural Diplomacy. Journal of American-East Asian Relations, 20(2–3), 256–268. https://doi.org/10.1163/18765610-02003011
+
+
+### Articles in Chinese
+
+胡悦, & 朱毓朝. (2011). “问题与主义”导向之争——西方比较政治学沿革及其借鉴意义. 天津社会科学, 03, 46–50. https://doi.org/10.16240/j.cnki.1002-3976.2011.03.013
+
+程同顺, & 胡悦. (2010). 对外政策的文化道具——浅析文明冲突论的工具性. 学习论坛, 26(02), 33–37.
+
+胡悦. (2009). 从政治科学角度分析人民政协的政治定位. 天津市社会主义学院学报, 01, 19–23.
+
+
+### Software
+
+Solt, F., & Hu, Y. (2016). pewdata: Reproducible Retrieval of Pew Research Center Datasets. http://CRAN.R-project.org/package=pewdata
+
+Solt, F., & Hu, Y. (2015a). dotwhisker: Dot-and-Whisker Plots of Regression Results. http://CRAN.R-project.org/package=dotwhisker
+
+Solt, F., & Hu, Y. (2015b). interplot: Plot the Effects of Variables in Interaction Terms. http://CRAN.R-project.org/package=interplot
+
+## Teaching
+
+### Graduate Level
+
+Analysis of Political Data (70700173)        
+Governmental Big Data (80700673, co-instructor)       
+
+### Undergraduate Level
+
+Understanding Policies: Interdisciplinary Perspectives and Case Illustrations (10700193)

@@ -59,16 +59,12 @@ df_qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliati
 ### qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
 
 ## jobs
-ProfessionalPositions <-
-  orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
+df_position <-
+  orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries %>% 
+  bind_rows() %>% 
+  mutate(`employment-summary.end-date.year.value` = ifelse(is.na(`employment-summary.end-date.year.value`), "Present", `employment-summary.end-date.year.value`), 
+         `employment-summary.end-date.month.value` = ifelse(is.na(`employment-summary.end-date.month.value`), "", `employment-summary.end-date.month.value`))
 
-for (i in 1:length(ProfessionalPositions)) {
-  if(length(ProfessionalPositions[[i]])==27)
-      {ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <- "Present"
-      ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <- ""}
-}
-
-df_position<-data.table::rbindlist(ProfessionalPositions,fill = T)
 
 # ## works
 # benchmark_orcid <- function(id) {
