@@ -11,7 +11,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
 output: 
   vitae::awesomecv:
-    pandoc_args: ["--lua-filter=multiple-bibliographies.lua"] # used for creating bibliographies for multiple section
+    pandoc_args: --lua-filter=multiple-bibliographies.lua # used for creating bibliographies for multiple section
 header-includes:
 - \usepackage{ctex}
 csl: apa.csl # to show the entire list of the authors
@@ -221,6 +221,8 @@ Member of
 ```{r teaching}
 tribble(
   ~Year, ~Name, ~Institution,
+  'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
+  'Fall', "Workshop: Learning R with Dr. Hu", "Tsinghua University",
   'Fall', "70700173: Analysis of Political Data","Tsinghua University",
   'Fall', "80700673: Governmental Big Data","Tsinghua University",
   'Spring', "30700953: Analysis of Public Policy: Perspectives and Methods","Tsinghua University",
