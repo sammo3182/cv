@@ -32,7 +32,7 @@ if (!require(pacman)) install.packages("pacman"); library(pacman)
 p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
 p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
 
-
+Sys.setlocale(, "Chinese")
 ```
 
 
