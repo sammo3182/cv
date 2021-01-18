@@ -33,77 +33,8 @@ p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
 p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
 
 
-# Get latex ---------------------------------------------------------------
-
-## This needs to be run manually if LaTex is not installed locally.
-##tinytex::install_tinytex()
-
 ```
 
-```{r orcidData, include=FALSE, echo=F,eval=FALSE}
-
-# orcidID <- "0000-0002-2829-3971"
-
-## Education
-# df_edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
-#   data.table::rbindlist(fill=T)
-
-### edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
-
-## Qualifications
-
-# df_qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries%>%
-#   data.table::rbindlist(fill=T)
-
-### qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
-
-## jobs
-# ProfessionalPositions <-
-#   orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries
-# 
-# for (i in 1:length(ProfessionalPositions)) {
-#   if(length(ProfessionalPositions[[i]])==27)
-#       {ProfessionalPositions[[i]]$`employment-summary.end-date.year.value` <- "Present"
-#       ProfessionalPositions[[i]]$`employment-summary.end-date.month.value` <- ""}
-# }
-# 
-# df_position<-data.table::rbindlist(ProfessionalPositions,fill = T)
-
-# ## works
-# benchmark_orcid <- function(id) {
-#   tictoc::tic()
-#
-#   # Get put-codes
-#   put_codes = orcid_works(id)[[1]] %>%
-#     bind_rows() %>%
-#     pull(`put-code`)
-#
-#   # Get info of those put codes
-#   list_orcid <- orcid_works(id, put_code = put_codes) #%>% bind_rows()
-#   cat(id, " - ")
-#
-#   tictoc::toc()
-#   list_orcid
-# }
-#
-# works_raw<-benchmark_orcid(orcidID)[[orcidID]][["works"]]
-# df_works <-within(works_raw,{
-#   authors<-NA
-#   authors <- str_extract(`work.citation.citation-value`,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
-#     str_replace_all(c("\\{"="","\\}"=""))
-# })
-
-##membership
-# df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
-#   data.table::rbindlist(fill=T)
-# membership_info <- c("membership-summary.organization.name","membership-summary.organization.address.country")
-
-#Grants
-
-# df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]]%>%
-#   data.table::rbindlist(fill = T)
-
-```
 
 # 教育经历
 
@@ -147,6 +78,7 @@ tribble(
 ```{r ProfessionalPositions}
 tribble(         
   ~Year, ~Degree, ~Institution, ~Country,        
+  '2020-09至今', "党委研工组组长","清华大学社会科学院", "中国，北京",       
   '2019-01至今', "助理教授","清华大学社会科学院政治学系", "中国，北京",       
   '2019-06至今', "副主任","清华大学数据与治理中心", "中国，北京",       
   '2015-05 ~ 2018-05', "统计学顾问（Statistical Consultant）","爱荷华社会科学研究中心（Iowa Social Science Research Center）", "美国，爱荷华州") %>%    
@@ -191,6 +123,39 @@ tribble(
 
 \endgroup
 
+# 科研项目
+
+```{r fundings}
+tribble(            
+  ~Year, ~Project, ~Institution,            
+  '2021', "新型城镇化进程中新老市民身份认同建构的社会心理机制与政策引导路径研究", "国家自然科学基金",         
+  '2020', "突发公共卫生事件互联网政治生态与话语竞争研究","北京市社会科学基金", 
+  "2020", " 北京市违法建设专题研究" ,"北京是规划和自然资源委员会") %>%       
+  detailed_entries(                    
+    when = Year,                    
+    with = Project,                    
+    what = Institution) 
+```
+
+# 教学经历
+
+```{r teaching}
+tribble(
+  ~Year, ~Name, ~Institution,
+  '秋季学期', "70700173: 治理技术专题：政治数据分析","清华大学",
+  '秋季学期', "80700673: 政务大数据应用与分析","清华大学",
+  '春季学期', "10700193: 理解公共政策：多元视角与案例解析","清华大学",
+  '春季学期', "30700953: 公共政策分析：视角与方法","清华大学",
+  '全年课程', "定量学群R语言工作坊","清华大学",
+  '2018 秋季学期', "POLI301: 政治数据分析","爱荷华大学",
+) %>% 
+  detailed_entries(
+    when = Year,
+    with = Name, 
+    where = Institution
+  )
+```
+
 # 会议活动
 
 \begingroup
@@ -231,21 +196,4 @@ LaTeX, Markdown, Git
 * 中西部政治科学协会（MPSA）成员
 * 中国政治科学研究协会（ACPS）成员
 
-# 教学经历
 
-```{r teaching}
-tribble(
-  ~Year, ~Name, ~Institution,
-  '秋季学期', "70700173: 治理技术专题：政治数据分析","清华大学",
-  '秋季学期', "80700673: 政务大数据应用与分析","清华大学",
-  '春季学期', "30700953: 公共政策分析：视角与方法","清华大学",
-  '夏季学期', "工作坊：数据可视化","清华大学",
-  '夏季学期', "工作坊：和Dr.Hu一起学习R","清华大学",
-  '2018 秋季学期', "POLI301: 政治数据分析","爱荷华大学",
-) %>% 
-  detailed_entries(
-    when = Year,
-    with = Name, 
-    where = Institution
-  )
-```

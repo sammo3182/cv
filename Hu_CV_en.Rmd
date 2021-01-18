@@ -34,11 +34,6 @@ p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
 p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
 
 
-# Get latex ---------------------------------------------------------------
-
-## This needs to be run manually if LaTex is not installed locally.
-##tinytex::install_tinytex()
-
 ```
 
 ```{r orcidData, include=FALSE}
@@ -199,7 +194,7 @@ df_grants%>%
 
 R, STATA, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
 
-## Application
+## Applied
 
 LaTeX, Markdown, Git
 
@@ -221,13 +216,11 @@ Member of
 ```{r teaching}
 tribble(
   ~Year, ~Name, ~Institution,
-  'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
-  'Fall', "Workshop: Learning R with Dr. Hu", "Tsinghua University",
+  'All-Year', "Workshop: Learning R with Dr. Hu", "Tsinghua University",
   'Fall', "70700173: Analysis of Political Data","Tsinghua University",
   'Fall', "80700673: Governmental Big Data","Tsinghua University",
+  'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
   'Spring', "30700953: Analysis of Public Policy: Perspectives and Methods","Tsinghua University",
-  'Summer', "Workshop: Data Visualization","Tsinghua University",
-  'Summer', "Workshop: Learning R with Dr. Hu","Tsinghua University",
   'Fall 2018', "POLI301: Analysis of Political Data","University of Iowa",
 ) %>% 
   detailed_entries(
