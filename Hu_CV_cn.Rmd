@@ -10,7 +10,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
 output: 
   vitae::awesomecv:
-    pandoc_args: ["--lua-filter=multiple-bibliographies.lua"] # used for creating bibliographies for multiple section
+    pandoc_args: --lua-filter=multiple-bibliographies.lua
 header-includes:
 - \usepackage{ctex}
 csl: apa.csl # to show the entire list of the authors

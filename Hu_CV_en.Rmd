@@ -11,7 +11,9 @@ date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
 output: 
   vitae::awesomecv:
-    pandoc_args: --lua-filter=multiple-bibliographies.lua # used for creating bibliographies for multiple section
+    pandoc_args: --lua-filter=multiple-bibliographies.lua
+  # vitae::markdowncv:
+  #   pandoc_args: --lua-filter=multiple-bibliographies.lua
 header-includes:
 - \usepackage{ctex}
 csl: apa.csl # to show the entire list of the authors
@@ -30,9 +32,11 @@ knitr::opts_chunk$set(echo = FALSE,
 # R packages --------------------------------------------------------------
 if (!require(pacman)) install.packages("pacman"); library(pacman)
 
-p_load_gh("ropenscilabs/tic", "mitchelloharawild/vitae")
+p_load_gh(
+  "ropenscilabs/tic" 
+  # ,"mitchelloharawild/vitae"
+  )
 p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
-
 
 ```
 
@@ -97,6 +101,7 @@ df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["sum
 
 ```
 
+
 # Education 
 
 ```{r Education}
@@ -121,7 +126,7 @@ df_qualifications%>%
   )
 ```
 
-# Professional Positions
+## Professional Positions
 ```{r ProfessionalPositions}
 df_position %>% 
   detailed_entries(
@@ -153,6 +158,7 @@ df_position %>%
 ::: {#refs_chinese}
 :::
 
+
 \endgroup
 
 ## Software
@@ -179,6 +185,7 @@ df_position %>%
 
 
 # Grants
+
 ```{r grants}
 df_grants%>%
   detailed_entries(
