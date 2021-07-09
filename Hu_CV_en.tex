@@ -1,0 +1,438 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Yue}{Hu}
+
+\position{Adjunt Associate Professor}
+\address{Department of Political Science, Tsinghua University, China}
+
+\email{\href{mailto:yuehu@tsinghua.edu.cn}{\nolinkurl{yuehu@tsinghua.edu.cn}}}
+\homepage{sammo3182.github.io}
+\github{sammo3182}
+\twitter{yuehupolisci}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{ctex}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {July 2021}
+    {Yue Hu~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{University of Iowa}{Ph.D. (Political Science) }{US}{2013 - 2018}{}\vspace{-4.0mm}
+    \cventry{University of South Carolina}{M.A. (Political Science) }{US}{2011 - 2013}{}\vspace{-4.0mm}
+    \cventry{University of Regina}{M.A. (Political Science) }{CA}{2009 - 2011}{}\vspace{-4.0mm}
+    \cventry{Nankai University}{B.L.L. (Zhou Enlai School of Governance) }{CN}{2005 - 2009}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{professional-training}{%
+\subsection{Professional Training}\label{professional-training}}
+
+\begin{cventries}
+    \cventry{University of Iowa}{Certificate in Informatics}{US}{2016 - 12}{}\vspace{-4.0mm}
+    \cventry{National University of Singapore}{Experimental Methods}{SG}{2014 - 06}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{professional-positions}{%
+\section{Professional Positions}\label{professional-positions}}
+
+\begin{cventries}
+    \cventry{Tsinghua University}{Deputy Director, Computational Social Science Platform}{CN}{2021.07--Present.}{}\vspace{-4.0mm}
+    \cventry{Github}{Campus Advisor, Education}{US}{2021.07--Present.}{}\vspace{-4.0mm}
+    \cventry{Tsinghua University}{Adjunct Associate Professor, Political Science}{CN}{2021.06--Present.}{}\vspace{-4.0mm}
+    \cventry{Tsinghua University}{Director of Graduate Studies, School of Social Science}{CN}{2020.09--Present.}{}\vspace{-4.0mm}
+    \cventry{Tsinghua University}{Deputy Director, Center on Data and Governance}{CN}{2019.06--Present.}{}\vspace{-4.0mm}
+    \cventry{Tsinghua University}{Assistant Professor, Political Science}{CN}{2019.01--2021.05}{}\vspace{-4.0mm}
+    \cventry{The University of Iowa Public Policy Center}{Statistical Consultant, Iowa Social Science Research Center}{US}{2015.05--2018.05}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{peer-reviewed-articles}{%
+\subsection{Peer-Reviewed Articles}\label{peer-reviewed-articles}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_published}{}
+\leavevmode\hypertarget{ref-HuPizzi2022}{}%
+Hu, Y., \& Pizzi, E. (2022). The {Role} of {Language Policy} in
+{Migration Decisions}. \emph{China: An International Journal}, Accepted.
+
+\leavevmode\hypertarget{ref-PizziHu2021}{}%
+Pizzi, E., \& Hu, Y. (2021). Does {Governmental Policy Shape Migration
+Decisions}?{The Case} of {China}'s hukou {System}. \emph{Modern China},
+Accepted.
+
+\leavevmode\hypertarget{ref-Hu2020}{}%
+Hu, Y. (2020). Culture {Marker Versus Authority Marker}: {How Do
+Language Attitudes Affect Political Trust}? \emph{Political Psychology},
+\emph{41}(4), 699--716. \url{https://doi.org/10.1111/pops.12646}
+
+\leavevmode\hypertarget{ref-Hu2020a}{}%
+Hu, Y. (2020). Refocusing {Democracy}: {The Chinese Government}'s
+{Framing Strategy} in {Political Language}. \emph{Democratization},
+\emph{72}(2), 302--320.
+\url{https://doi.org/10.1080/13510347.2019.1690461}
+
+\leavevmode\hypertarget{ref-HuLiu2020}{}%
+Hu, Y., \& Liu, A. H. (2020). The {Effects} of {Foreign Language
+Proficiency} on {Public Attitudes}: {Evidence} from the
+{Chinese}-{Speaking World}. \emph{Journal of East Asian Studies},
+\emph{20}(1), 1--23. \url{https://doi.org/10.1017/jea.2019.41}
+
+\leavevmode\hypertarget{ref-Hu2019}{}%
+Hu, Y. (2019). Are {Informal Education Facilities Effective Means} for
+{Generating Political Support}? {A Spatial Analysis}. \emph{Social
+Science Quarterly}, \emph{100}(3), 701--724.
+\url{https://doi.org/10.1111/ssqu.12589}
+
+\leavevmode\hypertarget{ref-ClaypoolEtAl2018}{}%
+Claypool, V. H., Reisinger, W., Zaloznaya, M., Hu, Y., \& Juehring, J.
+(2018). Tsar {Putin} and the "{Corruption}" {Thorn} in his {Side}: {The
+Demobilization} of {Votes} in a {Competitive Authoritarian Regime}.
+\emph{Electoral Studies}, \emph{54}, 182--204.
+
+\leavevmode\hypertarget{ref-Hu2018b}{}%
+Hu, Y. (2018). \emph{Rebuilding the {Tower} of {Babel}: {Language
+Policy} and {Political Trust} in {China}} {[}PhD thesis{]}. The
+University of Iowa.
+
+\leavevmode\hypertarget{ref-SoltEtAl2017}{}%
+Solt, F., Hu, Y., Hudson, K., Song, J., \& Yu, D. "Erico". (2017).
+Economic {Inequality} and {Class Consciousness}. \emph{The Journal of
+Politics}, \emph{79}(3), 1079--1083.
+\url{https://doi.org/10.1086/690971}
+
+\leavevmode\hypertarget{ref-SoltEtAl2016}{}%
+Solt, F., Hu, Y., Hudson, K., Song, J., \& Yu, D. "Erico". (2016).
+Economic {Inequality} and {Belief} in {Meritocracy} in the {United
+States}. \emph{Research \& Politics}, \emph{3}(4), 1--7.
+\url{https://doi.org/10.1177/2053168016672101}
+
+\leavevmode\hypertarget{ref-TangEtAl2016a}{}%
+Tang, W., Hu, Y., \& Jin, S. (2016). Affirmative {Inaction}: {Language
+Education} and {Labor Mobility} among {China}'s {Muslim Minorities}.
+\emph{Chinese Sociological Review}, \emph{48}(4), 346--366.
+
+\leavevmode\hypertarget{ref-Hu2013}{}%
+Hu, Y. (2013). Institutional {Difference} and {Cultural Difference}: {A
+Comparative Study} of {Canadian} and {Chinese Cultural Diplomacy}.
+\emph{Journal of American-East Asian Relations}, \emph{20}(2-3),
+256--268. \url{https://doi.org/10.1163/18765610-02003011}
+
+\leavevmode\hypertarget{ref-Hu2011}{}%
+Hu, Y. (2011). \emph{Culture and {Cultural Diplomacy}: {A Comparative
+Study} of a {Canadian} and {Chinese Case}} {[}PhD thesis{]}. The
+University of Regina.
+
+\leavevmode\hypertarget{ref-Hu2009}{}%
+Hu, Y. (2009). {An Analysis of Politics Fixed Position of CPPCC from the
+Political Scientific Angle}. \emph{Journal of Tianjin Institute of
+Socialism}, \emph{1}, 19--23.
+
+\endgroup
+
+\hypertarget{chinese-articles}{%
+\subsection{Chinese Articles}\label{chinese-articles}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_chinese}{}
+\leavevmode\hypertarget{ref-HuYueZhuYuZhao2011}{}%
+胡悦, \& 朱毓朝. (2011).
+{{``问题与主义''}导向之争{}{}西方比较政治学沿革及其借鉴意义}.
+\emph{天津社会科学}, \emph{03}, 46--50.
+
+\leavevmode\hypertarget{ref-ChengTongShunHuYue2010}{}%
+程同顺, \& 胡悦. (2010). {对外政策的文化道具{}{}浅析文明冲突论的工具性}.
+\emph{学习论坛}, \emph{26}(02), 33--37.
+
+\leavevmode\hypertarget{ref-HuYue2009}{}%
+胡悦. (2009). {从政治科学角度分析人民政协的政治定位}.
+\emph{天津市社会主义学院学报}, \emph{01}, 19--23.
+
+\endgroup
+
+\hypertarget{software}{%
+\subsection{Software}\label{software}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_software}{}
+\leavevmode\hypertarget{ref-HuEtAl2021}{}%
+Hu, Y., Sun, Y., \& Wu, W. (2021). \emph{Regioncode: {Convertor} of
+{Prefectural}-{Level Administrative Region Names}-{Codes}}.
+
+\leavevmode\hypertarget{ref-Hu2021}{}%
+Hu, Y. (2021). \emph{Drhutools: {Toolbox} for {Writing} an {Academic
+Paper} of {Empirical Research} with {Rmarkdown}}.
+
+\leavevmode\hypertarget{ref-HuSun2020}{}%
+Hu, Y., \& Sun, Y. (2020). \emph{Drhur: {Interactive Platform} for
+{Liberal Arts Students} to {Learn R}}.
+
+\leavevmode\hypertarget{ref-SoltHu2016}{}%
+Solt, F., \& Hu, Y. (2016). \emph{Pewdata: {Reproducible Retrieval} of
+{Pew Research Center Datasets}}. Available at The Comprehensive R
+Archive Network (CRAN).
+
+\leavevmode\hypertarget{ref-SoltHu2015}{}%
+Solt, F., \& Hu, Y. (2015). \emph{Dotwhisker: {Dot}-and-{Whisker Plots}
+of {Regression Results}}. Available at The Comprehensive R Archive
+Network (CRAN).
+
+\leavevmode\hypertarget{ref-SoltHu2015a}{}%
+Solt, F., \& Hu, Y. (2015). \emph{Interplot: {Plot} the {Effects} of
+{Variables} in {Interaction Terms}}. Available at The Comprehensive R
+Archive Network (CRAN).
+
+\endgroup
+
+\hypertarget{conferences}{%
+\section{Conferences}\label{conferences}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_conference}{}
+\leavevmode\hypertarget{ref-Hu2021a}{}%
+Hu, Y. (2021, July). Linguistic {Relativity} of {Political Trust}:
+{Effects} and {Mechanisms}. \emph{The 26th {International Political
+Science Association}}.
+
+\leavevmode\hypertarget{ref-HuYueZhuMeng2021}{}%
+胡悦, \& 朱萌. (2021, July).
+语言政策场域：外语习得对政治效能塑造机制研究.
+\emph{政治学与国际关系学术共同体会议}.
+
+\leavevmode\hypertarget{ref-HuEtAl2021a}{}%
+Hu, Y., Sun, Y., \& Su, Y.-S. (2021, May). Diverse {Loyalty}:
+{Psychological Paths} of {Mass Response} to {Political News}.
+\emph{第四届中国政治传播研究学术论坛}.
+
+\leavevmode\hypertarget{ref-TaiEtAl2021}{}%
+Tai, Y., Hu, Y., \& Frederick, S. (2021, January). Democracy, {Public
+Support}, and {Measurement Uncertainty}. \emph{{AsianPolmeth VIII} \&
+{ASQPS IX}}.
+
+\leavevmode\hypertarget{ref-JiangQiaoLeiHuYue2020}{}%
+蒋俏蕾, \& 胡悦. (2020, November). 青少年饭圈身份认同与集体行动:
+基于观察与实验数据的实证考察. \emph{中国心理学会}.
+
+\leavevmode\hypertarget{ref-JinEtAl2020}{}%
+Jin, S., Hu, Y., \& Meng, T. (2020, October). How {Inequality Affects
+Political Trust}: {A Mediation Analysis}. \emph{{``中国政治 新锐研究''}
+学术研讨会}.
+
+\leavevmode\hypertarget{ref-HuYue2019a}{}%
+胡悦. (2019, November). 新型城镇化中的语言治理：个体、群体与国家.
+\emph{第六届{``政治科学前沿理论与方法''}论坛}.
+
+\leavevmode\hypertarget{ref-PizziHu2019}{}%
+Pizzi, E., \& Hu, Y. (2019, August). Are {Strict Rules} a {Deterrent}?
+{Political Restrictions} and {Migration} in {China}. \emph{American
+{Political Science Association}'s 2019 {Annual Meeting} and {Exhibition}
+({APSA})}.
+
+\leavevmode\hypertarget{ref-HuYue2019b}{}%
+胡悦. (2019, May). 数据可视化与反p-{Hacking}：以政治科学研究为例.
+\emph{{中国R会议}}.
+
+\leavevmode\hypertarget{ref-HuYueShaoZiJie2019}{}%
+胡悦, \& 邵梓捷. (2019, May). Supply vs. {Demand}: {Why People Watch
+State}-{Media Broadcasts} in {China}.
+\emph{政治传播与社会发展论坛暨``政治传播：
+回到原点，守正创新``学术研讨会}.
+
+\leavevmode\hypertarget{ref-TangHu2018}{}%
+Tang, W., \& Hu, Y. (2018, June). Informal {Economic Behavior} and
+{Authoritarian Regime Instability}. \emph{Workshop on {Chinese Politics}
+and {Society}}.
+
+\leavevmode\hypertarget{ref-Hu2018a}{}%
+Hu, Y. (2018, April). Rebuilding the {Tower} of {Babel}? {The Influence}
+of {Language Policy} on {Political Trust}. \emph{The 76th {Midwest
+Political Science Association} ({MPSA}) {Annual Convention}}.
+
+\leavevmode\hypertarget{ref-HuTang2016a}{}%
+Hu, Y., \& Tang, W. (2016, October). Measure {Political Desirability}:
+{An Experimental Method}. \emph{The 30nd {Association} of {Chinese
+Political Studies} ({ACPS}) {Annual Meeting}}.
+
+\endgroup
+
+\hypertarget{grants}{%
+\section{Grants}\label{grants}}
+
+\begin{cventries}
+    \cventry{The University of Iowa}{Ballard and Seashore Fellowship}{}{2017}{}\vspace{-4.0mm}
+    \cventry{The University of Iowa University College}{T. Anne Cleary International Dissertation Research Fellowship}{}{2016}{}\vspace{-4.0mm}
+    \cventry{The University of Iowa University College}{Post-Comprehensive Research Award}{}{2016}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\hypertarget{analytical}{%
+\subsection{Analytical}\label{analytical}}
+
+R, STATA, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
+
+\hypertarget{applied}{%
+\subsection{Applied}\label{applied}}
+
+LaTeX, Markdown, Git
+
+\hypertarget{language}{%
+\subsection{Language}\label{language}}
+
+Language: English, Chinese (Mandarin)
+
+\hypertarget{professional-affiliation}{%
+\section{Professional Affiliation}\label{professional-affiliation}}
+
+Member of
+
+\begin{itemize}
+\tightlist
+\item
+  American Political Science Association
+\item
+  Midwest Political Science Association
+\item
+  Association of Chinese Political Studies
+\item
+  International Political Science Association
+\end{itemize}
+
+\hypertarget{teaching}{%
+\section{Teaching}\label{teaching}}
+
+\begin{cventries}
+    \cventry{}{Workshop: Learning R with Dr. Hu}{Tsinghua University}{All-Year}{}\vspace{-4.0mm}
+    \cventry{}{70700173: Analysis of Political Data}{Tsinghua University}{Fall}{}\vspace{-4.0mm}
+    \cventry{}{80700673: Governmental Big Data}{Tsinghua University}{Fall}{}\vspace{-4.0mm}
+    \cventry{}{10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases}{Tsinghua University}{Spring}{}\vspace{-4.0mm}
+    \cventry{}{30700953: Analysis of Public Policy: Perspectives and Methods}{Tsinghua University}{Spring}{}\vspace{-4.0mm}
+    \cventry{}{POLI301: Analysis of Political Data}{University of Iowa}{Fall 2018}{}\vspace{-4.0mm}
+\end{cventries}
+
+\end{document}

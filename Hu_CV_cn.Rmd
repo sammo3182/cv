@@ -1,6 +1,7 @@
 ---
 name: 胡
 surname: 悦
+position: "准聘副教授"
 address: "清华大学 政治学系"
 www: sammo3182.github.io
 email: yuehu@tsinghua.edu.cn
@@ -11,6 +12,9 @@ headcolor: "414141"
 output: 
   vitae::awesomecv:
     pandoc_args: --lua-filter=multiple-bibliographies.lua
+    keep_tex: yes
+    keep_md: yes
+    
 header-includes:
 - \usepackage{ctex}
 csl: apa.csl # to show the entire list of the authors
@@ -78,9 +82,12 @@ tribble(
 ```{r ProfessionalPositions}
 tribble(         
   ~Year, ~Degree, ~Institution, ~Country,        
+  '2020-07至今', "副主任","清华大学计算社会科学平台", "中国，北京",
+  '2021-07', "校园导师（Campus Advisor）","Github", "美国，加利福尼亚州", 
+  '2020-06至今', "准聘副教授","清华大学社会科学院政治学系", "中国，北京",  
   '2020-09至今', "党委研工组组长","清华大学社会科学院", "中国，北京",  
   '2019-06至今', "副主任","清华大学数据与治理中心", "中国，北京",       
-  '2019-01至今', "助理教授","清华大学社会科学院政治学系", "中国，北京",       
+  '2019-01至2021-05', "助理教授","清华大学社会科学院政治学系", "中国，北京",       
   '2015-05 ~ 2018-05', "统计学顾问（Statistical Consultant）","爱荷华社会科学研究中心（Iowa Social Science Research Center）", "美国，爱荷华州") %>%    
   detailed_entries(               
     when = Year,               

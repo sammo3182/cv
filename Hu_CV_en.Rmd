@@ -1,7 +1,15 @@
 ---
+output: 
+  vitae::awesomecv:
+    pandoc_args: --lua-filter=multiple-bibliographies.lua
+  # vitae::markdowncv:
+  #   pandoc_args: --lua-filter=multiple-bibliographies.lua
+    keep_tex: yes
+    keep_md: yes
+
 name: Yue
 surname: Hu
-position: "Assistant Professor"
+position: "Adjunt Associate Professor"
 address: "Department of Political Science, Tsinghua University, China"
 www: sammo3182.github.io
 email: yuehu@tsinghua.edu.cn
@@ -9,11 +17,7 @@ github: sammo3182
 twitter: yuehupolisci
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "414141"
-output: 
-  vitae::awesomecv:
-    pandoc_args: --lua-filter=multiple-bibliographies.lua
-  # vitae::markdowncv:
-  #   pandoc_args: --lua-filter=multiple-bibliographies.lua
+
 header-includes:
 - \usepackage{ctex}
 csl: apa.csl # to show the entire list of the authors
