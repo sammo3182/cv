@@ -1,18 +1,19 @@
 ---
 output:
   vitae::awesomecv:
-    pandoc_args: --lua-filter=multiple-bibliographies.lua
+    page_total: yes
     keep_tex: yes
     keep_md: yes
+    latex_engine: xelatex
 name: Yue
 surname: Hu
-position: Adjunt Associate Professor
+position: Associate Professor
 address: Department of Political Science, Tsinghua University, China
 www: sammo3182.github.io
 email: yuehu@tsinghua.edu.cn
 github: sammo3182
 twitter: yuehupolisci
-date: July 2021
+date: July 2022
 headcolor: '414141'
 header-includes: \usepackage{ctex}
 csl: apa.csl
@@ -22,7 +23,13 @@ bibliography_software: My_Software.bib
 bibliography_conference: My_Conference.bib
 nocite:
 - '@*'
-- '@'
+- '@ClaypoolEtAl2018, @Hu2011, @Hu2013, @Hu2018, @Hu2019, @Hu2020, @Hu2020a, @Hu2022,
+  @HuEtAl2022, @HuLiu2020, @HuPizzi2022, @HuShao2022, @JiangEtAl2022, @PizziHu2022,
+  @SoltEtAl2016, @SoltEtAl2017, @TaiEtAl2022, @TangEtAl2016, @TangHu2022, @ChengTongShunHuYue2010,
+  @HuYue2009, @HuYue2021, @HuYueZhuYuZhao2011, @JiChengYuanHuYue2022, @Hu2021, @HuEtAl2021,
+  @HuSun2020, @SoltHu2015, @SoltHu2015a, @SoltHu2016, @TaiEtAl2022a, @Hu2018b, @Hu2021a,
+  @HuEtAl2021a, @HuJiang2022, @HuTang2016a, @HuYue2019a, @HuYue2019b, @HuYueZhuMeng2021,
+  @JiangQiaoLeiHuYue2020, @JinEtAl2020, @PizziHu2019, @TaiEtAl2021, @TangHu2018'
 
 ---
 
@@ -49,11 +56,11 @@ nocite:
 
 # Professional Positions
 \begin{cventries}
-	\cventry{Tsinghua University}{Deputy Director, Computational Social Science Platform}{CN}{2021.07--Present.}{}\vspace{-4.0mm}
+	\cventry{Tsinghua University}{Deputy Director, Institute of Computational Social Science}{CN}{2021.07--Present.}{}\vspace{-4.0mm}
 	\cventry{Github}{Campus Advisor, Education}{US}{2021.07--Present.}{}\vspace{-4.0mm}
-	\cventry{Tsinghua University}{Adjunct Associate Professor, Political Science}{CN}{2021.06--Present.}{}\vspace{-4.0mm}
-	\cventry{Tsinghua University}{Director of Graduate Studies, School of Social Science}{CN}{2020.09--Present.}{}\vspace{-4.0mm}
+	\cventry{Tsinghua University}{Associate Professor, Political Science}{CN}{2021.06--Present.}{}\vspace{-4.0mm}
 	\cventry{Tsinghua University}{Deputy Director, Center on Data and Governance}{CN}{2019.06--Present.}{}\vspace{-4.0mm}
+	\cventry{Tsinghua University}{Director of Graduate Studies, School of Social Science}{CN}{2020.09--2022.09}{}\vspace{-4.0mm}
 	\cventry{Tsinghua University}{Assistant Professor, Political Science}{CN}{2019.01--2021.05}{}\vspace{-4.0mm}
 	\cventry{The University of Iowa Public Policy Center}{Statistical Consultant, Iowa Social Science Research Center}{US}{2015.05--2018.05}{}\vspace{-4.0mm}
 \end{cventries}
@@ -66,8 +73,11 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_published}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8027c12e9e.yaml
 :::
+
 
 \endgroup
 
@@ -77,9 +87,10 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_chinese}
-:::
 
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8029963451.yaml
+:::
 
 \endgroup
 
@@ -89,7 +100,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_software}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e80511532b3.yaml
 :::
 
 \endgroup
@@ -100,7 +113,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_conference}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e802c5f77e8.yaml
 :::
 
 \endgroup
@@ -141,7 +156,7 @@ Member of
 # Teaching
 
 \begin{cventries}
-	\cventry{}{Workshop: Learning R with Dr. Hu}{Tsinghua University}{All-Year}{}\vspace{-4.0mm}
+	\cventry{}{Workshop: Learning R with Dr. Hu and His Friends}{Tsinghua University}{All-Year}{}\vspace{-4.0mm}
 	\cventry{}{70700173: Analysis of Political Data}{Tsinghua University}{Fall}{}\vspace{-4.0mm}
 	\cventry{}{80700673: Governmental Big Data}{Tsinghua University}{Fall}{}\vspace{-4.0mm}
 	\cventry{}{10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases}{Tsinghua University}{Spring}{}\vspace{-4.0mm}

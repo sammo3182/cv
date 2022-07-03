@@ -1,19 +1,20 @@
 ---
 name: 胡
 surname: 悦
-position: 准聘副教授
+position: 副教授
 address: 清华大学 政治学系
 www: sammo3182.github.io
 email: yuehu@tsinghua.edu.cn
 github: sammo3182
 twitter: yuehupolisci
-date: July 2021
+date: July 2022
 headcolor: '414141'
 output:
   vitae::awesomecv:
-    pandoc_args: --lua-filter=multiple-bibliographies.lua
+    page_total: yes
     keep_tex: yes
     keep_md: yes
+    latex_engine: xelatex
 header-includes: \usepackage{ctex}
 csl: apa.csl
 bibliography_published: My_Publications.bib
@@ -22,7 +23,13 @@ bibliography_software: My_Software.bib
 bibliography_conference: My_Conference.bib
 nocite:
 - '@*'
-- '@'
+- '@ClaypoolEtAl2018, @Hu2011, @Hu2013, @Hu2018, @Hu2019, @Hu2020, @Hu2020a, @Hu2022,
+  @HuEtAl2022, @HuLiu2020, @HuPizzi2022, @HuShao2022, @JiangEtAl2022, @PizziHu2022,
+  @SoltEtAl2016, @SoltEtAl2017, @TaiEtAl2022, @TangEtAl2016, @TangHu2022, @ChengTongShunHuYue2010,
+  @HuYue2009, @HuYue2021, @HuYueZhuYuZhao2011, @JiChengYuanHuYue2022, @Hu2021, @HuEtAl2021,
+  @HuSun2020, @SoltHu2015, @SoltHu2015a, @SoltHu2016, @TaiEtAl2022a, @Hu2018b, @Hu2021a,
+  @HuEtAl2021a, @HuJiang2022, @HuTang2016a, @HuYue2019a, @HuYue2019b, @HuYueZhuMeng2021,
+  @JiangQiaoLeiHuYue2020, @JinEtAl2020, @PizziHu2019, @TaiEtAl2021, @TangHu2018'
 
 ---
 
@@ -63,7 +70,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_published}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2f673fa6.yaml
 :::
 
 \endgroup
@@ -74,7 +83,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_chinese}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c469a7121.yaml
 :::
 
 \endgroup
@@ -85,7 +96,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_software}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2b1411f.yaml
 :::
 
 \endgroup
@@ -94,6 +107,7 @@ nocite:
 
 \begin{cventries}
 	\cventry{国家自然科学基金}{新型城镇化进程中新老市民身份认同建构的社会心理机制与政策引导路径研究}{}{2021}{}\vspace{-4.0mm}
+	\cventry{国家高端智库（重点）}{香港群体身份认同的互动塑造机制研究}{}{2021}{}\vspace{-4.0mm}
 	\cventry{北京市社会科学基金}{突发公共卫生事件互联网政治生态与话语竞争研究}{}{2020}{}\vspace{-4.0mm}
 	\cventry{北京是规划和自然资源委员会}{ 北京市违法建设专题研究}{}{2020}{}\vspace{-4.0mm}
 \end{cventries}
@@ -105,7 +119,7 @@ nocite:
 	\cventry{}{80700673: 政务大数据应用与分析}{清华大学}{秋季学期}{}\vspace{-4.0mm}
 	\cventry{}{10700193: 理解公共政策：多元视角与案例解析}{清华大学}{春季学期}{}\vspace{-4.0mm}
 	\cventry{}{30700953: 公共政策分析：视角与方法}{清华大学}{春季学期}{}\vspace{-4.0mm}
-	\cventry{}{定量学群R语言工作坊}{清华大学}{全年课程}{}\vspace{-4.0mm}
+	\cventry{}{Learning R with Dr. Hu and His Friends 工作坊}{清华大学}{全年课程}{}\vspace{-4.0mm}
 	\cventry{}{POLI301: 政治数据分析}{爱荷华大学}{2018 秋季学期}{}\vspace{-4.0mm}
 \end{cventries}
 
@@ -115,7 +129,9 @@ nocite:
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_conference}
+
+::: {#bibliography}
+C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c79da5ba0.yaml
 :::
 
 \endgroup

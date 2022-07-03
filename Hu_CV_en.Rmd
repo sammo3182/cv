@@ -1,15 +1,14 @@
 ---
 output: 
   vitae::awesomecv:
-    pandoc_args: --lua-filter=multiple-bibliographies.lua
-  # vitae::markdowncv:
-  #   pandoc_args: --lua-filter=multiple-bibliographies.lua
+    page_total: true
     keep_tex: yes
     keep_md: yes
+    latex_engine: xelatex
 
 name: Yue
 surname: Hu
-position: "Adjunt Associate Professor"
+position: "Associate Professor"
 address: "Department of Political Science, Tsinghua University, China"
 www: sammo3182.github.io
 email: yuehu@tsinghua.edu.cn
@@ -40,7 +39,15 @@ p_load_gh(
   "ropenscilabs/tic" 
   # ,"mitchelloharawild/vitae"
   )
-p_load(tinytex, scholar, tidyverse, here, readxl, glue, bibtex, rorcid, lubridate, vitae)
+p_load(tinytex,
+       scholar,
+       tidyverse,
+       here,
+       readxl,
+       glue,
+       rorcid,
+       lubridate,
+       vitae)
 
 ```
 
@@ -148,8 +155,10 @@ df_position %>%
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_published}
-:::
+```{r pub-peer}
+bibliography_entries("My_publications.bib")
+```
+
 
 \endgroup
 
@@ -159,9 +168,9 @@ df_position %>%
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_chinese}
-:::
-
+```{r pub-chn}
+bibliography_entries("My_Chinese.bib")
+```
 
 \endgroup
 
@@ -171,8 +180,9 @@ df_position %>%
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_software}
-:::
+```{r pub-soft}
+bibliography_entries("My_Software.bib")
+```
 
 \endgroup
 
@@ -182,8 +192,9 @@ df_position %>%
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-::: {#refs_conference}
-:::
+```{r pub-conf}
+bibliography_entries("My_Conference.bib")
+```
 
 \endgroup
 
@@ -228,7 +239,7 @@ Member of
 ```{r teaching}
 tribble(
   ~Year, ~Name, ~Institution,
-  'All-Year', "Workshop: Learning R with Dr. Hu", "Tsinghua University",
+  'All-Year', "Workshop: Learning R with Dr. Hu and His Friends", "Tsinghua University",
   'Fall', "70700173: Analysis of Political Data","Tsinghua University",
   'Fall', "80700673: Governmental Big Data","Tsinghua University",
   'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
