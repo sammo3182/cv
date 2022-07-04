@@ -54,9 +54,10 @@ nocite:
 
 # 工作经历
 \begin{cventries}
+	\cventry{清华大学苏世民书院}{论文导师}{中国，北京}{2021-09至今}{}\vspace{-4.0mm}
 	\cventry{清华大学计算社会科学平台}{副主任}{中国，北京}{2020-07至今}{}\vspace{-4.0mm}
 	\cventry{Github}{校园导师（Campus Advisor）}{美国，加利福尼亚州}{2021-07}{}\vspace{-4.0mm}
-	\cventry{清华大学社会科学院政治学系}{准聘副教授}{中国，北京}{2020-06至今}{}\vspace{-4.0mm}
+	\cventry{清华大学社会科学院政治学系}{副教授}{中国，北京}{2020-06至今}{}\vspace{-4.0mm}
 	\cventry{清华大学社会科学院}{党委研工组组长}{中国，北京}{2020-09至今}{}\vspace{-4.0mm}
 	\cventry{清华大学数据与治理中心}{副主任}{中国，北京}{2019-06至今}{}\vspace{-4.0mm}
 	\cventry{清华大学社会科学院政治学系}{助理教授}{中国，北京}{2019-01至2021-05}{}\vspace{-4.0mm}
@@ -72,7 +73,7 @@ nocite:
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2f673fa6.yaml
+C:/Users/sammo/AppData/Local/Temp/RtmpyWuq7r/file38d82fa36e4d.yaml
 :::
 
 \endgroup
@@ -85,7 +86,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2f673fa6.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c469a7121.yaml
+C:/Users/sammo/AppData/Local/Temp/RtmpyWuq7r/file38d826a315d7.yaml
 :::
 
 \endgroup
@@ -98,7 +99,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c469a7121.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2b1411f.yaml
+C:/Users/sammo/AppData/Local/Temp/RtmpyWuq7r/file38d827906fa.yaml
 :::
 
 \endgroup
@@ -131,7 +132,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c2b1411f.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c79da5ba0.yaml
+C:/Users/sammo/AppData/Local/Temp/RtmpyWuq7r/file38d8488f3552.yaml
 :::
 
 \endgroup
@@ -139,6 +140,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpuUJzPH/file3d2c79da5ba0.yaml
 
 # 荣誉奖励
 \begin{cventries}
+	\cventry{清华大学}{学术新人奖}{}{2022}{}\vspace{-4.0mm}
 	\cventry{爱荷华大学}{Ballard and Seashore 奖学金}{}{2017}{}\vspace{-4.0mm}
 	\cventry{爱荷华大学}{T. Anne Cleary 国际博士论文奖学金}{}{2016}{}\vspace{-4.0mm}
 	\cventry{爱荷华大学}{ Post-Comprehensive 研究奖}{}{2016}{}\vspace{-4.0mm}

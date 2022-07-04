@@ -56,6 +56,7 @@ nocite:
 
 # Professional Positions
 \begin{cventries}
+	\cventry{Tsinghua University Schwarzman College}{Capstone Advisor, NA}{CN}{2021.08--Present.}{}\vspace{-4.0mm}
 	\cventry{Tsinghua University}{Deputy Director, Institute of Computational Social Science}{CN}{2021.07--Present.}{}\vspace{-4.0mm}
 	\cventry{Github}{Campus Advisor, Education}{US}{2021.07--Present.}{}\vspace{-4.0mm}
 	\cventry{Tsinghua University}{Associate Professor, Political Science}{CN}{2021.06--Present.}{}\vspace{-4.0mm}
@@ -75,7 +76,7 @@ nocite:
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8027c12e9e.yaml
+C:/Users/sammo/AppData/Local/Temp/Rtmpwtm49k/file3c7026b32f1b.yaml
 :::
 
 
@@ -89,7 +90,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8027c12e9e.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8029963451.yaml
+C:/Users/sammo/AppData/Local/Temp/Rtmpwtm49k/file3c7056163003.yaml
 :::
 
 \endgroup
@@ -102,7 +103,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e8029963451.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e80511532b3.yaml
+C:/Users/sammo/AppData/Local/Temp/Rtmpwtm49k/file3c7016095e50.yaml
 :::
 
 \endgroup
@@ -115,7 +116,7 @@ C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e80511532b3.yaml
 
 
 ::: {#bibliography}
-C:/Users/sammo/AppData/Local/Temp/RtmpYnKTg9/file3e802c5f77e8.yaml
+C:/Users/sammo/AppData/Local/Temp/Rtmpwtm49k/file3c7030395039.yaml
 :::
 
 \endgroup
