@@ -1,58 +1,64 @@
 ---
-output: 
-  vitae::awesomecv:
-    page_total: true
-    keep_tex: yes
-    keep_md: yes
-    latex_engine: xelatex
-
-name: Yue
-surname: Hu
-position: "Associate Professor"
-address: "Department of Political Science, Tsinghua University, China"
-www: sammo3182.github.io
-email: yuehu@tsinghua.edu.cn
-github: sammo3182
-twitter: yuehupolisci
-date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "414141"
-
+title: CV
+format:
+  quarto-cv-pdf:
+    keep-tex: true
 header-includes:
-- \usepackage{ctex}
-csl: apa.csl # to show the entire list of the authors
-bibliography_published: "My_Publications.bib" # use separate .bib files and assign each of them a unique key: bibliography_*
-bibliography_chinese: "My_Chinese.bib"
-bibliography_software: "My_Software.bib"
-bibliography_conference: "My_Conference.bib"
-nocite: '@*' # don't change this if you want to print out all the refs
+  # - \usepackage[UTF8]{ctex}
+  - \setmainfont{Noto Serif CJK TC}
+  - \setsansfont{Noto Sans CJK TC}
+
+author: "Yue Hu | 胡悦"
+date: last-modified
+# phone: 123-456-7890
+address: "Mingzhai, Tsinghua University, Haidian, Beijing, China"
+email: yuehu@tsinghua.edu.cn
+fontsize: 12pt
+#github: github # github account
+orcid: 0000-0002-2829-3971 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: sammo3182@github.io
+fontawesome: yes
+nocite: '@*'
+
+bibliography: 
+    peer: My_Articles.bib
+    chinese: My_Chinese.bib
+    software: My_Software.bib
+    conference: My_Conference.bib
+  
+validate-yaml: false
+csl: apa.csl
+
+execute: 
+  echo: false
+  warning: false
+  message: false
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, 
-                      warning = FALSE,
-                      message = FALSE)
-
-# R packages --------------------------------------------------------------
-if (!require(pacman)) install.packages("pacman"); library(pacman)
+if (!require(pacman)) install.packages("pacman") 
+library(pacman)
 
 p_load_gh(
-  "ropenscilabs/tic" 
-  # ,"mitchelloharawild/vitae"
+  "ropenscilabs/tic",
+  "mitchelloharawild/vitae"
   )
 p_load(tinytex,
        scholar,
        tidyverse,
        here,
-       readxl,
-       glue,
        rorcid,
        lubridate,
-       vitae)
+       glue,
+       modelsummary,
+       kableExtra
+       )
 
 ```
 
 ```{r orcidData, include=FALSE}
-
 orcidID <- "0000-0002-2829-3971"
 
 ## Education
@@ -112,17 +118,39 @@ df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["sum
 
 ```
 
+# Professional Positions
+
+```{r ProfessionalPositions}
+df_position %>% 
+  detailed_entries(
+    what = `employment-summary.organization.name`,
+    when = glue("{`employment-summary.start-date.year.value`}.{`employment-summary.start-date.month.value`}--{`employment-summary.end-date.year.value`}.{`employment-summary.end-date.month.value`}"),
+    with = glue("{`employment-summary.role-title`}, {`employment-summary.department-name`}"),
+    where = `employment-summary.organization.address.country`) |> 
+  select(with, when, what, where, -why) |> 
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |> 
+  column_spec(3, width = "15em") |> 
+  column_spec(1, width = "20em")
+```
 
 # Education 
 
-```{r Education}
-df_edu %>%
+```{r edu}
+df_edu |> 
   detailed_entries(
     with = glue::glue("{`education-summary.role-title`} ({`education-summary.department-name`}) "),
     when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
     what = `education-summary.organization.name`,
     where = `education-summary.organization.address.country`
-  )
+  ) |> 
+  select(with, when, what, where, -why) |> 
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
 ```
 
 ## Professional Training
@@ -134,105 +162,50 @@ df_qualifications%>%
     when = glue::glue("{`qualification-summary.end-date.year.value`} - {`qualification-summary.end-date.month.value`}"),
     what = `qualification-summary.organization.name`,
     where = `qualification-summary.organization.address.country`
-  )
-```
-
-# Professional Positions
-```{r ProfessionalPositions}
-df_position %>% 
-  detailed_entries(
-    what = `employment-summary.organization.name`,
-    when = glue("{`employment-summary.start-date.year.value`}.{`employment-summary.start-date.month.value`}--{`employment-summary.end-date.year.value`}.{`employment-summary.end-date.month.value`}"),
-    with = glue("{`employment-summary.role-title`}, {`employment-summary.department-name`}"),
-    where = `employment-summary.organization.address.country`)
+  ) |> 
+  select(with, when, what, where, -why) |>  
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
 ```
 
 # Publications
 
-## Peer-Reviewed Articles
+::: {#refs-peer}
+:::
 
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
+# Chinese
 
-```{r pub-peer}
-bibliography_entries("My_publications.bib")
-```
+::: {#refs-chinese}
+:::
 
+# Software
 
-\endgroup
+::: {#refs-software}
+:::
 
-## Chinese Articles
+# Conference
 
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-```{r pub-chn}
-bibliography_entries("My_Chinese.bib")
-```
-
-\endgroup
-
-## Software
-
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-```{r pub-soft}
-bibliography_entries("My_Software.bib")
-```
-
-\endgroup
-
-# Conferences
-
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-```{r pub-conf}
-bibliography_entries("My_Conference.bib")
-```
-
-\endgroup
-
+::: {#refs-conference}
+:::
 
 # Grants
 
 ```{r grants}
 df_grants%>%
-  detailed_entries(
+  brief_entries(
     with = `distinction-summary.role-title`,
     what = `distinction-summary.organization.name`,
     when = `distinction-summary.start-date.year.value`,
-    )
+    )|> 
+  select(with, what, when) |>  
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |> 
+  column_spec(1, width = "25em") 
 ```
-
-# Skills
-
-## Analytical
-
-R, STATA, Python, C++, Mathematica, NetLogo, JAGS, UCINET.
-
-## Applied
-
-LaTeX, Markdown, Git
-
-## Language
-
-Language: English, Chinese (Mandarin)
-
-
-# Professional Affiliation
-
-Member of 
-
-* American Political Science Association
-* Midwest Political Science Association
-* Association of Chinese Political Studies
-* International Political Science Association
 
 # Teaching
 
@@ -243,12 +216,29 @@ tribble(
   'Fall', "70700173: Analysis of Political Data","Tsinghua University",
   'Fall', "80700673: Governmental Big Data","Tsinghua University",
   'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
+  ' Spring', "60700033: Big Data Analysis (A)", "Tsinghua University",
   'Spring', "30700953: Analysis of Public Policy: Perspectives and Methods","Tsinghua University",
-  'Fall 2018', "POLI301: Analysis of Political Data","University of Iowa",
+  'Fall 2018', "POLI301: Analysis of Political Data","University of Iowa"
 ) %>% 
   detailed_entries(
     when = Year,
     with = Name, 
     where = Institution
-  )
+  )|> 
+  ungroup() |>  
+  select(when, with, where, -why) |>  
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |> 
+  column_spec(2, width = "25em") 
 ```
+
+# Professional Affiliation
+
+Member of 
+
+* American Political Science Association
+* Midwest Political Science Association
+* Association of Chinese Political Studies
+* International Political Science Association
