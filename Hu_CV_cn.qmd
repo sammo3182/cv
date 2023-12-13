@@ -62,7 +62,7 @@ p_load(tinytex,
 ```{r ProfessionalPositions}
 tribble(         
   ~Year, ~Degree, ~Institution, ~Country,        
-  '2020-06至今', "副教授","清华大学社会科学院政治学系", "中国，北京",  
+  '2021-06至今', "副教授","清华大学社会科学院政治学系", "中国，北京",  
   '2020-07至今', "副主任","清华大学计算社会科学平台", "中国，北京",
   '2019-06至今', "副主任","清华大学数据与治理中心", "中国，北京",    
   "", "","", "",
@@ -116,7 +116,7 @@ tribble(
 tribble(      
   ~Year, ~Degree, ~Institution, ~Country,     
   '2016-12', "信息学（Certificate of Informatics）","爱荷华大学", "美国，爱荷华州",    
-  '2014-06', "实验研究方法（Experimental Method）","新加坡国立大学", "新加坡",  ) %>% 
+  '2014-06', "实验研究方法（Experimental Method）","新加坡国立大学", "新加坡") %>% 
   detailed_entries(          
     when = Year,          
     with = Degree,           
