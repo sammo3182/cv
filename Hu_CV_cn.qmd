@@ -1,24 +1,21 @@
 ---
 title: 科研简历
 format:
-  quarto-cv-pdf:
-    keep-tex: true
-header-includes:
-  # - \usepackage[UTF8]{ctex}
-  - \setmainfont{Noto Serif CJK TC}
-  - \setsansfont{Noto Sans CJK TC}
+  quarto-cv-pdf: 
+    pdf-engine: xelatex
+CJKmainfont: Noto Sans CJK SC
+fontsize: 12pt
 
 author: "胡悦"
 date: last-modified
 # phone: 123-456-7890
 address: "北京海淀区清华大学明斋"
 email: yuehu@tsinghua.edu.cn
-fontsize: 12pt
-#github: github # github account
-orcid: 0000-0002-2829-3971 # orcid identifier
+github: sammo3182 # github account
+#orcid: 0000-0002-2829-3971 # orcid identifier
 #osf: ymqui # osf five character id
-#twitter: twitter # twitter handle
-web: sammo3182@github.io
+twitter: yuehupolisci # twitter handle
+web: www.drhuyue.site
 fontawesome: yes
 nocite: '@*'
 
@@ -26,7 +23,7 @@ bibliography:
     peer: My_Articles.bib
     chinese: My_Chinese.bib
     software: My_Software.bib
-    conference: My_Conference.bib
+    speech: My_Speech.bib
   
 validate-yaml: false
 csl: apa.csl
@@ -59,55 +56,50 @@ p_load(tinytex,
 ```
 
 # 工作经历
-```{r ProfessionalPositions}
+```{r position}
 tribble(         
-  ~Year, ~Degree, ~Institution, ~Country,        
-  '2021-06至今', "副教授","清华大学社会科学院政治学系", "中国，北京",  
-  '2020-07至今', "副主任","清华大学计算社会科学平台", "中国，北京",
-  '2019-06至今', "副主任","清华大学数据与治理中心", "中国，北京",    
-  "", "","", "",
-  '2021-09至今', "论文导师", "清华大学苏世民书院", "中国，北京",
-  '2021-07', "校园导师（Campus Advisor）","Github", "美国，加利福尼亚州", 
-  '2019-01至2021-05', "助理教授","清华大学社会科学院政治学系", "中国，北京",       
-  '2015-05 ~ 2018-05', "统计学顾问（Statistical Consultant）","爱荷华社会科学研究中心（Iowa Social Science Research Center）", "美国，爱荷华州") %>%    
-  detailed_entries(               
-    when = Year,               
-    with = Degree,               
-    where = Country,          
-    what = Institution) |> 
-  ungroup() |>  
-  select(when, with, what, where, -why) |>  
-  kable(col.names = NULL, booktabs = T) |> 
+  ~Year, ~Degree, ~Institution,        
+  '2021-06至今', "副教授","清华大学社会科学院政治学系",  
+  '2021-09至今', "论文导师", "清华大学苏世民书院",
+  '2019-01至2021-05', "助理教授","清华大学社会科学院政治学系") %>%    
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
-  sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) |> 
-  column_spec(2, width = "9em") |> 
-  column_spec(3, width = "20em") 
+  sub("\\\\toprule", "", .) %>% 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .) 
 ```
 
+## 学术兼职
+
+```{r professional}
+tribble(         
+  ~Year, ~Degree, ~Institution,        
+  '2021-07至今', "校园导师（Campus Advisor）","Github Educatoin",
+  '2021-04至今', "常务委员","北京青年政治学论坛", 
+  '2020-07至今', "副主任","清华大学国家治理实验室计算社会科学平台",
+  '2019-06至今', "副主任","清华大学数据与治理中心",
+  '2015-05 ~ 2018-05', "Statistical Consultant","Iowa Social Science Research Center") %>%    
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>% 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .) 
+```
 
 # 教育经历
 
 ```{r Education}
 tribble(   
   ~Year, ~Degree, ~Institution, ~Country,  
-  '2013-2018', "哲学博士（Ph.D., Political Science）","爱荷华大学（University of Iowa, Iowa City）", "美国，爱荷华",  
-  '2011-2013', "文学硕士（M.A.,Political Science）","南卡罗莱纳大学（University of South Carolina, Columbia）", "美国，南卡罗莱纳",   
-  '2009-2011', "文学硕士（M.A., Political Science）","里贾纳大学（University of Regina, Regina）", "加拿大，里贾纳" , 
-  '2005-2009', "法学学士（国际关系）","南开大学", "中国，天津") %>%    
-  detailed_entries(     
-    when = Year,     
-    with = Degree,      
-    where = Country,
-    what = Institution) |> 
-  ungroup() |>  
-  select(when, with, where, -why) |>  
-  kable(col.names = NULL, booktabs = T) |> 
+  '2013-2018', "哲学博士（Political Science）","University of Iowa", "美国",  
+  '2011-2013', "文学硕士（Political Science）","University of South Carolina", "美国",   
+  '2009-2011', "文学硕士（Political Science）","University of Regina", "加拿大" , 
+  '2005-2009', "法学学士（国际关系）","南开大学", "中国") %>%
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
   sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) |> 
-  column_spec(2, width = "30em") |> 
-  column_spec(3, width = "10em") 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
 ```
 
 ## 专业训练
@@ -115,21 +107,13 @@ tribble(
 ```{r Qualifications}
 tribble(      
   ~Year, ~Degree, ~Institution, ~Country,     
-  '2016-12', "信息学（Certificate of Informatics）","爱荷华大学", "美国，爱荷华州",    
+  '2016-12', "信息学（Certificate of Informatics）","爱荷华大学", "美国",    
   '2014-06', "实验研究方法（Experimental Method）","新加坡国立大学", "新加坡") %>% 
-  detailed_entries(          
-    when = Year,          
-    with = Degree,           
-    where = Country,     
-    what = Institution)  |> 
-  ungroup() |>  
-  select(when, with, what, where, -why) |>  
-  kable(col.names = NULL, booktabs = T) |> 
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
   sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) |> 
-  column_spec(2, width = "20em") |> 
-  column_spec(3:4, width = "10em")
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
 ```
 
 
@@ -151,17 +135,12 @@ tribble(
   '2023', "经济不平等的经济与治理认知塑造机制与行为政策引导策略研究", "国家自然科学基金",
   '2021', "新型城镇化进程中新老市民身份认同建构的社会心理机制与政策引导路径研究", "国家自然科学基金",
   '2021', "香港群体身份认同的互动塑造机制研究", "国家高端智库（重点）",
-  '2020', "突发公共卫生事件互联网政治生态与话语竞争研究","北京市社会科学基金") %>%     
-  detailed_entries(                    
-    when = Year,                    
-    with = Project,                    
-    what = Institution) |> 
-  ungroup() |> 
-  select(when, with, what, -where) |>  
-  kable(col.names = NULL, booktabs = T) |> 
+  '2020', "突发公共卫生事件互联网政治生态与话语竞争研究","北京市社会科学基金") %>% 
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
   sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
 ```
 
 # 荣誉奖励
@@ -171,20 +150,12 @@ tribble(
   ~Year, ~Award, ~Institution,            
   "2022", "学术新人奖", "清华大学",
   "2021", "清华大学教学成果奖","清华大学",
-  "2021", "北京市第十六届哲学社会科学优秀成果奖", "北京市政府",
-  '2017', "Ballard and Seashore 奖学金","爱荷华大学",         
-  '2016', "T. Anne Cleary 国际博士论文奖学金","爱荷华大学", 
-  "2016", " Post-Comprehensive 研究奖" ,"爱荷华大学") %>%       
-  detailed_entries(                    
-    when = Year,                    
-    with = Award,                    
-    what = Institution) |> 
-  ungroup() |> 
-  select(-where) |>  
-  kable(col.names = NULL, booktabs = T) |> 
+  "2021", "北京市第十六届哲学社会科学优秀成果奖", "北京市政府") %>% 
+  kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
   sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
 ```
 
 # 研发软件
@@ -192,11 +163,10 @@ tribble(
 ::: {#refs-software}
 :::
 
-# 国际会议
+# 专题讲座（摘选）
 
-::: {#refs-conference}
+::: {#refs-speech}
 :::
-
 
 
 # 教授课程
@@ -211,25 +181,9 @@ tribble(
   '春季学期', "60700033: 大数据分析（A）","清华大学",
   '全年课程', "Learning R with Dr. Hu and His Friends 工作坊","清华大学",
   '2018 秋季学期', "POLI301: 政治数据分析","爱荷华大学",
-) %>% 
-  detailed_entries(
-    when = Year,
-    with = Name, 
-    where = Institution
-  )|> 
-  ungroup() |>  
-  select(when, with, where, -why) |>  
-  kable(col.names = NULL, booktabs = T) |> 
-  kable_styling(latex_options = "hold_position") %>%
+)  %>% 
+  kable(col.names = NULL, booktabs = T, format = "latex") %>%
   sub("\\\\toprule", "", .) %>%
-  sub("\\\\bottomrule", "", .) |> 
-  column_spec(2, width = "30em") 
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
 ```
-
-# 学术共同体
-
-* Member of American Political Science Association
-* Member of Midwest Political Science Association
-* Member of Association of Chinese Political Studies
-* Member of International Political Science Association
-* 北京青年政治学论坛(常务委员)
