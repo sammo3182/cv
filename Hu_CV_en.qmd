@@ -11,9 +11,9 @@ date: last-modified
 # phone: 123-456-7890
 address: "Mingzhai, Tsinghua University, Haidian, Beijing, 100084, China"
 email: yuehu@tsinghua.edu.cn
-# github: sammo3182
-# twitter: yuehupolisci
-orcid: 0000-0002-2829-3971 # orcid identifier
+github: sammo3182
+twitter: yuehupolisci
+# orcid: 0000-0002-2829-3971 # orcid identifier
 #osf: ymqui # osf five character id
 web: www.drhuyue.site
 
