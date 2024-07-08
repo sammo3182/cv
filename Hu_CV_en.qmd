@@ -6,7 +6,7 @@ format:
 CJKmainfont: Noto Sans CJK SC
 fontsize: 12pt
 
-author: "Yue Hu | 胡悦"
+author: "Yue Hu"
 date: last-modified
 # phone: 123-456-7890
 address: "Mingzhai, Tsinghua University, Haidian, Beijing, 100084, China"
@@ -176,10 +176,12 @@ df_qualifications%>%
 
 # Publications
 
+## In English
+
 ::: {#refs-peer}
 :::
 
-## Chinese
+## In Chinese
 
 ::: {#refs-chinese}
 :::
@@ -189,12 +191,12 @@ df_qualifications%>%
 ::: {#refs-software}
 :::
 
-# Guest Lecture
+# Invited Talks
 
 ::: {#refs-speech}
 :::
 
-# Grants
+# Grands and Awards (Selected)
 
 ```{r grants}
 df_grants %>%
@@ -221,10 +223,11 @@ tribble(
   ~Year, ~Name, ~Institution,
   'All-Year', "Workshop: Learning R with Dr. Hu and His Friends", "Tsinghua University",
   'Fall', "70700173: Analysis of Political Data","Tsinghua University",
+  'Fall', "70700511: Professonalism and Competence","Tsinghua University",
   'Fall', "80700673: Governmental Big Data","Tsinghua University",
   'Spring', "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases","Tsinghua University",
-  'Spring', "60700033: Big Data Analysis (A)", "Tsinghua University",
   'Spring', "30700953: Analysis of Public Policy: Perspectives and Methods","Tsinghua University",
+  'Spring', "60700033: Big Data Analysis (A)", "Tsinghua University",
   'Fall 2018', "POLI301: Analysis of Political Data","University of Iowa"
 ) %>% 
   detailed_entries(

@@ -23,7 +23,8 @@ bibliography:
     peer: My_Articles.bib
     chinese: My_Chinese.bib
     software: My_Software.bib
-    speech: My_Speech.bib
+    speech_cn: My_Speech_cn.bib
+    speech_en: My_Speech_en.bib
   
 validate-yaml: false
 csl: apa.csl
@@ -59,8 +60,10 @@ p_load(tinytex,
 ```{r position}
 tribble(         
   ~Year, ~Degree, ~Institution,        
+  '2024-07至今', "副主任","清华大学智库中心",
   '2021-06至今', "副教授","清华大学社会科学院政治学系",  
   '2021-09至今', "论文导师", "清华大学苏世民书院",
+  '2020-09至2022-11', "研究生工作组组长", "清华大学社会科学学院",
   '2019-01至2021-05', "助理教授","清华大学社会科学院政治学系") %>%    
   kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
@@ -77,8 +80,7 @@ tribble(
   '2021-07至今', "校园导师（Campus Advisor）","Github Educatoin",
   '2021-04至今', "常务委员","北京青年政治学论坛", 
   '2020-07至今', "副主任","清华大学国家治理实验室计算社会科学平台",
-  '2019-06至今', "副主任","清华大学数据与治理中心",
-  '2015-05 ~ 2018-05', "Statistical Consultant","Iowa Social Science Research Center") %>%    
+  '2019-06至今', "副主任","清华大学数据与治理中心") %>%    
   kable(col.names = NULL, booktabs = T, format = "latex") |> 
   kable_styling(latex_options = "hold_position") %>%
   sub("\\\\toprule", "", .) %>% 
@@ -143,7 +145,7 @@ tribble(
   sub("\\\\bottomrule", "", .)
 ```
 
-# 荣誉奖励
+# 荣誉奖励(摘选)
 
 ```{r grants}
 tribble(            
@@ -165,7 +167,10 @@ tribble(
 
 # 专题讲座（摘选）
 
-::: {#refs-speech}
+::: {#refs-speech_en}
+:::
+
+::: {#refs-speech_cn}
 :::
 
 
@@ -175,12 +180,13 @@ tribble(
 tribble(
   ~Year, ~Name, ~Institution,
   '秋季学期', "70700173: 治理技术专题：政治数据分析","清华大学",
+  '秋季学期', "70700511: 社会科学专业化与能力提升研讨课","清华大学",
   '秋季学期', "80700673: 政务大数据应用与分析","清华大学",
   '春季学期', "10700193: 理解公共政策：多元视角与案例解析","清华大学",
   '春季学期', "30700953: 公共政策分析：视角与方法","清华大学",
   '春季学期', "60700033: 大数据分析（A）","清华大学",
   '全年课程', "Learning R with Dr. Hu and His Friends 工作坊","清华大学",
-  '2018 秋季学期', "POLI301: 政治数据分析","爱荷华大学",
+  '秋季学期(2018)', "POLI301: 政治数据分析","爱荷华大学",
 )  %>% 
   kable(col.names = NULL, booktabs = T, format = "latex") %>%
   sub("\\\\toprule", "", .) %>%
