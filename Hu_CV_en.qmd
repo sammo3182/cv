@@ -196,7 +196,7 @@ df_qualifications%>%
 ::: {#refs-speech}
 :::
 
-# Grands and Awards (Selected)
+# Grants and Awards (Selected)
 
 ```{r grants}
 df_grants %>%
