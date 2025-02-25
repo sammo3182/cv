@@ -1,0 +1,13 @@
+% TODO: Add custom LaTeX header directives here
+
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\usepackage[UTF8]{ctex}
+
+
+% Define a macro to print the title and titleaddon
+\DeclareFieldFormat{titleaddon}{\addcolon\space#1}
+\renewbibmacro*{title}{%
+  \printfield{title}%
+  \ifboolexpr{ test {\ifentrytype{article}} }
+    {\setunit{\subtitlepunct}\printfield{titleaddon}}
+    {\setunit{\subtitlepunct}\printfield{titleaddon}}}

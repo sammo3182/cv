@@ -1,0 +1,279 @@
+---
+title: CV
+format:
+  quarto-cv-pdf: 
+    pdf-engine: xelatex
+    keep-tex: false
+    citeproc: false
+fontsize: 12pt
+
+author: "Yue Hu"
+date: last-modified
+# phone: 123-456-7890
+address: "Mingzhai, Tsinghua University, Haidian, Beijing, 100084, China"
+email: yuehu@tsinghua.edu.cn
+github: sammo3182
+twitter: yuehupolisci
+# orcid: 0000-0002-2829-3971 # orcid identifier
+#osf: ymqui # osf five character id
+web: www.drhuyue.site
+
+fontawesome: yes
+nocite: '@*'
+
+bibliography: 
+    peer: My_Articles.bib
+    chinese: My_Chinese.bib
+    software: My_Software.bib
+    speech: My_Speech.bib
+validate-yaml: false
+csl: apa.csl
+
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor: 
+  render-on-save: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+if (!require(pacman)) install.packages("pacman")
+library(pacman)
+
+p_load_gh(
+  "ropenscilabs/tic",
+  "mitchelloharawild/vitae"
+)
+p_load(
+  tinytex,
+  scholar,
+  tidyverse,
+  here,
+  rorcid,
+  lubridate,
+  glue,
+  modelsummary,
+  kableExtra
+)
+
+```
+
+```{r}
+#| label: orcidData
+#| include: false
+
+orcidID <- "0000-0002-2829-3971"
+
+## Education
+df_edu <- rorcid::orcid_educations(orcidID)[[orcidID]]$`affiliation-group`$summaries %>%
+  data.table::rbindlist(fill = T)
+
+### edu_info<-c("education-summary.department-name","education-summary.role-title","education-summary.start-date.year.value","education-summary.end-date.year.value","education-summary.organization.name","education-summary.organization.address.country")
+
+## Qualifications
+
+df_qualifications <- rorcid::orcid_qualifications(orcidID)[[orcidID]]$`affiliation-group`$summaries %>%
+  data.table::rbindlist(fill = T)
+
+### qualifications_info<-c("qualification-summary.organization.name","qualification-summary.role-title","qualification-summary.end-date.year.value","qualification-summary.end-date.month.value","qualification-summary.organization.address.country")
+
+## jobs
+df_position <-
+  orcid_employments(orcidID)[[orcidID]]$`affiliation-group`$summaries %>%
+  bind_rows() %>%
+  mutate(
+    `employment-summary.end-date.year.value` = ifelse(is.na(`employment-summary.end-date.year.value`), "Present", `employment-summary.end-date.year.value`),
+    `employment-summary.end-date.month.value` = ifelse(is.na(`employment-summary.end-date.month.value`), "", `employment-summary.end-date.month.value`)
+  )
+
+
+# ## works
+# benchmark_orcid <- function(id) {
+#   tictoc::tic()
+#
+#   # Get put-codes
+#   put_codes = orcid_works(id)[[1]] %>%
+#     bind_rows() %>%
+#     pull(`put-code`)
+#
+#   # Get info of those put codes
+#   list_orcid <- orcid_works(id, put_code = put_codes) #%>% bind_rows()
+#   cat(id, " - ")
+#
+#   tictoc::toc()
+#   list_orcid
+# }
+#
+# works_raw<-benchmark_orcid(orcidID)[[orcidID]][["works"]]
+# df_works <-within(works_raw,{
+#   authors<-NA
+#   authors <- str_extract(`work.citation.citation-value`,"(?<=author=\\s\\{).*(?=\\}, year)")%>%
+#     str_replace_all(c("\\{"="","\\}"=""))
+# })
+
+## membership
+df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]] %>%
+  data.table::rbindlist(fill = T)
+# membership_info <- c("membership-summary.organization.name","membership-summary.organization.address.country")
+
+# Grants
+
+df_grants <- orcid_distinctions(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]] %>%
+  data.table::rbindlist(fill = T)
+
+```
+
+# Professional Positions
+
+```{r}
+#| label: professional
+
+df_position |>
+  detailed_entries(
+    what = `employment-summary.organization.name`,
+    when = glue("{`employment-summary.start-date.year.value`}.{`employment-summary.start-date.month.value`}--{`employment-summary.end-date.year.value`}.{`employment-summary.end-date.month.value`}"),
+    with = glue("{`employment-summary.role-title`}, {`employment-summary.department-name`}"),
+    where = `employment-summary.organization.address.country`
+  ) |>
+  as.data.frame() |>
+  mutate(with = str_remove(with, ", NA")) |>
+  select(with, when, what) |>
+  kable(col.names = NULL, booktabs = TRUE) |>
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\midrule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |>
+  column_spec(1, width = "20em") |>
+  column_spec(3, width = "10em")
+```
+
+
+# Education 
+
+```{r}
+#| label: edu
+
+df_edu |>
+  detailed_entries(
+    with = glue::glue("{`education-summary.role-title`} ({`education-summary.department-name`}) "),
+    when = glue::glue("{`education-summary.start-date.year.value`} - {`education-summary.end-date.year.value`}"),
+    what = `education-summary.organization.name`,
+    where = `education-summary.organization.address.country`
+  ) |>
+  as.data.frame() |>
+  select(with, when, what, where, -why) |>
+  kable(col.names = NULL, booktabs = T) |>
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\midrule", "", .) %>%
+  sub("\\\\bottomrule", "", .)
+```
+
+## Professional Training
+
+```{r}
+#| label: qualification
+
+df_qualifications%>%
+  detailed_entries(
+    with = `qualification-summary.role-title`,
+    when = glue::glue("{`qualification-summary.end-date.year.value`} - {`qualification-summary.end-date.month.value`}"),
+    what = `qualification-summary.organization.name`,
+    where = `qualification-summary.organization.address.country`
+  ) |> 
+  select(with, when, what, where, -why) |>  
+  kable(col.names = NULL, booktabs = T) |> 
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\midrule", "", .) %>% 
+  sub("\\\\bottomrule", "", .)
+```
+
+# Peer-Reviewed Publications
+
+::: {#refs-peer}
+:::
+
+# Publications in Chinese
+
+::: {#refs-chinese}
+:::
+
+# Software
+
+::: {#refs-software}
+:::
+
+# Invited Talks (Selected)
+
+::: {#refs-speech}
+:::
+
+# Awards and Honors
+
+```{r}
+#| label: grants
+
+df_grants %>%
+  brief_entries(
+    with = `distinction-summary.role-title`,
+    what = `distinction-summary.organization.name`,
+    when = `distinction-summary.start-date.year.value`,
+  ) |>
+  as.data.frame() |>
+  select(with, when, what) |>
+  kable(
+    col.names = NULL,
+    booktabs = T, format = "latex"
+  ) |>
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\midrule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |>
+  column_spec(1, width = "25em")
+```
+
+# Teaching
+
+```{r}
+#| label: teaching
+
+tribble(
+  ~Year, ~Name, ~Institution,
+  "All-Year", "Workshop: Learning R with Dr. Hu and His Friends", "Tsinghua University",
+  "Fall", "70700173: Analysis of Political Data", "Tsinghua University",
+  "Fall", "70700511: Professonalism and Competence", "Tsinghua University",
+  "Fall", "80700673: Governmental Big Data", "Tsinghua University",
+  "Spring", "10700193: Understanding Public Policies: Interdisciplinary Perspectives and Practical Cases", "Tsinghua University",
+  "Spring", "30700953: Analysis of Public Policy: Perspectives and Methods", "Tsinghua University",
+  "Spring", "60700033: Big Data Analysis (A)", "Tsinghua University",
+  "Fall 2018", "POLI301: Analysis of Political Data", "University of Iowa"
+) %>%
+  detailed_entries(
+    when = Year,
+    with = Name,
+    where = Institution
+  ) |>
+  ungroup() |>
+  select(when, with, where, -why) |>
+  kable(col.names = NULL, booktabs = T) |>
+  kable_styling(latex_options = "hold_position") %>%
+  sub("\\\\toprule", "", .) %>%
+  sub("\\\\midrule", "", .) %>%
+  sub("\\\\bottomrule", "", .) |>
+  column_spec(2, width = "25em") 
+```
+
+# Professional Affiliation
+
+Member of 
+
+* American Political Science Association
+* American Psychology Association
+* International Political Science Association
+* Midwest Political Science Association
+* The Association of Chinese Political Studies
