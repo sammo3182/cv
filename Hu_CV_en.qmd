@@ -2,7 +2,7 @@
 title: CV
 format:
   quarto-cv-pdf: 
-    pdf-engine: xelatex
+    #pdf-engine: xelatex # has to be xelatex not lualatex
     keep-tex: false
     citeproc: false
 fontsize: 12pt
@@ -15,7 +15,7 @@ email: yuehu@tsinghua.edu.cn
 github: sammo3182
 twitter: yuehupolisci
 # orcid: 0000-0002-2829-3971 # orcid identifier
-#osf: ymqui # osf five character id
+# osf: ymqui # osf five character id
 web: www.drhuyue.site
 
 fontawesome: yes
@@ -25,7 +25,7 @@ bibliography:
     peer: My_Articles.bib
     chinese: My_Chinese.bib
     software: My_Software.bib
-    speech: My_Speech.bib
+    speech: My_Speech_en.bib
 validate-yaml: false
 csl: apa.csl
 
