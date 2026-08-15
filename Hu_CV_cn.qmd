@@ -21,6 +21,7 @@ fontawesome: yes
 nocite: '@*'
 
 bibliography: 
+    book: My_Book.bib
     peer: My_Articles.bib
     chinese: My_Chinese.bib
     software: My_Software.bib
@@ -130,6 +131,10 @@ tribble(
   sub("\\\\bottomrule", "", .)
 ```
 
+# 专著
+
+::: {#refs-book}
+:::
 
 # 国际发表
 
@@ -161,7 +166,8 @@ tribble(
 
 ```{r grants}
 tribble(            
-  ~Year, ~Award, ~Institution,            
+  ~Year, ~Award, ~Institution,  
+  "2025", "国家高层次人才特殊支持计划青年项目", "中央宣传部",          
   "2022", "学术新人奖", "清华大学",
   "2021", "清华大学教学成果奖","清华大学",
   "2021", "北京市第十六届哲学社会科学优秀成果奖", "北京市政府") %>% 

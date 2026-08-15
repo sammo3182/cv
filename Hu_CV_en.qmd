@@ -22,6 +22,7 @@ fontawesome: yes
 nocite: '@*'
 
 bibliography: 
+    book: My_Book.bib
     peer: My_Articles.bib
     chinese: My_Chinese.bib
     software: My_Software.bib
@@ -116,8 +117,10 @@ df_position <-
 # })
 
 ## membership
-df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]] %>%
-  data.table::rbindlist(fill = T)
+# Not fetched: the "Professional Affiliation" section is hard-coded, and this
+# call is the flakiest ORCID endpoint (many per-put-code GETs -> 503).
+# df_membership <- orcid_memberships(orcidID)[[orcidID]][["affiliation-group"]][["summaries"]] %>%
+#   data.table::rbindlist(fill = T)
 # membership_info <- c("membership-summary.organization.name","membership-summary.organization.address.country")
 
 # Grants
@@ -192,6 +195,11 @@ df_qualifications%>%
   sub("\\\\midrule", "", .) %>% 
   sub("\\\\bottomrule", "", .)
 ```
+
+# Book
+
+::: {#refs-book}
+:::
 
 # Peer-Reviewed Publications
 
